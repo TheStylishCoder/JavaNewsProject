@@ -9,7 +9,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
             summary:"",
             fullStory:"",
             journalist: null,
-            categoryType: null,
+            category: null,
             location: null,
             date: null,
             viewCount: 0,
@@ -35,7 +35,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                 summary:"",
                 fullStory:"",
                 journalist: null,
-                categoryType: null,
+                category: null,
                 location: null,
                 date: null,
                 viewCount: 0,
@@ -46,12 +46,16 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         }
     }, [article])
 
-    if(!allJournalists.length === 0){ 
+    if(!allJournalists.length === 0 && !allCategories.length === 0 && !allLocations.length ===0){ 
         return <p>Loading...</p> 
     }
 
     const journalistOptions = allJournalists.map((journalist, index) => {
         return <option key={index} value={index}>{journalist.name}</option> 
+    })
+
+    const categoryOptions = allCategories.map((category, index) => {
+        return <option key={index} value={index}>{category.type}</option>
     })
 
     const handleChange = function (event){
@@ -69,6 +73,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         setStateArticle(copiedArticle);
     }
 
+    const handleCategory = function(event){
+        const index = parseInt(event.target.value);
+        const selectedCategory = allCategories[index];
+        let copiedArticle = {...stateArticle};
+        copiedArticle['category'] = selectedCategory;
+        setStateArticle(copiedArticle);
+    }
+
     const handleSubmit = function(event){
         event.preventDefault();
         if(stateArticle.id){
@@ -81,6 +93,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
     const findJournalistIndex = function(){ 
         if(article){
             return allJournalists.findIndex(journalist => article.journalist.id === journalist.id)
+        }else{
+            return null;
+        }
+    }
+
+    const findCategoryIndex = function(){ 
+        if(article){
+            return allCategories.findIndex(category => article.category.id === category.id)
         }else{
             return null;
         }
@@ -107,11 +127,11 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                     {journalistOptions}
                 </select>
 
-                {/* <label htmlFor = "categoryType">Category:</label>
-                <select name="categoryType" onChange={handleCategory} defaultValue={findJournalistIndex() || "select-journalist"}>
-                    <option disabled value='select-journalist'>Select a Journalist</option>
-                    {journalistOptions}
-                </select> */}
+                <label htmlFor = "category">Category:</label>
+                <select name="category" onChange={handleCategory} defaultValue={findCategoryIndex() || "select-category"}>
+                    <option disabled value='select-category'>Select a Category</option>
+                    {categoryOptions}
+                </select>
 
             </div>
         </form>
