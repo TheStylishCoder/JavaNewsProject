@@ -16,8 +16,10 @@ public class Journalist implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "name")
     private String name;
+
     @JsonIgnoreProperties(value = "journalist")
     @OneToMany(mappedBy = "journalist", fetch = FetchType.LAZY)
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
