@@ -19,7 +19,7 @@ public class Category implements Serializable {
 
     @Column(name = "type")
     private String type;
-    
+
     @JsonIgnoreProperties(value = "category")
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
