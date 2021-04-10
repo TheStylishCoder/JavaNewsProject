@@ -30,7 +30,7 @@ const JournalistForm = ({journalist, onCreate, onUpdate}) => {
 
     const handleChange = function (event){
         let copiedJournalist = {...stateJournalist} 
-        copiedJournalist[propertyName] = event.target.value; 
+        // copiedJournalist[propertyName] = event.target.value; 
         setStateJournalist(copiedJournalist);
     }
 
