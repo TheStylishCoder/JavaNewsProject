@@ -24,7 +24,7 @@ public class Article implements Serializable {
     @Column(name = "summary")
     private String summary;
 
-    @Column(name = "full_story")
+    @Column(name = "full_story", length=7000)
     private String fullStory;
 
     @ManyToOne
@@ -69,8 +69,11 @@ public class Article implements Serializable {
     )
     private List <User> viewedBy;
 
+    @Column(name = "image")
+    private String image;
+
     public Article(String headline, String summary, String fullStory, Journalist journalist, Category category,
-                   Location location, Date date, int viewCount) {
+                   Location location, Date date, int viewCount, String image) {
         this.headline = headline;
         this.summary = summary;
         this.fullStory = fullStory;
@@ -82,6 +85,7 @@ public class Article implements Serializable {
         this.favourite = false;
         this.favouritedBy = new ArrayList<>();
         this.viewedBy = new ArrayList<>();
+        this.image = image;
     }
 
     public Article() {
@@ -181,6 +185,14 @@ public class Article implements Serializable {
 
     public void setViewedBy(List<User> viewedBy) {
         this.viewedBy = viewedBy;
+    }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 }
 
