@@ -58,6 +58,10 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         return <option key={index} value={index}>{category.type}</option>
     })
 
+    const locationOptions = allLocations.map((location, index) => {
+        return <option key={index} value={index}>{location.name}</option>
+    })
+
     const handleChange = function (event){
         let propertyName = event.target.name; 
         let copiedArticle= {...stateArticle} 
@@ -81,6 +85,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         setStateArticle(copiedArticle);
     }
 
+    const handleLocation= function(event){
+        const index = parseInt(event.target.value);
+        const selectedLocation = allCategories[index];
+        let copiedArticle = {...stateArticle};
+        copiedArticle['location'] = selectedLocation;
+        setStateArticle(copiedArticle);
+    }
+
     const handleSubmit = function(event){
         event.preventDefault();
         if(stateArticle.id){
@@ -101,6 +113,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
     const findCategoryIndex = function(){ 
         if(article){
             return allCategories.findIndex(category => article.category.id === category.id)
+        }else{
+            return null;
+        }
+    }
+
+    const findLocationIndex = function(){ 
+        if(article){
+            return allLocations.findIndex(location => article.location.id === location.id)
         }else{
             return null;
         }
@@ -131,6 +151,12 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                 <select name="category" onChange={handleCategory} defaultValue={findCategoryIndex() || "select-category"}>
                     <option disabled value='select-category'>Select a Category</option>
                     {categoryOptions}
+                </select>
+
+                <label htmlFor = "location">Location:</label>
+                <select name="location" onChange={handleLocation} defaultValue={findLocationIndex() || "select-location"}>
+                    <option disabled value='select-location'>Select a Location</option>
+                    {locationOptions}
                 </select>
 
             </div>
