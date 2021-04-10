@@ -24,14 +24,14 @@ const LoginContainer = ({allUsers, allLocations}) => {
         <>
         <Switch>
             
-            <Route exact path='/login' render={() => {
-                return <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
-             }}/>
-
-            <Route exact path='/login' render={() => {
-                return <LoginForm allUsers={allUsers}  handleLogin={handleLogin} />
-            }}/>
-
+            <Route exact path='/login' render={() => 
+            <> 
+            <div className="login-container">
+                <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
+                <LoginForm allUsers={allUsers}  handleLogin={handleLogin} />
+            </div>
+            </>
+            }/>
 
         </Switch>
        
