@@ -28,9 +28,9 @@ const JournalistForm = ({journalist, onCreate, onUpdate}) => {
         }
     }, [journalist])
 
-    const handleChange = function (event){
+    const handleUpdate = (event) => {
         let copiedJournalist = {...stateJournalist} 
-        // copiedJournalist[propertyName] = event.target.value; 
+        copiedJournalist["name"] = event.target.value; 
         setStateJournalist(copiedJournalist);
     }
 
@@ -51,7 +51,7 @@ const JournalistForm = ({journalist, onCreate, onUpdate}) => {
         <form onSubmit={handleSubmit}>
             <div className = "journalist-form">
                 <label htmlFor = "name">Journalist Full Name:</label>
-                <input type = "text" placeholder="Full Name" name="name" onChange={handleChange} value={stateJournalist.name} />
+                <input type = "text" placeholder="Full Name" name="name" onChange={handleUpdate} value={stateJournalist.name} />
                 <button type="submit">Save</button>
             </div>
         </form>
