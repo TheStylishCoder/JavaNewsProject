@@ -49,7 +49,7 @@ public class Role implements Serializable {
     public void setRole(String role) {
         this.role = role;
     }
-    
+
     public List<User> getUsers() {
         return users;
     }
