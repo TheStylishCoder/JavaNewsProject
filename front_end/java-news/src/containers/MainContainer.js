@@ -15,18 +15,27 @@ const MainContainer = () => {
     const [allArticles, setAllArticles] = useState([]);
     const [allJournalists, setAllJournalists] = useState([]);
     const [allUsers, setAllUsers] = useState([]);
+    const [allRoles, setAllRoles] = useState([]);
+    const [allLocations, setAllLocations] = useState([]);
+    const [allCategories, setAllCategories] = useState([]);
 
     const requestAll = function(){
         const request = new Request();
         const articlePromise = request.get('/api/articles')
         const journalistPromise = request.get('/api/journalists')
         const userPromise = request.get('/api/users')
+        const rolePromise = request.get('/api/roles')
+        const locationPromise = request.get('/api/locations')
+        const categoryPromise = request.get('/api/categories')
 
-        Promise.all([articlePromise, journalistPromise, userPromise])
+        Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise])
         .then((data) => {
             setAllArticles(data[0]);
             setAllJournalists(data[1]);
             setAllUsers(data[2]);
+            setAllRoles(data[3]);
+            setAllLocations(data[4]);
+            setAllCategories(data[5]);
         })
     }
 

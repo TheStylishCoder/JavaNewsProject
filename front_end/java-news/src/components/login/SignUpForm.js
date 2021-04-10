@@ -1,14 +1,14 @@
 import React, {useState} from 'react';
 
-const SignUpForm = ({locations, onCreate}) => {
+const SignUpForm = ({allLocations, onCreate}) => {
 
 
     const [stateUser, setStateUser] = useState(
         {
             username: "",
             password: "",
-            roleType: USER,
-            location: null
+            roleType: "user",
+            location: ""
         }
     )
 
@@ -18,6 +18,16 @@ const SignUpForm = ({locations, onCreate}) => {
         let propertyName = event.target.name;
         let copiedUser = {...stateUser}
         copiedUser[propertyName]= event.target.value;
+        setStateUser(copiedUser);
+    }
+
+
+
+    const handleLocation = function(event){
+        const index = parseInt(event.target.value);
+        const selectedLocation = allLocations[index];
+        let copiedUser = {...stateUser};
+        copiedUser['location'] = selectedLocation;
         setStateUser(copiedUser);
     }
 
@@ -32,14 +42,9 @@ const SignUpForm = ({locations, onCreate}) => {
         
     }
 
-
-
-
-    const locationOptions = locations.map((location, index) => {
-        return <option key={index} value={index}>{location}</option>
+    const locationOptions = allLocations.map((location, index) => {
+        return <option key={index} value={index}>{location.name}</option>
     })
-
-  
 
 
     return(

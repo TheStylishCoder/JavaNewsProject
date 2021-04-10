@@ -5,14 +5,14 @@ import LoginForm from '../components/login/LoginForm';
 import SignUpForm from '../components/login/SignUpForm';
 
 
-const LoginContainer = ({allUsers}) => {
+const LoginContainer = ({allUsers, allLocations}) => {
 
 
     const handlePost = function(user){
         const request = new Request();
         request.post("/api/users", user)
         .then(() => {
-          window.location = '/articles'
+          window.location = '/users/profile'
         })
       }
 
@@ -25,7 +25,7 @@ const LoginContainer = ({allUsers}) => {
         <Switch>
             
             <Route exact path='/login' render={() => {
-                return <SignUpForm allUsers={allUsers}  onCreate={handlePost} />
+                return <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
              }}/>
 
             <Route exact path='/login' render={() => {
