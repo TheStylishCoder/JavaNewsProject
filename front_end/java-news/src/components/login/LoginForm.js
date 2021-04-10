@@ -17,13 +17,13 @@ const LoginForm = ({allUsers, handleLogin}) => {
     }
 
     const loginSubmit = function(){
-        for (user of allUsers){
-            if(stateUser.name === user.name && stateUser.password === user.password){
-                handleLogin(user);
-            } else {
-                return null;
-            }
-        }
+        // for (user of allUsers){
+        //     if(stateUser.name === user.name && stateUser.password === user.password){
+        //         handleLogin(user);
+        //     } else {
+        //         return null;
+        //     }
+        // }
        
     }
 

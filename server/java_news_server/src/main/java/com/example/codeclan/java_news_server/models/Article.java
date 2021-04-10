@@ -1,13 +1,12 @@
 package com.example.codeclan.java_news_server.models;
 
-
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Cascade;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Date;
+import java.util.Calendar;
 import java.util.List;
 
 @Entity
@@ -42,8 +41,10 @@ public class Article implements Serializable {
     @JoinColumn(name = "location_id", nullable = false)
     private Location location;
 
+    @JsonFormat(pattern ="dd-MM-yyyy")
+    @Temporal(TemporalType.DATE)
     @Column(name = "date")
-    private Date date;
+    private Calendar date;
 
     @Column(name = "view_count")
     private int viewCount;
@@ -73,7 +74,7 @@ public class Article implements Serializable {
     private String image;
 
     public Article(String headline, String summary, String fullStory, Journalist journalist, Category category,
-                   Location location, Date date, int viewCount, String image) {
+                   Location location, Calendar date, int viewCount, String image) {
         this.headline = headline;
         this.summary = summary;
         this.fullStory = fullStory;
@@ -147,11 +148,11 @@ public class Article implements Serializable {
         this.location = location;
     }
 
-    public Date getDate() {
+    public Calendar getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Calendar date) {
         this.date = date;
     }
 
