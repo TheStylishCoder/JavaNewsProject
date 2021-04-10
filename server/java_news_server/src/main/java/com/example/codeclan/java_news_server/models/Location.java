@@ -25,9 +25,15 @@ public class Location implements Serializable {
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     private List<Article> articles;
 
-    public Location(String type) {
+    @JsonIgnoreProperties(value = "location")
+    @OneToMany(mappedBy = "location", fetch = FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.DELETE)
+    private List<User> users;
+
+    public Location(String name) {
         this.name = name;
         this.articles = new ArrayList<>();
+        this.users = new ArrayList<>();
     }
 
     public Location() {
@@ -55,6 +61,14 @@ public class Location implements Serializable {
 
     public void setArticles(List<Article> articles) {
         this.articles = articles;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 }
 
