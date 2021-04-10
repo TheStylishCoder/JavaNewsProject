@@ -3,53 +3,53 @@ import React, {useState} from 'react';
 const SignUpForm = ({allLocations, onCreate}) => {
 
 
-    // const [stateUser, setStateUser] = useState(
-    //     {
-    //         username: "",
-    //         password: "",
-    //         roleType: "user",
-    //         location: ""
-    //     }
-    // )
+    const [stateUser, setStateUser] = useState(
+        {
+            username: "",
+            password: "",
+            roleType: "user",
+            location: ""
+        }
+    )
 
 
 
-    // const handleChange = function(event){
-    //     let propertyName = event.target.name;
-    //     let copiedUser = {...stateUser}
-    //     copiedUser[propertyName]= event.target.value;
-    //     setStateUser(copiedUser);
-    // }
+    const handleChange = function(event){
+        let propertyName = event.target.name;
+        let copiedUser = {...stateUser}
+        copiedUser[propertyName]= event.target.value;
+        setStateUser(copiedUser);
+    }
 
 
 
-    // const handleLocation = function(event){
-    //     const index = parseInt(event.target.value);
-    //     const selectedLocation = allLocations[index];
-    //     let copiedUser = {...stateUser};
-    //     copiedUser['location'] = selectedLocation;
-    //     setStateUser(copiedUser);
-    // }
+    const handleLocation = function(event){
+        const index = parseInt(event.target.value);
+        const selectedLocation = allLocations[index];
+        let copiedUser = {...stateUser};
+        copiedUser['location'] = selectedLocation;
+        setStateUser(copiedUser);
+    }
 
 
-    // const handleSubmit = function(event){
-    //     event.preventDefault();
-    //     if(stateUser){
-    //         onCreate(stateUser)
-    //     } else {
-    //         return null;
-    //     }
+    const handleSubmit = function(event){
+        event.preventDefault();
+        if(stateUser){
+            onCreate(stateUser)
+        } else {
+            return null;
+        }
         
-    // }
+    }
 
-    // const locationOptions = allLocations.map((location, index) => {
-    //     return <option key={index} value={index}>{location.name}</option>
-    // })
+    const locationOptions = allLocations.map((location, index) => {
+        return <option key={index} value={index}>{location.name}</option>
+    })
 
 
     return(
         <>
-        {/* <div class="sign-up-form">
+        <div class="sign-up-form">
             <h3>Sign Up</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username}/>
@@ -60,7 +60,7 @@ const SignUpForm = ({allLocations, onCreate}) => {
                 </select>
                 <button type="submit">Sign Up</button>
             </form>
-        </div> */}
+        </div>
         
         </>
     )

@@ -8,21 +8,21 @@ import SignUpForm from '../components/login/SignUpForm';
 const LoginContainer = ({allUsers, allLocations}) => {
 
 
-    // const handlePost = function(user){
-    //     const request = new Request();
-    //     request.post("/api/users", user)
-    //     .then(() => {
-    //       window.location = '/users/profile'
-    //     })
-    //   }
+    const handlePost = function(user){
+        const request = new Request();
+        request.post("/api/users", user)
+        .then(() => {
+          window.location = '/users/profile'
+        })
+      }
 
-    // const handleLogin = function(){
-    //         // set user login status to true?
-    // }
+    const handleLogin = function(){
+            // set user login status to true?
+    }
 
     return(
         <>
-        {/* <Switch>
+        <Switch>
             
             <Route exact path='/login' render={() => {
                 return <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
@@ -34,7 +34,7 @@ const LoginContainer = ({allUsers, allLocations}) => {
 
 
         </Switch>
-        */}
+       
         </>
     )
 
