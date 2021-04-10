@@ -5,7 +5,7 @@ import LoginForm from '../components/login/LoginForm';
 import SignUpForm from '../components/login/SignUpForm';
 
 
-const LoginContainer = ({allUsers, allLocations}) => {
+const LoginContainer = ({setCurrentUser, allUsers, allLocations}) => {
 
 
     const handlePost = function(user){
@@ -16,8 +16,8 @@ const LoginContainer = ({allUsers, allLocations}) => {
         })
       }
 
-    const handleLogin = function(){
-            // set user login status to true?
+    const handleLogin = function(user){
+            setCurrentUser(user);
     }
 
     return(

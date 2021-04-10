@@ -27,7 +27,6 @@ const LoginForm = ({allUsers, handleLogin}) => {
        
     }
 
-
     return(
         <>
         <div class="login-form">

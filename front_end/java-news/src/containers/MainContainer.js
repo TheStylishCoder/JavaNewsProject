@@ -18,6 +18,8 @@ const MainContainer = () => {
     const [allRoles, setAllRoles] = useState([]);
     const [allLocations, setAllLocations] = useState([]);
     const [allCategories, setAllCategories] = useState([]);
+    const [currentUser, setCurrentUser] = useState(null);
+
 
     const requestAll = function(){
         const request = new Request();
@@ -65,7 +67,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/login" render={() => {
-              return <LoginContainer allUsers={allUsers} />
+              return <LoginContainer allUsers={allUsers} currentUser={currentUser} setCurrentUser={setCurrentUser}/>
           }} />
           
         </Switch>
