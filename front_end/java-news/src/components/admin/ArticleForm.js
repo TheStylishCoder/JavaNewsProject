@@ -1,7 +1,7 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 
-const ArticleForm = ({allJournalists, article, onCreate, onUpdate}) => {
+const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCreate, onUpdate}) => {
 
     const [stateArticle, setStateArticle] = useState(
         {

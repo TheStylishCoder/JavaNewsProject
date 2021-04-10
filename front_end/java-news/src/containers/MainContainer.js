@@ -61,7 +61,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/admin" render={() => {
-              return <AdminContainer allArticles={allArticles} allJournalists={allJournalists} />
+              return <AdminContainer allArticles={allArticles} allJournalists={allJournalists} allCategories={allCategories} allLocations={allLocations} />
           }} />
 
           <Route path="/login" render={() => {

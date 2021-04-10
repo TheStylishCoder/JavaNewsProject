@@ -7,7 +7,7 @@ import EditJournalistList from '../components/admin/EditJournalistList';
 import ArticleForm from '../components/admin/ArticleForm';
 import EditArticleList from '../components/admin/EditArticleList';
 
-const AdminContainer = ({allArticles, allJournalists}) => {
+const AdminContainer = ({allArticles, allJournalists, allCategories, allLocations}) => {
 
     const handleJournalistPost = function(journalist){
         const request = new Request();
@@ -49,7 +49,7 @@ const AdminContainer = ({allArticles, allJournalists}) => {
         }} />
 
         <Route exact path='/admin/articles/new' render={() => {
-            return <ArticleForm allJournalists={allJournalists} onCreate={handleArticlePost} />
+            return <ArticleForm allJournalists={allJournalists} allCategories={allCategories} allLocations={allLocations} onCreate={handleArticlePost} />
         }} />
 
         <Route exact path='/admin/articles' render={() => {
