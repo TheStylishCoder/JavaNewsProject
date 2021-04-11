@@ -5,7 +5,7 @@ import LoginForm from '../components/login/LoginForm';
 import SignUpForm from '../components/login/SignUpForm';
 
 
-const LoginContainer = ({allUsers, allLocations}) => {
+const LoginContainer = ({setCurrentUser, allUsers, allLocations}) => {
 
 
     const handlePost = function(user){
@@ -17,21 +17,23 @@ const LoginContainer = ({allUsers, allLocations}) => {
       }
 
     const handleLogin = function(){
-            // set user login status to true?
+            setCurrentUser(user)
     }
 
     return(
         <>
         <Switch>
-            
-            <Route exact path='/login' render={() => {
-                return <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
-             }}/>
+         
+            <Route exact path='/login' render={() => 
+            <>
+            <div className="login-container">
+                <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
+                <LoginForm allUsers={allUsers}  handleLogin={handleLogin} />
+            </div>
+             </>
 
-            <Route exact path='/login' render={() => {
-                return <LoginForm allUsers={allUsers}  handleLogin={handleLogin} />
-            }}/>
-
+            }/>
+           
 
         </Switch>
        

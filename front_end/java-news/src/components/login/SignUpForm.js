@@ -7,7 +7,7 @@ const SignUpForm = ({allLocations, onCreate}) => {
         {
             username: "",
             password: "",
-            roleType: "user",
+            role: "User",
             location: ""
         }
     )
