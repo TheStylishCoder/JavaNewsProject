@@ -5,22 +5,30 @@ import ArticleList from '../components/articles/ArticleList';
 
 const ArticleContainer = ({allArticles}) => {
 
-    const[selectedArticle, setSelectedArticle] = useState({})
+    const findArticleById = function(id){
+        return allArticles.find((article) => {
+          return article.id === parseInt(id);
+        })
+      }
 
-    const handleSelectedArticle = (article) => {
-        setSelectedArticle(article)
+
+    if(!allArticles){
+        return null
     }
-
 
     return(
         <>
         <Switch>
-            <Route exact path='/articles' render={() =>{
-                return <ArticleList allArticles={allArticles} onArticleSelect={handleSelectedArticle} />
-            }}/>
-            <Route exact path='/articles/:id' render={() => {
-                return <ArticleDetail article={selectedArticle}/>
-            }}/>
+
+        <Route exact path="/articles/:id" render={(props) =>{
+        const id = props.match.params.id;
+        const article = findArticleById(id);
+        return <ArticleDetail article={article}/>
+        }}/>
+
+        <Route render={() => {
+        return <ArticleList allArticles={allArticles}/>
+        }} />
 
         </Switch>
         </>

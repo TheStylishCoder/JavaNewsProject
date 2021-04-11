@@ -1,8 +1,8 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import Article from './Article';
 
 
-const ArticleList = ({allArticles, onArticleSelect}) => {
+const ArticleList = ({allArticles}) => {
 
     if (allArticles.length === 0){
         return (<p>Loading...</p>)
@@ -10,10 +10,11 @@ const ArticleList = ({allArticles, onArticleSelect}) => {
 
     const articleListItems = allArticles.map((article, index) => {
         return(
-            <li onClick={()=> {onArticleSelect(article)}} className="article-list-item" key={index}>
-                <h3>{article.headline}</h3>
-                <p>{article.summary}</p>
-                <img src={article.image} height="200" width="auto" />
+          
+             <li className="article-list-item" key={index}>
+                 <div className="article-component">
+                    <Article article={article} />
+                 </div>
             </li>
         )
     })
@@ -25,7 +26,6 @@ const ArticleList = ({allArticles, onArticleSelect}) => {
         </ul>
         </>
     )
-
 }
 
 export default ArticleList;

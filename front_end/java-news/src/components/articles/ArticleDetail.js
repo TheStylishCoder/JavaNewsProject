@@ -1,18 +1,19 @@
 import React from 'react';
+import Article from './Article';
 
-const ArticleDetail = ({selectedArticle}) => {
+const ArticleDetail = ({article}) => {
+
+    if(!article){
+        return <p>Loading...</p>
+    }
 
     return(
-        <>
+    
         <div className="article-detail">
-            {selectedArticle.location} {selectedArticle.category}
-            {selectedArticle.headline}
-            {selectedArticle.journalist} {selectedArticle.date}
-            {selectedArticle.fullStory}
+            <Article article={article}/>
         </div>
-        </>
+    
     )
-
 }
 
 export default ArticleDetail;
