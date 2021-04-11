@@ -1,13 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const Journalist = ({Journalist}) => {
+const Journalist = ({journalist}) => {
 
   if (!journalist){
     return <p>Loading...</p>
   }
 
-  const url = "/journalists/" + journalist.id;
+  const url = "/admin/journalists/" + journalist.id;
 
   return (
     <>

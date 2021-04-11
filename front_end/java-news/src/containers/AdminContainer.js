@@ -6,6 +6,7 @@ import AdminNavBar from '../components/admin/AdminNavBar';
 import EditJournalistList from '../components/admin/EditJournalistList';
 import ArticleForm from '../components/admin/ArticleForm';
 import EditArticleList from '../components/admin/EditArticleList';
+import JournalistDetail from '../components/admin/JournalistDetail';
 
 const AdminContainer = ({allArticles, allJournalists, allCategories, allLocations}) => {
 
@@ -26,7 +27,7 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
 
     const handleJournalistUpdate = function(journalist){
         const request = new Request();
-        request.patch('/api/journalists' + journalist.id, journalist)
+        request.patch("/api/journalists" + journalist.id, journalist)
         .then(() => {
             window.location = '/admin/journalists' 
             // window.location = '/admin/journalists' + journalist.id
@@ -70,6 +71,15 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
             const journalist = findJournalistById(id);
             return <JournalistForm journalist={journalist} onUpdate={handleJournalistUpdate} />
         }} />
+
+        <Route exact path="/admin/journalists/:id" render={(props) =>{
+            const id = props.match.params.id;
+            const journalist= findJournalistById(id);
+            return <JournalistDetail journalist={journalist}
+            onDelete={handleJournalistDelete}
+            
+            />
+        }}/>
 
         <Route exact path='/admin/articles/new' render={() => {
             return <ArticleForm allJournalists={allJournalists} allCategories={allCategories} allLocations={allLocations} onCreate={handleArticlePost} />
