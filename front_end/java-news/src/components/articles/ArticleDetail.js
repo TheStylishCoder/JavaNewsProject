@@ -7,9 +7,9 @@ const ArticleDetail = ({article, currentUser}) => {
         return <p>Loading...</p>
     }
 
-    const favouriteClick = function(article){
+    const favouriteDisplay = function(article){
         if(currentUser.role === "User"){
-            return <button>Add To Reading List</button>
+            return <button onClick={() => {onFavouriteToggle(article)}}>{article.favourite ? 'Delete from Reading List' : 'Add to Reading List'}</button>
         }else{
             return null
         }
@@ -26,7 +26,7 @@ const ArticleDetail = ({article, currentUser}) => {
             <p>Category: {article.category.type}</p>
             <p>{article.fullStory}</p> 
             <p>{article.viewCount}</p>
-            {favouriteClick()}
+            {favouriteDisplay()}
         </div>
     
     )
