@@ -7,6 +7,7 @@ import EditJournalistList from '../components/admin/EditJournalistList';
 import ArticleForm from '../components/admin/ArticleForm';
 import EditArticleList from '../components/admin/EditArticleList';
 import JournalistDetail from '../components/admin/JournalistDetail';
+import ArticleDetail from '../components/admin/ArticleDetail';
 
 const AdminContainer = ({allArticles, allJournalists, allCategories, allLocations}) => {
 
@@ -27,7 +28,7 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
 
     const handleJournalistUpdate = function(journalist){
         const request = new Request();
-        request.patch("/api/journalists" + journalist.id, journalist)
+        request.patch("/api/journalists/" + journalist.id, journalist)
         .then(() => {
             window.location = '/admin/journalists' 
             // window.location = '/admin/journalists' + journalist.id
@@ -43,11 +44,35 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
         })
     }
 
+    const findArticleById = function(id){
+        return allArticles.find((article) => {
+            return article.id === parseInt(id);
+        })
+    }
+
     const handleArticlePost = function(article){
         const request = new Request();
         request.post("/api/articles", article)
         .then(() => {
             window.location = '/articles'
+        })
+    }
+
+    const handleArticleUpdate = function(article){
+        const request = new Request();
+        request.patch("/api/articles/" + article.id, article)
+        .then(() => {
+            window.location = '/admin/articles' 
+            // window.location = '/admin/journalists' + journalist.id
+        })
+    }
+
+    const handleArticleDelete = function(id){
+        const request = new Request();
+        const url = "/api/articles/" + id
+        request.delete(url)
+        .then(() => {
+            window.location = "/admin/articles"
         })
     }
 
@@ -88,6 +113,21 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
         <Route exact path='/admin/articles' render={() => {
             return <EditArticleList allArticles={allArticles} />
         }} />
+
+        <Route exact path='/admin/articles/:id/edit' render={(props) => {
+            const id = props.match.params.id;
+            const article = findArticleById(id);
+            return <ArticleForm article={article} onUpdate={handleArticleUpdate} />
+        }} />
+
+        <Route exact path="/admin/articles/:id" render={(props) =>{
+            const id = props.match.params.id;
+            const article = findArticleById(id);
+            return <ArticleDetail article={article}
+            onDelete={handleArticleDelete}
+            
+            />
+        }}/>
 
         
         </>
