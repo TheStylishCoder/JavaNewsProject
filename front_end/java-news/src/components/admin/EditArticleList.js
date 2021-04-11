@@ -49,4 +49,4 @@ const EditArticleList = ({allArticles}) => {
 
 }
 
-export default EditArticleList;
+export default EditArticleList; 
