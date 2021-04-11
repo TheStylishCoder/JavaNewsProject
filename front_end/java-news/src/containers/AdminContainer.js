@@ -117,7 +117,7 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
         <Route exact path='/admin/articles/:id/edit' render={(props) => {
             const id = props.match.params.id;
             const article = findArticleById(id);
-            return <ArticleForm article={article} onUpdate={handleArticleUpdate} />
+            return <ArticleForm article={article} allJournalists={allJournalists} allCategories={allCategories} allLocations={allLocations} onUpdate={handleArticleUpdate} />
         }} />
 
         <Route exact path="/admin/articles/:id" render={(props) =>{
