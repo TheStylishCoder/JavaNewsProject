@@ -11,7 +11,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
             journalist: null,
             category: null,
             location: null,
-            date: null,
+            date: "",
             viewCount: 0,
             favourite: false,
             image: ""
@@ -37,7 +37,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                 journalist: null,
                 category: null,
                 location: null,
-                date: null,
+                date: "",
                 viewCount: 0,
                 favourite: false,
                 image: ""
@@ -159,15 +159,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                     {locationOptions}
                 </select>
 
-                {/* <label htmlFor = "date">Date:</label>
-                <select name="date" onChange={handleLocation} defaultValue={findLocationIndex() || "select-location"}>
-                    <option disabled value='select-location'>Select a Location</option>
-                    {locationOptions}
-                </select> */}
+                <label htmlFor = "date">Date:</label>
+                <input type="date" name="date" onChange={handleChange} value={stateArticle.date} />
+                  
 
                 <label htmlFor = "image">Image Link/URL:</label>
                 <input type="text" placeholder="Image URL" name="image" onChange={handleChange} value={stateArticle.image} />
 
+                <button type="submit">Save</button>
             </div>
         </form>
         </>
