@@ -30,4 +30,4 @@ const ArticleDetail = ({article, onDelete}) => {
     )
   }
 
-export default ArticleDetail;
+export default ArticleDetail; 
