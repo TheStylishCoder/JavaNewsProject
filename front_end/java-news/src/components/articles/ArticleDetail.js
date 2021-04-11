@@ -10,7 +10,12 @@ const ArticleDetail = ({article}) => {
     return(
     
         <div className="article-detail">
-            <Article article={article}/>
+            <h1>{article.headline}</h1>
+            <img src={article.image} height="400px" width="auto" />
+            <p>Author: {article.journalist.name}</p>
+            <p>Date: {article.date}</p>
+            <p>Category: {article.category.type}</p>
+            <p>{article.fullStory}</p> 
         </div>
     
     )
