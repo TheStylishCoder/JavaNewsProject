@@ -44,5 +44,11 @@ public class ArticleController {
         articleRepository.delete(found);
         return new ResponseEntity<>(null, HttpStatus.OK);
     }
+
+//    http://localhost:8080/api/articles/category?category=Business an example search
+    @GetMapping(value="/articles/category")
+    public ResponseEntity<List<Article>> getAllArticlesByCategory(@RequestParam(name="category") String category){
+        return new ResponseEntity<List<Article>>(articleRepository.findArticlesByCategoryType(category), HttpStatus.OK);
+    }
 }
 
