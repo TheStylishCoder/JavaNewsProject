@@ -11,7 +11,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
             journalist: null,
             category: null,
             location: null,
-            date: null,
+            date: "",
             viewCount: 0,
             favourite: false,
             image: ""
@@ -37,7 +37,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                 journalist: null,
                 category: null,
                 location: null,
-                date: null,
+                date: "",
                 viewCount: 0,
                 favourite: false,
                 image: ""
@@ -46,18 +46,26 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         }
     }, [article])
 
-    if(!allJournalists.length === 0 && !allCategories.length === 0 && !allLocations.length ===0){ 
-        return <p>Loading...</p> 
-    }
 
+
+    if(!allJournalists.length === 0){
+        return <p>Loading...</p>  
+    }
     const journalistOptions = allJournalists.map((journalist, index) => {
         return <option key={index} value={index}>{journalist.name}</option> 
     })
 
+    if(!allCategories.length === 0){
+        return <p>Loading...</p> 
+    }
     const categoryOptions = allCategories.map((category, index) => {
         return <option key={index} value={index}>{category.type}</option>
     })
 
+
+    if(!allLocations.length ===0){
+        return <p>Loading...</p> 
+    }
     const locationOptions = allLocations.map((location, index) => {
         return <option key={index} value={index}>{location.name}</option>
     })
@@ -159,15 +167,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                     {locationOptions}
                 </select>
 
-                {/* <label htmlFor = "date">Date:</label>
-                <select name="date" onChange={handleLocation} defaultValue={findLocationIndex() || "select-location"}>
-                    <option disabled value='select-location'>Select a Location</option>
-                    {locationOptions}
-                </select> */}
+                <label htmlFor = "date">Date:</label>
+                <input type="date" name="date" onChange={handleChange} value={stateArticle.date} />
+                  
 
                 <label htmlFor = "image">Image Link/URL:</label>
                 <input type="text" placeholder="Image URL" name="image" onChange={handleChange} value={stateArticle.image} />
 
+                <button type="submit">Save</button>
             </div>
         </form>
         </>
