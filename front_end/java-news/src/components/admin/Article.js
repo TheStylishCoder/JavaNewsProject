@@ -14,6 +14,7 @@ const Article = ({article}) => {
     <Link to = {url} className="name">
     {article.headline} 
     </Link>
+    <img src={article.image} height="300px" width="auto" />
     <p>Author: {article.journalist.name}</p>
     <p>Date: {article.date}</p>
     <p>Category: {article.category.type}</p>
