@@ -9,11 +9,18 @@ import EditArticleList from '../components/admin/EditArticleList';
 
 const AdminContainer = ({allArticles, allJournalists, allCategories, allLocations}) => {
 
+
+    const findJournalistById = function(id){
+        return allJournalists.find((journalist) => {
+            return journalist.id === parseInt(id);
+        })
+    }
+
     const handleJournalistPost = function(journalist){
         const request = new Request();
         request.post("/api/journalists", journalist)
         .then(() => {
-            window.location = '/journalists'
+            window.location = '/admin/journalists'
         })
     }
 
@@ -21,7 +28,17 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
         const request = new Request();
         request.patch('/api/journalists' + journalist.id, journalist)
         .then(() => {
-            window.location = '/journalists' + journalist.id
+            window.location = '/admin/journalists' 
+            // window.location = '/admin/journalists' + journalist.id
+        })
+    }
+
+    const handleJournalistDelete = function(id){
+        const request = new Request();
+        const url = "/api/journalists/" + id
+        request.delete(url)
+        .then(() => {
+            window.location = "/admin/journalists"
         })
     }
 
@@ -47,6 +64,12 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
         <Route exact path='/admin/journalists' render={() => {
             return <EditJournalistList allJournalists={allJournalists} />
         }} />
+        
+        <Route exact path='/admin/journalists/:id/edit' render={(props) => {
+            const id = props.match.params.id;
+            const journalist = findJournalistById(id);
+            return <JournalistForm journalist={journalist} onUpdate={handleJournalistUpdate} />
+        }} />
 
         <Route exact path='/admin/articles/new' render={() => {
             return <ArticleForm allJournalists={allJournalists} allCategories={allCategories} allLocations={allLocations} onCreate={handleArticlePost} />
@@ -56,11 +79,7 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
             return <EditArticleList allArticles={allArticles} />
         }} />
 
-        {/* <Route exact path='/journalists/:id/edit' render={(props) => {
-            const id = props.match.params.id;
-            // const journalist = findJournalistById(id);
-            return <JournalistForm journalist={journalist} onUpdate={handleJournalistUpdate} />
-        }} /> */}
+        
         </>
     )
 
