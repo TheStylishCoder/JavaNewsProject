@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import ArticleDetail from '../components/articles/ArticleDetail';
 import ArticleList from '../components/articles/ArticleList';
 
-const ArticleContainer = ({allArticles}) => {
+const ArticleContainer = ({allArticles, businessArticles}) => {
 
     const findArticleById = function(id){
         return allArticles.find((article) => {
@@ -19,6 +19,10 @@ const ArticleContainer = ({allArticles}) => {
     return(
         <>
         <Switch>
+
+        <Route exact path='/articles/business' render={() =>{
+            return <ArticleList allArticles={businessArticles}/>
+        }}/>
 
         <Route exact path="/articles/:id" render={(props) =>{
         const id = props.match.params.id;

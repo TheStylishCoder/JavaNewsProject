@@ -19,6 +19,9 @@ const MainContainer = () => {
     const [allLocations, setAllLocations] = useState([]);
     const [allCategories, setAllCategories] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
+    const [businessArticles, setBusinessArticles] = useState([]);
+
+
 
     const requestAll = function(){
         const request = new Request();
@@ -28,8 +31,9 @@ const MainContainer = () => {
         const rolePromise = request.get('/api/roles')
         const locationPromise = request.get('/api/locations')
         const categoryPromise = request.get('/api/categories')
+        const businessArticlesPromise = request.get('/api/articles/category?category=Business')
 
-        Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise])
+        Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise, businessArticlesPromise])
         .then((data) => {
             setAllArticles(data[0]);
             setAllJournalists(data[1]);
@@ -37,6 +41,7 @@ const MainContainer = () => {
             setAllRoles(data[3]);
             setAllLocations(data[4]);
             setAllCategories(data[5]);
+            setBusinessArticles(data[6]);
         })
     }
 
@@ -50,7 +55,7 @@ const MainContainer = () => {
         <NavBar/>
         <Switch>
           <Route path="/articles"  render={() => {
-              return <ArticleContainer allArticles={allArticles} />
+              return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} />
           }} />
 
           <Route path="/journalists" render={() => {
