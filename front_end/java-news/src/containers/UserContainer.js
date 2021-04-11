@@ -1,11 +1,12 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 import UserNavBar from '../components/users/UserNavBar';
 import UserProfile from '../components/users/UserProfile';
 import ReadingList from '../components/users/ReadingList';
 import RecentlyViewed from '../components/users/RecentlyViewed';
 import LocalNews from '../components/users/LocalNews';
 
-const UserContainer = () => {
+const UserContainer = ({currentUser}) => {
 
     return(
         <>

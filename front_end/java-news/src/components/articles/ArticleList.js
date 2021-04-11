@@ -2,7 +2,7 @@ import React from 'react';
 import Article from './Article';
 
 
-const ArticleList = ({allArticles}) => {
+const ArticleList = ({allArticles, currentUser}) => {
 
     if (allArticles.length === 0){
         return (<p>Loading...</p>)
@@ -13,7 +13,7 @@ const ArticleList = ({allArticles}) => {
           
              <li className="article-list-item" key={index}>
                  <div className="article-component">
-                    <Article article={article} />
+                    <Article article={article} currentUser={currentUser} />
                  </div>
             </li>
         )

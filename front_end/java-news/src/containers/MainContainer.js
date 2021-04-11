@@ -68,6 +68,8 @@ const MainContainer = () => {
         requestAll()
     }, [])
 
+
+
     return(
         <Router>
         <>
@@ -83,7 +85,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/users" render={() => {
-              return <UserContainer allUsers={allUsers} allArticles={allArticles} allJournalists={allJournalists} /> 
+              return <UserContainer allUsers={allUsers} allArticles={allArticles} allJournalists={allJournalists} currentUser={currentUser}/> 
           }} />
 
           <Route path="/admin" render={() => {

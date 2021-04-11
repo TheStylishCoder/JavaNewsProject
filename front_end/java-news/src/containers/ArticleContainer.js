@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import ArticleDetail from '../components/articles/ArticleDetail';
 import ArticleList from '../components/articles/ArticleList';
 
-const ArticleContainer = ({allArticles, businessArticles, politicsArticles, technologyArticles, entertainmentArticles, lifestyleArticles, upliftingArticles, sportsArticles}) => {
+const ArticleContainer = ({allArticles, businessArticles, politicsArticles, technologyArticles, entertainmentArticles, lifestyleArticles, upliftingArticles, sportsArticles, currentUser}) => {
 
     const findArticleById = function(id){
         return allArticles.find((article) => {
@@ -21,31 +21,31 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
         <Switch>
 
         <Route exact path='/articles/business' render={() =>{
-            return <ArticleList allArticles={businessArticles}/>
+            return <ArticleList allArticles={businessArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/politics' render={() =>{
-            return <ArticleList allArticles={politicsArticles}/>
+            return <ArticleList allArticles={politicsArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/technology' render={() =>{
-            return <ArticleList allArticles={technologyArticles}/>
+            return <ArticleList allArticles={technologyArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/entertainment' render={() =>{
-            return <ArticleList allArticles={entertainmentArticles}/>
+            return <ArticleList allArticles={entertainmentArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/lifestyle' render={() =>{
-            return <ArticleList allArticles={lifestyleArticles}/>
+            return <ArticleList allArticles={lifestyleArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/uplifting' render={() =>{
-            return <ArticleList allArticles={upliftingArticles}/>
+            return <ArticleList allArticles={upliftingArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path='/articles/sports' render={() =>{
-            return <ArticleList allArticles={sportsArticles}/>
+            return <ArticleList allArticles={sportsArticles} currentUser={currentUser}/>
         }}/>
 
         <Route exact path="/articles/:id" render={(props) =>{
@@ -55,7 +55,7 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
         }}/>
 
         <Route render={() => {
-        return <ArticleList allArticles={allArticles}/>
+        return <ArticleList allArticles={allArticles} currentUser={currentUser}/>
         }} />
 
         </Switch>
