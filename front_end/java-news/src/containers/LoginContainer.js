@@ -17,7 +17,7 @@ const LoginContainer = ({setCurrentUser, allUsers, allLocations}) => {
       }
 
     const handleLogin = function(){
-            setCurrentUser(user)
+            // setCurrentUser(user)
     }
 
     return(

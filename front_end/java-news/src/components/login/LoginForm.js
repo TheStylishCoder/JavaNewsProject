@@ -17,6 +17,8 @@ const LoginForm = ({allUsers, handleLogin}) => {
     }
 
     const loginSubmit = function(){
+        return null;
+    }
         // for (user of allUsers){
         //     if(stateUser.name === user.name && stateUser.password === user.password){
         //         handleLogin(user);
@@ -25,7 +27,7 @@ const LoginForm = ({allUsers, handleLogin}) => {
         //     }
         // }
        
-    }
+    
 
 
     return(
