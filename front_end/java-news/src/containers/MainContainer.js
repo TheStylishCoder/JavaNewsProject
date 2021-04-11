@@ -20,7 +20,12 @@ const MainContainer = () => {
     const [allCategories, setAllCategories] = useState([]);
     const [currentUser, setCurrentUser] = useState(null);
     const [businessArticles, setBusinessArticles] = useState([]);
-
+    const [politicsArticles, setPoliticsArticles] = useState([]);
+    const [technologyArticles, setTechnologyArticles] = useState([]);
+    const [entertainmentArticles, setEntertainmentArticles] = useState([]);
+    const [lifestyleArticles, setLifestyleArticles] = useState([]);
+    const [upliftingArticles, setUpliftingArticles] = useState([]);
+    const [sportsArticles, setSportsArticles] = useState([]);
 
 
     const requestAll = function(){
@@ -32,8 +37,16 @@ const MainContainer = () => {
         const locationPromise = request.get('/api/locations')
         const categoryPromise = request.get('/api/categories')
         const businessArticlesPromise = request.get('/api/articles/category?category=Business')
+        const politicsArticlesPromise = request.get('/api/articles/category?category=Politics')
+        const technologyArticlesPromise = request.get('/api/articles/category?category=Technology')
+        const entertainmentArticlesPromise = request.get('/api/articles/category?category=Entertainment')
+        const lifestyleArticlesPromise = request.get('/api/articles/category?category=Lifestyle')
+        const upliftingArticlesPromise = request.get('/api/articles/category?category=Uplifting')
+        const sportsArticlesPromise = request.get('/api/articles/category?category=Sports')
 
-        Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise, businessArticlesPromise])
+
+        Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise, businessArticlesPromise, 
+            politicsArticlesPromise, technologyArticlesPromise, entertainmentArticlesPromise, lifestyleArticlesPromise, upliftingArticlesPromise, sportsArticlesPromise])
         .then((data) => {
             setAllArticles(data[0]);
             setAllJournalists(data[1]);
@@ -42,6 +55,12 @@ const MainContainer = () => {
             setAllLocations(data[4]);
             setAllCategories(data[5]);
             setBusinessArticles(data[6]);
+            setPoliticsArticles(data[7]);
+            setTechnologyArticles(data[8]);
+            setEntertainmentArticles(data[9]);
+            setLifestyleArticles(data[10]);
+            setUpliftingArticles(data[11]);
+            setSportsArticles(data[12]);
         })
     }
 
@@ -55,7 +74,8 @@ const MainContainer = () => {
         <NavBar/>
         <Switch>
           <Route path="/articles"  render={() => {
-              return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} />
+              return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}
+               entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  />
           }} />
 
           <Route path="/journalists" render={() => {
