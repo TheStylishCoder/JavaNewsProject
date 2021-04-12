@@ -1,9 +1,5 @@
 import React from 'react';
-<<<<<<< HEAD
-import Journalist from  '../admin/Journalist';
-=======
-
->>>>>>> develop
+import Journalist from  './Journalist';
 
 const JournalistDetail = ({journalist}) => {
 

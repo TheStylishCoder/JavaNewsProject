@@ -87,7 +87,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/journalists" render={() => {
-            //   return <JournalistContainer allJournalists={allJournalists} />
+              return <JournalistContainer allJournalists={allJournalists} />
           }} />
 
           <Route path="/users" render={() => {

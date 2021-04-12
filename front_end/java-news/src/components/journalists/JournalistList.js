@@ -1,19 +1,19 @@
 import React from 'react';
-import Journalist from  '../admin/Journalist'
+import Journalist from  './Journalist';
 
 
-const JournalistList = ({journalists, currentUser}) => {
+const JournalistList = ({allJournalists}) => {
 
-    if (journalists.length === 0){
+    if (allJournalists.length === 0){
         return(<p>Loading...</p>)
     }
 
 
-    const JournalistListItems = journalists.map((journalist, index) => {
+    const journalistListItems = allJournalists.map((journalist, index) => {
         return(
            <li className="journalist-list-item" key={index}>
                <div className="journalist-component">
-                   <Journalist journalist={journalist} currentUser={currentUser} />
+                   <Journalist journalist={journalist}/>
                 </div>
             </li>
         )
@@ -22,7 +22,7 @@ const JournalistList = ({journalists, currentUser}) => {
     return(
         <div className="journalist-list">
             <ul>
-                {JournalistListItems}
+                {journalistListItems}
             </ul>
         </div>
         
