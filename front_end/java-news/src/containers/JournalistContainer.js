@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import JournalistDetail from '../components/journalists/JournalistDetail';
 import JournalistList from '../components/journalists/JournalistList';
+import {Route, Switch} from 'react-router-dom';
 
 
 
