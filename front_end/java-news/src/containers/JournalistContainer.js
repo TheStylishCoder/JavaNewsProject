@@ -1,35 +1,67 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import {Route, Switch} from 'react-router-dom';
+import Journalist from  '../components/admin/Journalist'
 import JournalistDetail from '../components/journalists/JournalistDetail';
 import JournalistList from '../components/journalists/JournalistList';
-i
+import Request from '../helpers/request';
 
-const JournalistContainer = () => {
 
-    const [allJournalists, setAllJournalists] = useState([])
-    const [selectedJournalist, setSelectedJournalist] = useState(null)
+const JournalistContainer = (journalist, currentUser) => {
+    const [allJournalists, setAllJournalists] = useState([]);
+    const [allArticles, setArticles] = useState ([]);
+    
 
-    const getJournalists = () => {
 
-    }
+    const requestAll = function(){
+        const request = new Request();
+        const journalistPromise = request.get('/api/journalists')
+        const articlePromise = request.get('/api/articles')
+      
+    
+        Promise.all([journalistPromise, articlePromise])
+        .then((data) => {
+            setAllJournalists(data[0]);
+            setArticles(data[1]);
+            
+        })
+      }
 
-    useEffect(() => {
-        getJournalists()
-    }, [])
+      useEffect(()=>{
+        requestAll()
+      }, [])
 
-    const handleSelectedJournalist = (journalist) => {
-        setSelectedJournalist(journalist)
-        .then(() => {
-            window.location = '/journalists'
+      const findJournalistById = function(id){
+        return JournalistList.find((journalist) => {
+            return journalist.id === parseInt(id);
         })
     }
 
-    return(
+     
+
+      if(!journalist){
+          return null
+      }
+    
+       return(
         <>
-        <h1>Journalists</h1>
-        <div className="beers-container">
-        <JournalistList allJournalists={allJournalists} onSelectedJournalist={handleSelectedJournalist}/>
-        <JournalistDetail journalist={selectedJournalist}/>
-        </div>
+        <Switch>
+         
+        <Route exact path='/journalists' render={() =>{
+            return <Journalist allJournalists={journalist} currentUser={currentUser}/>
+        }}/>
+
+       <Route exact path="/journalists/:id" render={(props) =>{
+        const id = props.match.params.id;
+        const journalist = findJournalistById(id);
+        return <JournalistDetail journalist={journalist} currentUser={currentUser}/>
+        }}/>
+
+        <Route render={() => {
+        return <JournalistList allJournalists={allJournalists} currentUser={currentUser}/>
+        }} />
+
+       
+        </Switch>
         </>
     )
 

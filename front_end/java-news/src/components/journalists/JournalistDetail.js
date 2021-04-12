@@ -1,10 +1,10 @@
 import React from 'react';
-import Journalist from '.Journalist'
+import Journalist from  '../admin/Journalist';
 
 const JournalistDetail = ({journalist}) => {
 
     if(!journalist){
-        return <p>Select a Journalist</p>
+        return <p>Loading</p>
     }
 
     const journalistArticles = journalist.articles.map((article, index) => {
@@ -15,13 +15,14 @@ const JournalistDetail = ({journalist}) => {
 
     return(
         <>
-        <div className="journalist-detail">
-            <div>
-                <p>Journalists</p>
-                <h2>{journalist.name}</h2>
-                <p>{ journalist.article} </p>
-            
-            </div>
+        <div className = "journalist-detail">
+        <h1>Journalist: {journalist.name}</h1>
+        <h2>All articles by {journalist.name}:</h2>
+
+        <ul>
+        {journalistArticles}
+        </ul>
+       
 
         </div>
 

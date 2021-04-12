@@ -1,15 +1,21 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import Journalist from  '../admin/Journalist'
 
-const JournalistList = ({selectedJournalist, allJournalists, onSelectedJournalist}) => {
 
-    const url = "/journalists/" + selectedJournalist.id;
+const JournalistList = ({journalists, currentUser}) => {
 
-    const JournalistListItems = allJournalists.map((journalist, index) => {
+    if (journalists.length === 0){
+        return(<p>Loading...</p>)
+    }
+
+
+    const JournalistListItems = journalists.map((journalist, index) => {
         return(
-            <Link to = {url}>
-             <li onClick={() => {onSelectedJournalist(journalist)}} key={index}>{journalist.name}</li>
-             </Link>
+           <li className="journalist-list-item" key={index}>
+               <div className="journalist-component">
+                   <Journalist journalist={journalist} currentUser={currentUser} />
+                </div>
+            </li>
         )
     })
 
