@@ -9,5 +9,6 @@ import java.util.List;
 @Repository
 public interface ArticleRepository extends JpaRepository<Article, Long> {
 
-    List<Article> findArticlesByCategoryType(String category);
+    List<Article> findArticlesByCategoryTypeOrderByDateDesc(String category);
+
 }
