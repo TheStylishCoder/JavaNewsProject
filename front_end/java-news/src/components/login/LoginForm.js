@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from 'react-router-dom';
 
 const LoginForm = ({allUsers, handleLogin}) => {
 
@@ -22,13 +23,13 @@ const LoginForm = ({allUsers, handleLogin}) => {
     const loginSubmit = function(){
         for( let user of allUsers){
             if(stateUser.name === user.name && stateUser.password === user.password){
-                handleLogin(user);
-            } else {
-                return null;
-            }
+                handleLogin(user)
+                // .then(() => {
+                //     window.location = '/users/:id'
+                //   })
         }
     }
-
+}
     //     const userList = allUsers.map((user, index) => {
     //         if(stateUser.name === user.name && stateUser.password === user.password){
     //             return user;
@@ -43,7 +44,7 @@ const LoginForm = ({allUsers, handleLogin}) => {
        
        
     
-
+    const url = "/users/profile"
 
     return(
         <>
@@ -52,7 +53,7 @@ const LoginForm = ({allUsers, handleLogin}) => {
             <form onSubmit={loginSubmit} >
                 <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username} />
                 <input type="Password" placeholder="Password" name="password" onChange={handleChange} value={stateUser.password}/>
-                <button type="submit">Login</button>
+                <Link to={url}><button type="submit">Login</button></Link> 
             </form>
         </div>
         </>

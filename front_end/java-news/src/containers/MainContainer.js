@@ -93,7 +93,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/login" render={() => {
-              return <LoginContainer allUsers={allUsers} currentUser={currentUser} setCurrentUser={setCurrentUser} />
+              return <LoginContainer allLocations={allLocations} allUsers={allUsers} currentUser={currentUser} setCurrentUser={setCurrentUser} />
           }} />
           
         </Switch>

@@ -6,14 +6,20 @@ import ReadingList from '../components/users/ReadingList';
 import RecentlyViewed from '../components/users/RecentlyViewed';
 import LocalNews from '../components/users/LocalNews';
 
-const UserContainer = ({currentUser}) => {
+const UserContainer = ({currentUser, allUsers}) => {
+
+    const findUserById = function(id){
+        return allUsers.find((user) => {
+            return user.id === parseInt(id);
+        })
+    }
 
     return(
         <>
         <UserNavBar />
 
         <Route exact path='/users/profile' render={() => {
-            return <UserProfile />
+            return <UserProfile currentUser={currentUser}/>
         }} />
 
         <Route exact path='/users/readinglist' render={() => {
@@ -27,6 +33,12 @@ const UserContainer = ({currentUser}) => {
         <Route exact path='/users/localnews' render={() => {
             return <LocalNews />
         }} />
+{/* 
+        <Route exact path = '/users/:id' render={(props) => {
+                const id = props.match.params.id;
+                const user = findUserById(id);
+                return <UserProfile user={user}/>
+            }}/> */}
 
         </>
     )
