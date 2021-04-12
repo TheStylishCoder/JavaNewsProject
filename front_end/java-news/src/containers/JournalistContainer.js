@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {Route, Switch} from 'react-router-dom';
-import Journalist from  '../components/journalists/Journalist';
 import JournalistDetail from '../components/journalists/JournalistDetail';
 import JournalistList from '../components/journalists/JournalistList';
-import Request from '../helpers/request';
+
 
 
 const JournalistContainer = ({journalist, currentUser, allJournalists}) => {

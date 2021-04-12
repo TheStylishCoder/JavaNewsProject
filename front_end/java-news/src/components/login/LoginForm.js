@@ -20,7 +20,12 @@ const LoginForm = ({allUsers, handleLogin}) => {
 
 
 
+<<<<<<< HEAD
     const loginSubmit = function(){
+=======
+    const loginSubmit = function(event){
+        event.preventDefault();
+>>>>>>> develop
         console.log("login submit called")
         for( let user of allUsers){
             if(stateUser.name === user.name && stateUser.password === user.password){

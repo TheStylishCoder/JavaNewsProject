@@ -73,6 +73,7 @@ const MainContainer = () => {
     const handleCurrentUser = (user) => {
         console.log("mainContainer user", user);
         setCurrentUser(user)
+        // window.location = '/users/' + currentUser.id
     }
 
 
@@ -87,7 +88,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/journalists" render={() => {
-              return <JournalistContainer allJournalists={allJournalists} />
+            //   return <JournalistContainer allJournalists={allJournalists} />
           }} />
 
           <Route path="/users" render={() => {
