@@ -42,6 +42,10 @@ const SignUpForm = ({allLocations, onCreate}) => {
         
     }
 
+    if(!allLocations){
+        return null;
+    }
+
     const locationOptions = allLocations.map((location, index) => {
         return <option key={index} value={index}>{location.name}</option>
     })
@@ -49,7 +53,7 @@ const SignUpForm = ({allLocations, onCreate}) => {
 
     return(
         <>
-        <div class="sign-up-form">
+        <div className="sign-up-form">
             <h3>Sign Up</h3>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username}/>

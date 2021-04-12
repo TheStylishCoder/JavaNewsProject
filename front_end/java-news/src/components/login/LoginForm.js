@@ -16,27 +16,42 @@ const LoginForm = ({allUsers, handleLogin}) => {
         setStateUser(copiedUser);
     }
 
+
+
+
     const loginSubmit = function(){
-        return null;
+        for( let user of allUsers){
+            if(stateUser.name === user.name && stateUser.password === user.password){
+                handleLogin(user);
+            } else {
+                return null;
+            }
+        }
     }
-        // for (user of allUsers){
-        //     if(stateUser.name === user.name && stateUser.password === user.password){
-        //         handleLogin(user);
-        //     } else {
-        //         return null;
-        //     }
-        // }
+
+    //     const userList = allUsers.map((user, index) => {
+    //         if(stateUser.name === user.name && stateUser.password === user.password){
+    //             return user;
+    //         }
+    //         handleLogin(user);
+
+    //         }
+    //         return null;
+    //     })
+    // }
+
+       
        
     
 
 
     return(
         <>
-        <div class="login-form">
+        <div className="login-form">
         <h3>Login</h3>
             <form onSubmit={loginSubmit} >
                 <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username} />
-                <input type="Password" placeholder name="password" onChange={handleChange} value={stateUser.password}/>
+                <input type="Password" placeholder="Password" name="password" onChange={handleChange} value={stateUser.password}/>
                 <button type="submit">Login</button>
             </form>
         </div>
