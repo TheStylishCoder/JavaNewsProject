@@ -16,28 +16,28 @@ const NavBar = () => {
                     <Link to="/home"><i class="fas fa-home fa-2x"></i></Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/politics">Politics</Link>
+                    <Link to="/articles/politics">POLITICS</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/business">Business</Link>
+                    <Link to="/articles/business">BUSINESS</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/technology">Technology</Link>
+                    <Link to="/articles/technology">TECHNOLOGY</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/entertainment">Entertainment</Link>
+                    <Link to="/articles/entertainment">ENTERTAINMENT</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/lifestyle">Lifestyle</Link>
+                    <Link to="/articles/lifestyle">LIFESTYLE</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/uplifting">Uplifting</Link>
+                    <Link to="/articles/uplifting">UPLIFTING</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/articles/sports">Sports</Link>
+                    <Link to="/articles/sports">SPORTS</Link>
                 </li>
                 <li className="navLink">
-                    <Link to="/login">Login</Link>
+                    <Link to="/login">LOGIN</Link>
                 </li>
             </ul>
        
