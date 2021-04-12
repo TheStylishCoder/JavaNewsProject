@@ -1031,6 +1031,360 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(politics10);
 
 
+        Article entertainment1 = new Article("Kim Kardashian becomes a billionaire after her net worth surges by $220m in just six months",
+                "The 40-year-old's stake in her beauty brand is worth $500m (£361m), while her shapewear line is valued at $225m (£162m).",
+                "Kim Kardashian has officially become a billionaire, according toForbes.The reality TV star, 40, saw her net worth soar from $780m (£564m) in October to $1bn (£723m) this month, the magazine reports.Her fortune comes mainly from her two businesses: the shapewear brand Skims, and the cosmetics company KKW Beauty.She has also earned millions from her TV career - namely Keeping Up With The Kardashians - and endorsement deals.The rest of her estate is made up of her personal finances, properties and investments.Kardashian, who is still using the surname Kardashian West, is joiningthe billionaire club two months after filing for divorce from her husbandKanye.Shefiled the divorce papersin Los Angeles in February, citing irreconcilable differences.The star previously made a public plea for \"compassion and empathy\" towards West, 43, amid his struggles with bipolar disorder.The couple are seeking joint custody of their four children North, Chicago, Psalm and Saint.\n" +
+                        "Rapper West is said to have become a billionaire last year following the success of his Yeezy shoe brand.His net worth is now $6.6bn (£4.7bn), according to Bloomberg, making him therichest black man in US history.Kardashian started her own beauty line in 2017 following the success of her sisterKylie Jenner's company - Kylie Cosmetics.Claiming to be \"inspired\" by her younger sibling, she sold 20% of KKW Beauty to cosmetics giant Coty last year, which valued the brand at $1bn.Her 72% stake is said to be worth $500m (£361m), while Skims is valued at $225m (£162m).The successes of the sisters' companies rely heavily on their huge social media followings.Kardashian has 213 million followers on Instagram, while Jenner boasts224 million.Shares in Snapchat fell by $1.3bn (£904m) after Jenner decided to delete her account in 2018.The younger sister was reported to have become a billionaire by Forbes last year but was later accused of inflating her business value and was stripped of her title.Kardashian joins the likes of Amazon owner Jeff Bezos and Tesla entrepreneur Elon Musk in the US billionaire's club",
+                robertson, entertainment, usa, "2021-04-07", 0,
+                "https://e3.365dm.com/21/04/1600x900/skynews-kim-kardashian-the-kardashians_5332744.jpg?bypass-service-worker&20210406233804");
+        articleRepository.save(entertainment1);
+
+
+
+        Article entertainment2 = new Article("Kim Kardashian has filed for divorce from her rapper husband Kanye West after nearly seven years of marriage.",
+                "A Los Angeles Superior Court spokeswoman confirmed to Reuters that Kardashian filed the divorce papers on Friday.",
+                "A representative for the 40-year-old reality TV star also confirmed that she had filed papers.The grounds for the divorce were not immediately known. TMZ said sources called the divorce \"amicable,\" saying Kardashian is asking for joint legal and physical custody of the couple's four children,whichWestis \"fine\" with.The US entertainment news site also reports that the pair had a prenuptial arrangement in place, with discussions on property settlements said to be in the advanced stages.It follows months of speculation that the couple's marriage was in trouble, with multiple sources telling US media that their \"divorce is imminent\" and Kardashian has hired renowned divorce lawyer Laura Wasser.Kardashian, who shot to fame in the reality TV show Keeping Up With The Kardashians, married Gold Digger hitmaker West in 2014 - making them one of the biggest celebrity couples in Hollywood.Their marriage is believed to have become strained last year when West, 43, who suffers from bipolar disorder, ran anunsuccessful US presidential campaignmarked by erratic statements under his self-styled Birthday Party.In July, Kardashian, who isstudying to become a lawyer, defended West's behaviour in a statement urging compassion for his mental health struggles.However, the couple appeared to continue to grow apart with the 21-time Grammy winner spending most of his time at his ranch in Wyoming, while Kardashian resided in their Calabasas mansion outsideLos Angeles.Entertainment websites E! News, TMZ and Variety first reported on the split and it was later confirmed by the Associated Press.\n" +
+                        "The couple married in a ceremony at a Renaissance fortress in Florence, Italy, in May 2014 and have four young children: North, Saint, Chicago and Psalm. It was the first marriage for the 43-year-old West, and the third for Kardashian.The couple were previously friends before they began dating in 2012, and had their first child, North, in 2013.West proposed later that year using the giant screen at the empty waterfront ballpark of the San Francisco Giants in front of her family, and the engagement was featured in an episode of Keeping Up With The Kardashians.The beginning of the end of the marriage comes after the September announcement that her family's reality show was coming to an end thisyear after 14 years.Kardashian was previously married to NBA player Kris Humphries, whom she divorced after 72 days of marriage in October 2011.In 2000, 19-year-old Kardashian married music producer Damon Thomas, but Thomas filed for divorce in 2003.",
+                binding, entertainment, usa, "2021-02-20", 0,
+                "https://www.the-sun.com/wp-content/uploads/sites/6/2021/02/NINTCHDBPICT000638735614.jpg?w=620");
+        articleRepository.save(entertainment2);
+
+
+
+        Article entertainment3 = new Article("Ever wanted some words of support from your football hero? How about help with a marriage proposal from a famous musician?",
+                "The coronavirus pandemic has hit the entertainment industry hard - and it's seen a growing number of celebrities selling personalised video messages online.",
+                "Websites such as Cameo and Memmo give members of the public the  chance to ask stars to record a shout-out for their friends or relatives, with prices ranging from around £15 to several hundred pounds.\n" +
+                        "\n" +
+                        "Nigel Farage is one of the latest names to sign up to Cameo - a site  which has attracted big stars in the US - with a video from the former Brexit Party leader setting you back £75.\n" +
+                        "\n" +
+                        "Simon Webbe, who found fame with the boyband Blue, says he charges around £50 for a personalised video on Memmo and he received about 100 requests in the run-up to Mother's Day.\n" +
+                        "\n" +
+                        "He told Sky News: \"I think a lot of people will be sitting there going:  'Well, why do celebrities need to be doing this when they make their money?'\n" +
+                        "\n" +
+                        "\"People like myself who's in the entertainment business, my income relies on people getting together - as you know over the last year we've been locked down. The whole world has been like that.\n" +
+                        "\n" +
+                        "\"A lot of my work is international so I've not been able to make a living for over a year at all.\"\n" +
+                        "\n" +
+                        "He added: \"This is just that little way to earn those extra little pennies if I can put to the side for the mortgage, I've got a baby on the way as well, so I don't think I can afford to be too proud.\"\n" +
+                        "\n" +
+                        "Gustav Lundberg Toresson, one of the co-founders of Memmo, said the number of celebrities is \"growing exponentially\" and more than 3,000 \n" +
+                        "people are now in their \"talent base\" offering video messages.\n" +
+                        "\n" +
+                        "He started the company in Sweden in 2019 with his business partner Tobias Bengtsdahl and hopes to recruit Premier League footballers to \n" +
+                        "the site in the near future.\n" +
+                        "\n" +
+                        "Ex-England football manager Sven Goran Eriksson and former Geordie Shore star Charlotte Crosby were among the first famous names to sign up, along with a host of retired footballers, Mr Toresson said.\n" +
+                        "\n" +
+                        "He told Sky News: \"There's a lot of interest in the footballers - a lot of former ones like Glenn Hoddle and Sven Goran Eriksson, but also some interesting characters from TV like Clinton Baptiste (a character from Peter Kay's Phoenix Nights) and Paddy Doherty (from My Big Fat Gypsy\n" +
+                        "Wedding and Celebrity Big Brother).\"\n" +
+                        "\n" +
+                        "Sir Rod Stewart ordered a video message from an impersonator of the singer on Memmo for his son earlier this year, Mr Toresson said.\n" +
+                        "\n" +
+                        "The coronavirus lockdowns prompted an increase in celebrities signing up to Memmo because people working in entertainment had \"a lot more time on their hands\", he added.\n" +
+                        "\n" +
+                        "However there has been a similar rise in demand in Sweden, where COVID restrictions have not been as strict as other countries, according to Mr Toresson.\n" +
+                        "\n" +
+                        "\"I think it's just that talent realise they can actually make a lot of money in their living room - and it's actually really easy,\" he said.\n" +
+                        "\n" +
+                        "Celebrities decide how much they charge for their videos and use an app to set their price, view their requests and record their messages.\n" +
+                        "\n" +
+                        "\"They're generally priced between £5 up to £500-£1,000,\" Mr Toresson said.\n" +
+                        "\n" +
+                        "\"It's varying a lot depending on how much you want to adjust the demand.\n" +
+                        "\n" +
+                        "\"We always want this to be up to the talent themselves.\"\n" +
+                        "The celebrities receive 75% of the amount they charge, with Memmo taking the remaining 25%, while some stars are recording 15 to 20 videos a day, according to Mr Toresson.\n" +
+                        "\n" +
+                        "Birthday messages are the most common requests, and there have been more than 50 marriage proposals where a celebrity pops the question on behalf of the person requesting the video, he added.\n" +
+                        "\n" +
+                        "One unnamed celebrity in the UK who helped out with a proposal is now planning to attend the wedding after he was invited to the ceremony this summer, Mr Toresson said.\n" +
+                        "\n" +
+                        "Some of the more bizarre requests have included people asking celebrities to help them break up with their partner.\n" +
+                        "\n" +
+                        "\"The acceptance rates for those ones are lower,\" Mr Toresson added.\n" +
+                        "\n" +
+                        "Memmo says very few inappropriate message requests are received, which Mr Toresson believes is because people have to pay to make a request and they cannot be anonymous.\n" +
+                        "\n" +
+                        "\"In the end it's always up to the talent to accept or reject the request for any reason,\" he said.\n" +
+                        "\n" +
+                        "\"We don't really regulate who is on and who is not, but we have certain rules about what kind of content you can create on the platforms.\n" +
+                        "\n" +
+                        "\"We don't allow any nudity, we don't allow any hate speech and so on. We keep a close track of that.\"Mr Toresson says he isn't worried about competition from rival site \n" +
+                        "Cameo, which launched in 2016 and offers video messages from stars  including boxing great Floyd Mayweather Jr, actress Lindsay Lohan and Baywatch actor David Hasselhoff.\n" +
+                        "\n" +
+                        "\"Healthy competition is always good,\" he said.\n" +
+                        "\"It's a huge opportunity to help creators, help celebrities to connect with their fans in a lot of different ways.\n" +
+                        "\n" +
+                        "\"We think the number of creators and the number of celebrities is growing exponentially. We're trying to keep up with ourselves.\n" +
+                        "\n" +
+                        "\"It's a big opportunity out there.\"\n",
+                mercer, entertainment, uk, "2021-04-05", 0,
+                "https://e3.365dm.com/21/03/1600x900/skynews-celebrity-videos-memmo_5324779.jpg?bypass-service-worker&20210331153851");
+        articleRepository.save(entertainment3);
+
+
+
+        Article entertainment4 = new Article("Foo Fighters frontman Dave Grohl to publish memoir of 'a life lived loud'\n",
+                "He will give fans an insight into what it's like playing drums for Tom Petty on Saturday Night Live and swing dancing with AC/DC",
+                "Foo Fighters frontman Dave Grohl is releasing a book, packed full of memories and anecdotes from his life.\n" +
+                        "\n" +
+                        "Titled The Storyteller, the 52-year-old says it will be \"a collection of memories of a life lived loud\" and is set to feature stories of his encounters with his former Nirvana bandmate, the late Kurt Cobain, David Bowie and Iggy Pop.\n" +
+                        "\n" +
+                        "The book will also see the Foo Fighters guitarist talk about his upbringing in Washington DC and his hopes of seeing the world when he left home at 18.\n" +
+                        "\n" +
+                        "He will give fans an insight into what it's like playing drums for Tom Petty on Saturday Night Live, swing dancing with AC/DC and performing at the White House.\n" +
+                        "\n" +
+                        "Over lockdown, the former Nirvana drummer started an Instagram account, @davestruestories, to share anecdotes with his fans as the music industry went on hold.\n" +
+                        "\n" +
+                        "\n" +
+                        "Grohl said: \"There is a common thread that runs throughout everything that I do: storytelling.\n" +
+                        "\n" +
+                        "\"Whether in song, documentary film or on the page, I have always felt compelled to share moments from my life.\n" +
+                        "\n" +
+                        "\"In March 2020, realising that my day job with the Foo Fighters was going to go on hold, I started an Instagram account and decided to focus all of my creative energy on writing some of my stories down, something I love doing but I've never really had the time for.\n" +
+                        "\n" +
+                        "\"I soon found that the reward I felt every time I posted a story was the same as the feeling I get when playing a song to an audience, so I kept on writing.\n" +
+                        "\n" +
+                        "\"The response from readers was as soul-filling as any applause in an arena.\n" +
+                        "\n" +
+                        "\"So, I took stock of all the experiences I've had in my life - incredible, difficult, funny and emotional - and decided it was time to finally put them into words.\n" +
+                        "\n" +
+                        "\"Now with the amazing people at Simon & Schuster I'm excited and honoured to announce The Storyteller, a collection of memories of a life lived loud.\n" +
+                        "\n" +
+                        "\"From my early days growing up in the suburbs of Washington, DC, to hitting the road at the age of 18, and all the music that followed, I can now share these adventures with the world, as seen and heard from behind the microphone. Turn it up!\"\n" +
+                        "\n" +
+                        "Ian Marshall, deputy publishing director of non-fiction for Simon & Schuster UK, said: \"I don't think I have ever seen such universal excitement in a company, with so many of my colleagues sharing their very personal memories of Dave and his music.\n" +
+                        "\n" +
+                        "\"But, in the end, what really sets this book apart is the sheer brilliance of the writing: this is a rock memoir that will set the standard for a generation to come, as he truly is THE storyteller.\"\n" +
+                        "\n",
+                connelly, entertainment, usa, "2021-04-07", 0,
+                "https://e3.365dm.com/21/04/1600x900/skynews-dave-grohl-foo-fighters_5332937.jpg?bypass-service-worker&20210407084244");
+        articleRepository.save(entertainment4);
+
+
+
+        Article entertainment5 = new Article("Obi-Wan Kenobi TV series on Disney Plus: Cast, release date and everything you need to know",
+                "It’s set to follow the hugely popular Mandalorian in landing on the streaming service, there are some big names already signed up for thenew drama.",
+                "There are some familiar faces from the Star Wars prequels\n" +
+                        "along for the ride, plus some serious Hollywood talent ready to mix things up. The show is being described by Lucasfilm as a ‘special event series’, which suggests the story will be self-contained, rather than an expanding series like The Mandalorian. Deborah Chow is the main \n" +
+                        "creative force behind the project, having previously directed two episodes of the The Mandalorian’s first series. Here’s everything you need to know. \n" +
+                        "\n" +
+                        "Who is in the cast of the  Obi-Wan Kenobi TV series?\n" +
+                        "\n" +
+                        "Star Wars fans were overjoyed when the first cast list of the Obi-Wan Kenobi project was announced – with Ewan McGregor’s Obi-Wan and Hayden Christensen’s Anakin Skywalker reuniting from the film prequels. Elsewhere, Bonnie Piesse, who played Beru in Star Wars: \n" +
+                        "Attack of the Clones and Revenge of the Sith, and Joel Edgerton, who played her husband Owen, have been confirmed to return for the series too. \n" +
+                        "\n" +
+                        "Marvel’s The Eternals star Kumail Nanjiani is also along for \n" +
+                        "the ride, along with Indira Varma (Game Of Thrones, This Way Up). Rupert Friend (Homeland), O’Shea Jackson (Straight Outta Compton), Sung Kang (Fast and Furious 6), Simone Kessell (Reckoning, The Crossing) and Benny Safdie (Pieces of a Woman, Good Time) are also in the cast. \n" +
+                        "\n" +
+                        "What is the Obi-Wan Kenobi TV series plot?\n" +
+                        "\n" +
+                        "The new series will take place in the gap between the Star Wars prequel trilogy and A New Hope, with the drama set nine years after the events of Revenge of the Sith. Revenge of the Sith ended with Obi-Wan defeating Anakin Skywalker in battle, only for his body to be retrieved by Emperor Palpatine and transformed into Darth Vader.\n" +
+                        "\n" +
+                        "The official synopsis from Disney reads: ‘The story begins 10 years after the dramatic events of Star Wars: Revenge of the Sith where Kenobi faced his greatest defeat, the downfall and corruption of his best friendand Jedi apprentice, Anakin Skywalker turned evil Sith Lord Darth \n" +
+                        "Vader.’\n" +
+                        "\n" +
+                        "When will the Obi-Wan Kenobi TV series be released?\n" +
+                        "\n" +
+                        "Production will begin on the series this April, and the series has yet to be given an official release e date. The drama is expected to arrive in 2022.\n",
+                fletcher, entertainment, uk, "2021-04-07", 0,
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ewan-mcgregor-1567119325.jpg?crop=0.776xw:0.776xh;0.0918xw,0.0816xh&resize=768:*");
+        articleRepository.save(entertainment5);
+
+
+
+        Article entertainment6 = new Article("Game of Thrones: All the show’s biggest feuds from behind-the-scenes",
+                "Game of Thrones brought us some of the most memorable TV moments of the 21st century over the course of its eight season run, but it turns out some of the biggest drama actually took place off screen.",
+                "For all of the friendships that blossomed on set (Sophie Turner and Maisie Williams are the real winners of the Game of Thrones, in our eyes), there were conflicts that dogged production on the HBO show from the very start. Whether it was guest stars showering people in food, or actors holding grudges with one another for years at a time, \n" +
+                        "there was almost as much conflict behind the camera as there was in front of it. These are the biggest rows and feuds that went on behind the scenes in Westeros. \n" +
+                        "\n" +
+                        "Ian McShane and the Burger\n" +
+                        "\n" +
+                        "Ian McShane’s guest appearance on Game of Thrones wasn’t exactly plane sailing for show bosses. The actor spoke about the drama in a damning way in interviews, dismissing it as just ‘tits and dragons’, before hitting out at fans by telling them they needed to get a ‘get a \n" +
+                        "f***ing life’. His time on set wasn’t much better. While filming his role as spiritual leader Brother Ray in season six, there was an incident that involved a burger and an argument with Sandor ‘The Hound’ Clegane actor Rory McCann. As Game of Thrones director Mark Mylod revealed in James Hibberd’s book Fire Cannot Kill A Dragon, the actor took issue with the burger he’d been served for lunch on set. Instead of merely throwing it away, he decided to kick it as hard as he could, saying what he thought of the dish in no uncertain terms. Not only did it fly high into the air, but it landed Rory, who was eating his lunch nearby. Ian’s \n" +
+                        "burger flip-out went down in folklore on the show, and his dislike for the dish led to the show changing caterers – something director James admitted to being thankful for. \n" +
+                        "\n" +
+                        "Nathalie Emmanuel’s comments from a sexist co-star\n" +
+                        "\n" +
+                        "Emilia Clarke was forced to step in during one unpleasant incident on the set of Game of Thrones, after a supporting actor made a sexist comment towards Nathalie Emmanuel. The actress joined the cast of the HBO as Missandei during season three of the show, and became friends with Daenerys Targaryen star Emilia. Nathalie said the pair are \n" +
+                        "close and ‘always looked out for each other’ as ‘the only girls on a male-dominated set’. Emily had her back after Nathalie suffered an uncomfortable incident during one shoot, when a male actor made an inappropriate comment about the ‘revealing’ clothes she was wearing \n" +
+                        "during a scene – something which didn’t go down well at all. Speaking to Vogue, Nathalie said: ‘In my first season, my costume was pretty revealing, and there was an incident with a supporting actor who made a comment about it on set – I mean, typical – and Emilia straightaway \n" +
+                        "had my back. It got handled.’ \n" +
+                        "\n" +
+                        "Disagreements over the un-released pilot\n" +
+                        "\n" +
+                        "While not strictly a feud, the unaired Game of Thrones pilot was a moment of disagreement that proves drama was at the heart of Game of Thrones from the very beginning. The HBO epic might be one of the most successful shows in the history of television, but things were nearly so different. The original episode featured different cast members, and a negative reaction to initial screenings brought about \n" +
+                        "many changes. In fact, the show might never have been made if screenwriter friends of showrunners D.B. Weiss and David Benioff hadn’t voiced their displeasure and pleaded with them to tear up the original script and start from scratch. ‘Watching them watch that original pilot was one of the most painful experiences of my life,’ Weiss\n" +
+                        "said about his friends on John August and Craig Mazin’s podcast Scriptnotes. ‘As soon as it finished, [one friend] said, ‘You guys have a massive problem.’’ Had the friends of Weiss and Benioff not taken issue with them, then the show would have been very different. \n" +
+                        "Conflict is the essence of great drama, after all. \n" +
+                        "\n" +
+                        "Lena Headey and Jerome Flynn\n" +
+                        "\n" +
+                        "One of the most speculated-over conflicts on the show is the alleged feud between Jerome Flynn and Lena Headey. While the pair’s characters Ser Bronn of the Blackwater and Cersei Lannister were directly involved in a plot to kill the Lannister brothers, they were only ever seen together in one short sequence from the season three premiere episode Valar Dohaeris, which got fans a little suspicious. The\n" +
+                        "pair first starred opposite each other in 90s ITV drama Soldier, Soldier, and rumours of a romantic connection between them first surfaced way back in 2002. They were never officially confirmed, but it was also \n" +
+                        "later reported that the pair had dated and broken up in 2014 when season four of Game Of Thrones was on air. It was alleged that the pair had gone through a difficult break-up, and had been kept apart on screen as a result of an acrimonious split.\n" +
+                        "However, speaking to Con of Thrones audiences in Nashville in 2019, Jerome went some way to setting the record straight. ‘The last time I saw Lena we were speaking, so I wouldn’t believe everything you read,’ he said. ‘[The media] can get pretty desperate for stories... \n" +
+                        "Lena’s a wonderful person and a wonderful actress.’\n",
+                fletcher, entertainment, uk, "2020-11-05", 0,
+                "https://metro.co.uk/wp-content/uploads/2020/11/PRC_171485944.jpg?quality=90&strip=all&zoom=1&resize=644%2C338");
+        articleRepository.save(entertainment6);
+
+
+
+        Article entertainment7 = new Article("Obi Wan TV show air date, cast, plot, trailer and everything you need to know",
+                "This *is* the show you're looking for.",
+                "Obi-Wan will stream exclusively on Disney+ and we can't wait to say 'Hello there!'\n" +
+                        "A new Kenobi project had been rumoured for a while (first in the form of a movie, then as a series), but it was officially announced at Disney's D23 event in August 2019, and no-one was happier to hear the news than the show's star Ewan McGregor, who found keeping the secret quite a struggle.\u2028\n" +
+                        "\"It got difficult,\" McGregor said (via Flickering Myth). \"I was brought up to tell the truth, and I was in a situation where I wasn't really allowed to. The studios and the big franchises want to keep everything very secret and as closed as it can be, and rightly so.\n" +
+                        "\n" +
+                        "\"But at the same time there's this overwhelming amount of speculation online and on social media and what have you, and wherever I went for the last 10 years people would ask me, 'Would you do it again?' Once they started doing spin-offs of course everyone was like, 'Are you gonna do an Obi-Wan Kenobi spin-off?' and I was talking to Lucasfilm and Disney about that, but of course I couldn't say that I was.\u2028\n" +
+                        "\"So I'd have to go, 'Well, you know, if they wanted to do one I'd be quite interested in doing it,' and it started to look a bit like I was just trying to get the part – which for a man of my standing was quite humiliating.\"\n" +
+                        "The show will be directed by Deborah Chow, who has Star Wars pedigree in the form of her excellent work on The Mandalorian.\n" +
+                        "\n" +
+                        "\"We really wanted to select a director who is able to explore both the quiet determination and rich mystique of Obi-Wan in a way that folds seamlessly into the Star Wars saga,\" Lucasfilm President Kathleen Kennedy said in a release.\n" +
+                        "\n" +
+                        "\"Based on her phenomenal work developing our characters in The Mandalorian, I'm absolutely confident Deborah is the right director to tell this story.\"\n" +
+                        "The series has been written by Hossein Amini, who also wrote Drive and Snow White and the Huntsman.\n" +
+                        "Here's everything you need to know.\n" +
+                        "\n" +
+                        "Obi Wan cast: Who will be in Obi Wan?\n" +
+                        "\n" +
+                        "Unsurprisingly, Obi-Wan himself was the first to be confirmed.\n" +
+                        "\"I'm more excited about doing this one than I was doing the second and third one that we did before,\" McGregor told Empire. \"I'm just excited about working with Deborah Chow, and the storylines are going to be really good I think. I'm just excited to play him again. It's been long enough since I played him before.\"\n" +
+                        "\n" +
+                        "And it's fair to say quite a lot has changed since his last Star Wars dalliance.\n" +
+                        "\n" +
+                        "\"The first three [Star Wars films] I did were really at the very beginning of digital photography,\" he said. \"We had a camera with an umbilical cord to a tent. It was like back to the beginning of movies where the camera didn't move very much because there was so much hardware attached to it.\n" +
+                        "\n" +
+                        "\"Now we're going to be able to really create stuff without swathes of green-screen and blue-screen, which becomes very tedious for the actor.\"\n" +
+                        "\n" +
+                        "McGregor will be returning to the role he took on in The Phantom Menace, Attack of the Clones and Revenge of the Sith.\n" +
+                        "\"I want to get closer and closer to how Obi-Wan felt while Alec Guinness was playing him,\" he said. \"I feel like I'm greyer and nearer him in age, so it'll be easier to do that.\"\n" +
+                        "\n" +
+                        "On The One Show, McGregor echoed that, discussing how it'll be nice to \"bridge that gap\" between the two performances, adding: \"It's really exciting.\"\n" +
+                        "\n" +
+                        "Star Wars head honcho has also announced that none other than Hayden Christensen will also appear, reprising the role of Darth Vader in the new series. This came as a huge shock to many given the mixed response his part received following the prequel trilogy, but it's also a welcome addition to the show which helps provide us with a better understanding of what it's about.\n" +
+                        "\n" +
+                        "During the initial announcement, Hayden alluded to the troubled relationship between Anakin and Obi-Wan which was complicated further following their fight on Mustafar.\n" +
+                        "\n" +
+                        "\"It was such an incredible journey playing Anakin Skywalker,\" Christensen recalls. \"Of course, Anakin and Obi-Wan weren’t on the greatest of terms when we last saw them… It will be interesting to see what an amazing director like Deborah Chow has in store for us all. I’m excited to work with Ewan again. It feels good to be back.\"\n" +
+                        "\n" +
+                        "There's a chance the show will also feature Jimmy Smits' \n" +
+                        "Senator Bail Organa of Alderaan – he's another actor from the prequel trilogy who's appeared in Disney's Star Wars movies, thanks to his Rogue One cameo. But that's pure guesswork on our part.\n" +
+                        "\n" +
+                        "Don't expect any Mandalorian crossover episodes, however – even if they will take place at some of the same locations. Why? Patience, Padawan, we're about to get to that…\n" +
+                        "\n" +
+                        "But at least Ewan's been binging everyone's favourite live action Star Wars show.\n" +
+                        "Discussing his preparation to return to the character, McGregor did mention that The Mandalorian was part of his prep (via Newsweek).\n" +
+                        "\n" +
+                        "\"It'll just be there, I think. Also, I'm reminding myself by watching their new films and The Mandalorian and stuff, I really enjoyed. I keep myself as current as I can with the Lucasfilm world. I don't think it will take two minutes; I'll put the cloak back on and I'll be there, I think,\" he said.\n" +
+                        "\n" +
+                        "Obi Wan plot: What will Obi Wan be about?\n" +
+                        "\n" +
+                        "Despite the fact McGregor has demonstrated the ability to keep a secret for several years, he's been the best source of information about the Disney+ series.\n" +
+                        "\n" +
+                        "\"The storyline sits between Episode III and Episode IV,\" McGregor told Men's Health.\n" +
+                        "That's why it can't cross over with The Mandalorian – that show's set after Episode VI.\n" +
+                        "The last time we saw him in the role, \"the Jedi Order was falling apart. It will be interesting to take a character we know in a way and show him – well, his arc will be quite interesting, I think, dealing with the fact that all the Jedi were slaughtered with the end of Episode III. It's quite something to get over\".\n" +
+                        "\n" +
+                        "McGregor also confirmed that the narrative would unfold over six episodes, which will each be roughly an hour long.\n" +
+                        "When Kathleen Kennedy announced that Anakin will appear on the show, she hinted at \"a rematch\" between Vader and his former master. For better or worse, get ready to relive the prequel era of Star Wars in its fullest.\n" +
+                        "\n" +
+                        "And does this mean that Vader's former apprentice, Ahsoka Tano, will appear too? Rumours suggest that this could be a possibility now that Anakin is back in the picture.\n" +
+                        "\n" +
+                        "Obi Wan trailer: When will we see the Obi Wan trailer?\n" +
+                        "\n" +
+                        "Not for a while – but for now, click here to see how Darth Vader and Baby Yoda share more in common than you might realise!\n" +
+                        "Expect to see the first proper trailer in the month leading up to the premiere. \n" +
+                        "\n" +
+                        "As soon as it lands, we'll update this feature, along with the latest news, scoops and exclusives, so do keep us bookmarked.",
+                ashurt, entertainment, uk, "2020-12-11", 0,
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ewan-mcgregor-1567119325.jpg?crop=0.776xw:0.776xh;0.0918xw,0.0816xh&resize=768:*");
+        articleRepository.save(entertainment7);
+
+
+
+        Article entertainment8 = new Article("The Witcher: Henry Cavill confirms season 2 filming plans have changed due to second lockdown ",
+                "Henry Cavill has confirmed that The Witcher is returning to the studio over lockdown for filming on season two. ",
+                "The star has been keeping fans informed of his training plans over recent times, running in the hills of the Lake District in a recent Instagram post. Now, however, the star has announced that he is relocating south, with filming on the Netflix show due to take place in the studio during lockdown. ‘England returns to Lockdown on Thursday so it is time for me to depart Yorkshire and the extraordinary North, and head back down South to continue shooting in the studio,’ he wrote on Facebook. ‘Thank you for hosting all of us on season 2 of The Witcher. Hopefully I shall return to your hills, dales and fells soon. Stay strong and stay safe, my friends.’\n" +
+                        "\n" +
+                        "Anticipation for the new season is high, especially after Henry was seen battling new monsters in the first season two teaser. The star is returning to the role of Geralt of Rivia, teaming up with Princess Ciri (Freya Allen) and Yennefer of Vengerberg (Anya Chalotra) for a new set of adventures.\n" +
+                        "\n" +
+                        "Filming for season two was originally shut down in March as a result of the coronavirus outbreak. The cast and crew previously returned to set in August, with changes written into the script to allow for social distancing measures. The Witcher is likely to air on Netflix in 2021 given the delay, but a release date has yet to be confirmed.\n",
+                fletcher, entertainment, uk, "2020-11-3", 0,
+                "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/the-witcher-season-2-henry-cavill-1601904499.jpg?crop=0.837xw:0.669xh;0.0291xw,0.0458xh&resize=768:*");
+        articleRepository.save(entertainment8);
+
+
+
+        Article entertainment9 = new Article("Great British Bake Off: Paul Hollywood’s ex Summer Monteys-Fullam claims he ‘doesn’t actually bake’ and prefers cheap sliced bread ",
+                "The fallout from Paul Hollywood and ex Summer Monteys-Fullam’s breakup keeps rumbling on, and now Summer has done the unthinkable and dished the dirt on Paul’s bread preferences. ",
+                ". Summer took to Instagram for a fan Q&A recently, claiming that Great British Bake Off star Paul didn’t make fresh bread at home during their time together, and saying that he actually prefers the cheap sliced stuff. A fan asked her the question [via the Sun]: ‘Could you bake before you met Mr Bake Off himself?’ ‘He didn’t bake – he liked his cheap sliced bread!’ she replied. During the same fan Q&A, Summer was also asked: ‘Did you ever get nervous cooking for Paul as he’s a chef.’ She replied: ‘Lol. Firstly, he isn’t a chef. And secondly no not really, he’d just eat Rice Krispies most evenings so I’d cook for myself.’\n" +
+                        "\n" +
+                        "Model and barmaid Summer and Paul first got together following the presenter’s split from his wife Alexandra Hollywood. Summer previously revealed that she was ‘besotted at the beginning’ of their relationship. Summer split from Paul last year after two years together. She recently claimed that Paul has sent her more than 25 legal letters. While there were initially very close, Paul and Summer called time on their relationship after things turned bitter.\n" +
+                        "\n" +
+                        "Paul accusing his ex of ‘playing games’, but the 25-year-old barmaid denied his accusations. She went on to claim the Bake Off star tried to pressure her into signing a gagging order.\n",
+                fletcher, entertainment, uk, "2020-11-13", 0,
+                "https://metro.co.uk/wp-content/uploads/2020/09/PRC_166746343.jpg?quality=90&strip=all&zoom=1&resize=644%2C338");
+        articleRepository.save(entertainment9);
+
+
+
+        Article entertainment10 = new Article("Saved By The Bell apologises to Selena Gomez for kidney transplant joke",
+                "The makers of Saved By The Bell have apologised to Selena Gomez for a joke made in a recent episode about her kidney transplant.",
+                "A spokesperson for NBC said it was \"never our intention\" to joke about her surgery.\n" +
+                        "\n" +
+                        "The rebooted series features an episode where two characters argue over who donated a kidney to the singer in 2017.\n" +
+                        "\n" +
+                        "NBC also said they had been in touch with Gomez about making a donation to her charity.\n" +
+                        "\n" +
+                        "Selena, 28, received a kidney transplant three years ago after being diagnosed with the autoimmune disease Lupus.\n" +
+                        "\n" +
+                        "'The joke is offensive to donor families'\n" +
+                        "\n" +
+                        "The characters in Saved By The Bell speculated in a scene about who donated the kidney - with one claiming it was Demi Lovato and another saying it was Justin Bieber's mum.\n" +
+                        "\n" +
+                        "Later in the episode, graffiti appears on the wall saying, \"does Selena Gomez even have kidneys?\"\n" +
+                        "\n" +
+                        "She does, and one of them was donated by best friend Francia Raisa.\n" +
+                        "\n" +
+                        "Francia has since tweeted about the episode, praising other donors for performing a \"selfless act\".\n" +
+                        "\n" +
+                        "Cecilia Adamou is 21 and has just graduated from university.\n" +
+                        "\n" +
+                        "At the age of 12 she received a kidney transplant from her mum and says she found the way Saved By The Bell dealt with organ donation \"tasteless\".\n" +
+                        "\n" +
+                        "\"What many people don't realise is that although Selena Gomez knew her kidney donor, most people who receive kidney transplants receive them from dead donors and never find out who they are,\" she tells Radio 1 Newsbeat.\n" +
+                        "\n" +
+                        "\"So I think the joke the show made about not knowing who gave Selena her kidney is offensive to donor families.\"\n" +
+                        "\n" +
+                        "Cecilia also says she believes it's wrong for any show in 2020 to make jokes about illnesses and disabilities.\n" +
+                        "\n" +
+                        "\"There's already lots of wrong information online about organ donation,\" she says.\n" +
+                        "\n" +
+                        "\"I think the show could give people the wrong idea about organ donation and put them off.\"\n" +
+                        "\n" +
+                        "\"The joke is offensive to donor families\"\n" +
+                        "Fiona Loud is the head of policy at charity Kidney Care UK and has received a kidney herself.\n" +
+                        "\n" +
+                        "She says donating a kidney is \"one of the most selfless things a person can do\" for a friend, family member or a stranger.\n" +
+                        "\"This extraordinary generosity transforms lives and is something to be respected, rather than be made fun of.\n" +
+                        "\n" +
+                        "\"Every day in the UK around 20 people will develop kidney failure and sadly at least one person will die every day in need of a kidney transplant.\n" +
+                        "\n" +
+                        "\"We would like to give our utmost thanks and appreciation to amazing kidney donors like Francia Raisa.\"\n" +
+                        "\n" +
+                        "What is Lupus?\n" +
+                        "\n" +
+                        "According to the NHS, it's a long-term health condition that causes joint pain, skin rashes and tiredness.\n" +
+                        "\n" +
+                        "It has no cure and can also cause headaches, mouth sores, a high temperature and hair loss.\n" +
+                        "\n" +
+                        "It is not easy to diagnose because it has similar symptoms to other conditions but a blood test will usually reveal the condition if high levels of a type of antibody are found.",
+                rackham, entertainment, usa, "2020-11-30", 0,
+                "https://ichef.bbci.co.uk/news/976/cpsprodpb/23E5/production/_115698190_gettyimages-1204549367.jpg");
+        articleRepository.save(entertainment10);
+
 
 
 
