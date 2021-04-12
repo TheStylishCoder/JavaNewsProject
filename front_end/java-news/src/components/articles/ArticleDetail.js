@@ -1,33 +1,13 @@
 import React from 'react';
 import Article from './Article';
 
-const ArticleDetail = ({article, currentUser}) => {
+const ArticleDetail = ({article, currentUser, onFavouriteToggle}) => {
 
     if(!article){
         return <p>Loading...</p>
     }
 
-    const checkFavourite = function(article){
-        const readingList = currentUser.favouriteArticles;
-        if(readingList.some(article)){
-            {article.favourite = true}
-        }else {
-            {article.favourite = false}
-
-        }
-    }
-
-    const handleFavouriteToggle = (article) => {
-        checkFavourite();
-        const readingList = currentUser.favouriteArticles.map((favourite) => {
-            if(favourite.headline === article.headline){
-                article.favourite = false
-                const index = currentUser.favouriteArticles.indexOf(article)
-                currentUser.favouriteArticles.splice(index,1)
-            }
-            currentUser.favouriteArticles.push(article)
-        })
-    }
+    
 
     const favouriteDisplay = function(article){
         if(currentUser.role === "User"){

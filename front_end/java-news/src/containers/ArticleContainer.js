@@ -16,6 +16,29 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
         return null
     }
 
+    const checkFavourite = function(article){
+        const readingList = currentUser.favouriteArticles;
+        if(readingList.some(article)){
+            {article.favourite = true}
+        }else {
+            {article.favourite = false}
+
+        }
+    }
+
+    const handleFavouriteToggle = (article) => {
+        checkFavourite();
+        const readingList = currentUser.favouriteArticles.map((favourite) => {
+            if(favourite.headline === article.headline){
+                article.favourite = false
+                const index = currentUser.favouriteArticles.indexOf(article)
+                currentUser.favouriteArticles.splice(index,1)
+            }
+            currentUser.favouriteArticles.push(article)
+            article.favourite = true;
+        })
+    }
+
     return(
         <>
         <Switch>
@@ -51,7 +74,7 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
         <Route exact path="/articles/:id" render={(props) =>{
         const id = props.match.params.id;
         const article = findArticleById(id);
-        return <ArticleDetail article={article}/>
+        return <ArticleDetail article={article} onFavouriteToggle={handleFavouriteToggle}/>
         }}/>
 
         <Route render={() => {
