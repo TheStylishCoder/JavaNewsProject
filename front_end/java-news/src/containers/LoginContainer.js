@@ -21,6 +21,7 @@ const LoginContainer = ({currentUser, setCurrentUser, allUsers, allLocations}) =
       }
 
     const handleLogin = function(user){
+        console.log("handleLogin called", user)
             setCurrentUser(user)
         }
 
