@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
-import java.util.GregorianCalendar;
+
 
 @Component
 public class DataLoader implements ApplicationRunner {
@@ -122,7 +122,7 @@ public class DataLoader implements ApplicationRunner {
                 "Trading standards officers warned people not to click on a link which connects to a copycat website run by fraudsters, where crooks could steal people's personal information." +
                 "Royal Mail said it would never send a text message of that kind." +
                 "A similar scam that used DPD branding did the rounds in January, Trading Standards warned.",
-                read, business, uk, new GregorianCalendar(2021, 03, 29), 0, "https://ichef.bbci.co" +
+                read, business, uk, "29-03-2021", 0, "https://ichef.bbci.co" +
                 ".uk/news/976/cpsprodpb/67FC/production/_116902662_royalmail_pa.jpg");
         articleRepository.save(business1);
 
@@ -132,7 +132,7 @@ public class DataLoader implements ApplicationRunner {
                 "The ‘Save The Street’ campaign says independent retailers won't survive without it. The Treasury did not comment on whether it would pursue the idea, but said it had protected ‘millions' of retail jobs during the pandemic. The proposed scheme - which would work like the Eat Out to Help Out restaurant discounts last year - is backed by the likes of beauty entrepreneur Charlotte Tilbury, fashion designer Henry Holland and retail consultant Mary Portas." +
                 "‘We would be kidding ourselves to think that everything will be fine for independent retailers once they reopen on 12 April,' says Ross Bailey, the entrepreneur leading the campaign. 'Now it is the government's responsibility to support these businesses and ensure they are given a fighting chance to bounce back - the government needs to show that all businesses matter, not just big businesses.’ The British Retail Consortium estimates that non-essential retail stores lost around £22bn in sales in 2020 due to lockdown measures, as footfall declined by 40%. Independent shops - many of which lack a strong online presence - were hit particularly hard as they faced prolonged closures and restrictions. Yet this hasn't stopped people from trying to start businesses. Latest data from Cornerstone Tax, which gives advice on property stamp duty, shows 13% of consumers have started, or intend to start, their own business in 2021. The firm's research also shows more than half of consumers want to support smaller firms over retail giants. Retail analysts are also seriously concerned about the situation facing Britain's independent shops. ‘Independent retailers have had a tumultuous year and immediate action is needed to avoid a high street apocalypse,' says Natalie Berg, retail analyst at NBK Retail." +
                 "A Shop Out to Help Out Scheme would encourage consumers to ‘ditch their screens’ and support their local shops, she says. ‘This is a unique opportunity to redefine our high streets, but without government support we'll be bracing for a retail bloodbath.’ Retail expert Kate Hardcastle agrees, pointing out that independent retailers were the ones who ‘really demonstrated their worth’ in the early days of the pandemic in coming to their communities' aid when other retailers didn't have their online shopping offerings ready. She is concerned that everyone will forget about them now. 'Just telling people to shop small as has been previous campaigns might serve as a reminder, not an action,’ she tells the BBC. ‘Just as the case was with Eat Out to Help Out, we need to see our government support small businesses longer term. I'd love to see initiatives to make it easier for small businesses to open up on the High Street and rejuvenate.’ A Treasury spokesman said: ‘We've supported retailers across the UK though out the outbreak, protecting millions of jobs - and will continue to do so in the months ahead. Shops won't pay any business rates until July, can continue to furlough staff until September, and are receiving Restart Grants of up to £6,000.’",
-                russon, business, uk, new GregorianCalendar(2021, 03, 30), 0, "https://ichef.bbci.co" +
+                russon, business, uk, "30-03-2021", 0, "https://ichef.bbci.co" +
                 ".uk/news/976/cpsprodpb/11BE4/production/_117767627_1fe55671-9b32-4f69-a483-71d580ebf354.jpg");
         articleRepository.save(business2);
 
@@ -159,8 +159,7 @@ public class DataLoader implements ApplicationRunner {
                 "looking to flog off their buildings because they will still need them for some days of the week, but" +
                 " it's also unlikely that everyone will be working Monday to Friday in the office. There's a balance " +
                 "to be struck between the two extremes - it's a case of allowing employees the flexibility and " +
-                "responsibility of managing themselves.’", russon, business, uk, new GregorianCalendar(2021,
-                04, 1), 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/1297/production/_117795740_vr-john.jpg");
+                "responsibility of managing themselves.’", russon, business, uk, "01-04-2021", 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/1297/production/_117795740_vr-john.jpg");
         articleRepository.save(business3);
 
         Article business4 = new Article("We're at a moment of real change in the world of work", "Royal Bank of " +
@@ -189,8 +188,7 @@ public class DataLoader implements ApplicationRunner {
                 "'In the end, businesses need to make money, but not at any cost,' said Mr Cheese. 'What's driven a " +
                 "lot of this thinking is the concept that the only person who matters is the financial stakeholder, " +
                 "but now we're looking at multidisciplinary stakeholders - the business is responsible to their " +
-                "people, society and the environment.'", russon, business, uk, new GregorianCalendar(2020,
-                07, 21), 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/13364/production/_112029687_gettyimages" +
+                "people, society and the environment.'", russon, business, uk, "21-07-2020", 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/13364/production/_112029687_gettyimages" +
                 "-1005194764.jpg");
         articleRepository.save(business4);
 
@@ -226,8 +224,7 @@ public class DataLoader implements ApplicationRunner {
                 "'And it is not just about being recognised for doing a good job, it is also about being able to " +
                 "blame someone else if something goes wrong. Often things, good or bad, at work are a team effort. " +
                 "And if you are actually in the office with the boss, then if something does go wrong, you can " +
-                "sneakily say, 'It was John's fault.’'", bloom, business, uk, new GregorianCalendar(2020, 10
-                , 12), 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/CF95/production/_114814135_gettyimages" +
+                "sneakily say, 'It was John's fault.’'", bloom, business, uk, "12-10-2020", 0, "https://ichef.bbci.co.uk/news/976/cpsprodpb/CF95/production/_114814135_gettyimages" +
                 "-653859322.jpg");
         articleRepository.save(business5);
 
@@ -264,7 +261,7 @@ public class DataLoader implements ApplicationRunner {
                 "Yonderdesk builds interactive, web-based digital offices for firms, with employees designated a specific virtual desk. The office can be designed to replicate exactly a company's real one, or have a completely different design or layout.\n" +
                 "Want a video call with a colleague? Simply click on their icon. Or if someone from outside the business is getting in touch, they 'appear' in the virtual reception area.\n" +
                 "Sheffield-based food company Delicious Alchemy has been trialling Yonderdesk's tool in recent weeks. 'It has been beneficial in creating a sense of being part of a team, despite not being able to be together in one place,' says Nigel Glendinning, Delicious Alchemy's chief executive.\n" +
-                "\n", bearne, business, uk, new GregorianCalendar(2021, 01, 18), 0, "https://ichef.bbci.co" +
+                "\n", bearne, business, uk, "18-01-2021", 0, "https://ichef.bbci.co" +
                 ".uk/news/976/cpsprodpb/05C9/production/_116518410_higher2.jpg");
 
         articleRepository.save(business6);
@@ -286,7 +283,7 @@ public class DataLoader implements ApplicationRunner {
                 "'We are making this up on the fly. The reality is we are all trying to figure it out together,' the senior Facebook executive told a panel hosted by Bloomberg.\n" +
                 "Facebook will start to reopen its Silicon Valley offices at the beginning in May, after more than a year of working from home during the global pandemic.\n" +
                 "Its largest offices won't reach 50% capacity until early September, it said.\n", harper,
-                business, usa, new GregorianCalendar(2021, 04, 1), 0, "https://ichef.bbci.co" +
+                business, usa, "01-04-2021", 0, "https://ichef.bbci.co" +
                 ".uk/news/976/cpsprodpb/4B45/production/_117796291_gettyimages-962098266.jpg");
         articleRepository.save(business7);
 
@@ -330,7 +327,7 @@ public class DataLoader implements ApplicationRunner {
                 "Prof Wachter adds that human bosses 'should certainly not be seen as the gold standard'.\n" +
                 "Mr Schwartz says his hope is that AI bosses may help their human counterparts to improve their performance. He says this is because the computer ones will do more of the boring stuff - compile the rotas, set the simple tasks, carry out the initial performance monitoring etc.\n" +
                 "This will enable the sentient homo sapiens bosses to concentrate on being better team leaders.",
-                bloom, business, uk, new GregorianCalendar(2021, 02, 15), 0, "https://ichef.bbci.co" +
+                bloom, business, uk, "15-02-2021", 0, "https://ichef.bbci.co" +
                 ".uk/news/976/cpsprodpb/986F/production/_116932093_gettyimages-909209638.jpg");
 
         articleRepository.save(business8);
@@ -352,7 +349,7 @@ public class DataLoader implements ApplicationRunner {
                 "On Wednesday, the global airline industry body IATA said a digital travel pass for Covid-19 test results and vaccine certificates will be launched on the Apple platform in mid-April.\n" +
                 "'The application will only achieve its success once airlines, different countries, airports adopt " +
                 "it,' a spokesman for IATA said, explaining that its travel pass will help speed up check-ins.\n",
-                harper, business, restOfWorld, new GregorianCalendar(2021, 04, 01), 0, "https://ichef.bbci" +
+                harper, business, restOfWorld, "01-04-2021", 0, "https://ichef.bbci" +
                 ".co.uk/news/976/cpsprodpb/16615/production/_117796619_a74ed5e0-1365-416e-9559-e3565c1fba7e.jpg");
         articleRepository.save(business9);
 
@@ -381,7 +378,7 @@ public class DataLoader implements ApplicationRunner {
                 "'The Hong Guang Mini is the first time a major company has stepped up with a simple EV that targets buyers looking for a real car.'\n" +
                 "Reports have linked Wuling to a Latvian automaker who could sell a version of the car in Europe. " +
                 "However, the price is likely to be twice as high due to European environmental requirements.\n",
-                harper, business, restOfWorld, new GregorianCalendar(2021, 02, 25), 0, "https://ichef.bbci" +
+                harper, business, restOfWorld, "25-02-2021", 0, "https://ichef.bbci" +
                 ".co.uk/news/976/cpsprodpb/DD5C/production/_117286665_saic.jpg");
 
         articleRepository.save(business10);

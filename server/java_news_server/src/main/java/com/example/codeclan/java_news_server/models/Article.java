@@ -41,10 +41,10 @@ public class Article implements Serializable {
     @JoinColumn(name = "location_id", nullable = false)
     private Location location;
 
-    @JsonFormat(pattern ="dd-MM-yyyy")
-    @Temporal(TemporalType.DATE)
+//    @JsonFormat(pattern ="dd-MM-yyyy")
+//    @Temporal(TemporalType.DATE)
     @Column(name = "date")
-    private Calendar date;
+    private String date;
 
     @Column(name = "view_count")
     private int viewCount;
@@ -74,7 +74,7 @@ public class Article implements Serializable {
     private String image;
 
     public Article(String headline, String summary, String fullStory, Journalist journalist, Category category,
-                   Location location, Calendar date, int viewCount, String image) {
+                   Location location, String date, int viewCount, String image) {
         this.headline = headline;
         this.summary = summary;
         this.fullStory = fullStory;
@@ -148,11 +148,11 @@ public class Article implements Serializable {
         this.location = location;
     }
 
-    public Calendar getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Calendar date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
