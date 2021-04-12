@@ -1798,5 +1798,445 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(lifestyle8);
 
 
+        Article technology1 = new Article("The tech billionaire who is putting women first",
+                "You may never have heard of her - but the co-founder of dating app Bumble, Whitney Wolfe Herd, has joined Forbes list of the super-rich.",
+                "You may never have heard of her - but the co-founder of dating app Bumble, Whitney Wolfe Herd, has joined Forbes list of the super-rich.\n" +
+                        "And while others, such as fellow billionaire Kim Kardashian, are grabbing the headlines, there is an argument that the lesser known Wolfe Herd could serve as an equally strong role model.\n" +
+                        "The 31-year-old became the world's youngest self-made female billionaire when she took Bumble public in February.\n" +
+                        "She rang the Nasdaq bell with her 18-month-old baby son on her hip. In her speech she said she wanted to make the internet \"a kinder, more accountable place\".\n" +
+                        "In an interview with the BBC in 2017, Ms Wolfe Herd said the secret to being an effective chief executive was not to take yourself \"too seriously\". She also emphasised the need to find a work/life balance and make time for family, even if that meant \"taking an afternoon off”.\n" +
+                        "Her rise to membership of the billionaires' club has been an interesting one.\n" +
+                        "Before Bumble, she was among the founding team at Tinder but after tensions with other executives - one of whom she had been dating - she left. Shortly after, she launched a sexual harassment case.\n" +
+                        "Tinder's parent company, Match Group Inc, denied the claims but paid around $1m to settle the dispute.\n" +
+                        "As a result of the case, she experienced a lot of online abuse, prompting her to delete her Twitter account.\n" +
+                        "Bumble, rather pointedly, is all about putting women in control.\n" +
+                        "The central focus of her app is that only women can initiate a conversation in heterosexual matches. It is a simple idea but one that makes a world of difference to those on the dating scene who have been bombarded with unwanted messages from men.\n" +
+                        "She founded Bumble with Russian billionaire Andrey Adreev, who also has a stake in Badoo, both of which he sold in November 2019.\n" +
+                        "Ms Wolfe Herd owns a 11.6% stake in Bumble, giving her an estimated net worth of $1.3bn. She also heads Badoo. The two apps have a combined 40 million users, 2.4 million of whom pay a subscription.\n" +
+                        "Ms Wolf Herd grew up in Utah and in an interview after Bumble went public, she spoke to Time Magazine about an abusive relationship she was in as a teenager, and how it \"stripped her down to nothing\" while also \"informing her understanding of what was wrong with gender dynamics”.\n" +
+                        "In the same interview, she appeared determined to put her past behind her: \"I don't need to justify myself any more,\" she said.\n" +
+                        "\"Why am I cleaning up somebody else's drama? Women are always cleaning up somebody else's mess.\"\n" +
+                        "Her willingness to talk openly and to avoid corporate speak has won her fans.\n" +
+                        "Yet while she may be keen to carve a different path to that of other tech companies, last year Bumble logged more than 880,000 incidents that violated its guidelines - and like many other platforms it too relies on Artificial Intelligence to scan for hate speech.\n" +
+                        "Its latest campaign is against body shaming, banning derogatory remarks about appearance, body shape and size.\n" +
+                        "Ms Wolfe Herd is one of 328 women who made Forbes' 2021 list of the world's billionaires, up from 241 women last year.\n" +
+                        "This year, MacKenzie Scott, the ex-wife of Amazon chief Jeff Bezos, is among the top three richest women - beaten to the top spot by Alice Walton, who made her money via Walmart and frontrunner Francoise Bettencourt Meyers, whose grandfather founded cosmetics giant L’Oreal.\n",
+                wakefield, technology, uk, "2020-02-14", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/1542E/production/_117868078_mediaitem117868077.jpg");
+        articleRepository.save(technology1);
+
+        Article technology2 = new Article("Working from home: The rise of the DIY office",
+                "People around the world scrambled to work from home when the coronavirus pandemic began to take hold. While many are now being encouraged to return to the office, plenty have no plans to go back yet.",
+                "People around the world scrambled to work from home when the coronavirus pandemic began to take hold. While many are now being encouraged to return to the office, plenty have no plans to go back yet.\n" +
+                        "It's resulted in the creation of some rather innovative office spaces.\n" +
+                        "\"What people are finding is that having some separation from home life and work life is becoming incredibly important,\" said Bruce Daisley, author of The Joy of Work. It's not a level playing field, he noted, with some home workers having considerably more home than others.\n" +
+                        "\"Some will be working from their parents' house or in their only room. A lot of people are trying to find compromises so they can get the best out of the weird situation they're in.\"\n" +
+                        "We asked for your more unusual WFH set-ups - here's a selection of your home-grown grand designs.\n" +
+                        "Exercise and email\n" +
+                        "Kane Fulton decided to combine his desire to keep fit with his day job managing start-ups in Yorkshire, all within the confines of his admittedly rather large, walk-in wardrobe. Instead of an office chair, he has a bike.\n" +
+                        "He's now sometimes back in his actual office but when he's not, he begins the working day with a virtual 40km (25-mile) cycle on his bike/desk chair, using the training app Zwift at the same time. A pair of noise-cancelling headphones drowns out the noise of his pedalling (at least they do for him).\n" +
+                        "\"It's not the most elegant set-up, but it works - and compensates for the the lack of a morning walk,\" he said.\n" +
+                        "DIY desks\n" +
+                        "A lot of ingenuity has gone into fashioning desks, with home-grown standing desks proving particularly popular. It seems not everyone has forgotten everything they've always been told about sitting still for too long.\n" +
+                        "\n" +
+                        "High life\n" +
+                        "Steve Masters, a Green Party councillor, combined his work life and his environmental activism by setting up an office in a tree house at the end of May. He lives and works in the structure and also takes a physical stand against the building of the HS2 high-speed rail link through Jones' Hill Wood in Buckinghamshire, which he opposes.\n" +
+                        "\n" +
+                        "\"I have had the best reception and bandwidth when up in the tree,\" he said.\n" +
+                        "Mr Masters is using a council-issued laptop tethered to his phone, and he's charging the kit using a solar-powered portable power station. So far, he says he hasn't had to use the national grid at all. However, he concedes that this \"may prove more difficult as the days grow shorter and bad weather hits\".\n" +
+                        "Remote control science\n" +
+                        "\n" +
+                        "Dr Amruta Gadge at the University of Sussex (above) wasn't going to let the small issue of being locked out of her lab keep her from a scientific breakthrough. She set up her computers at home to control the lab's lasers remotely and was able to create a Bose-Einstein Condensate (BEC) - also known as the fifth state of matter.\n" +
+                        "This is created when certain elements are cooled to extremely low temperatures. The atoms that comprise them lose their energy and clump to form one solid \"super-atom\".\n" +
+                        "The university says it believes this has never been done remotely before.\n" +
+                        "It's being used to help the team develop magnetic sensors, which could be used in things like electrical vehicle batteries, touchscreens and solar cells.\n" +
+                        "\"We were determined to keep our research going so we have been exploring new ways of running our experiments remotely,\" said Dr Gadge.\n" +
+                        "Cupboard farm\n" +
+                        "\n" +
+                        "Plant scientist Jen Bromley works for the farming start-up Vertical Future. At the start of lockdown, she cleared the family's boiler-room shelves which were full of cricket bats and Christmas decorations, and created her own in-house vertical farm.\n" +
+                        "She attached LED lights on timers to the shelves and is growing a selection of edible flowers, including borage, violas and pansies. Unfortunately, Jen's cupboard did not lend itself to automated irrigation, so for three months all watering had to be done by hand. That's no mean feat, especially given the cosy nature of being inside a cupboard.\n" +
+                        "\"There may not have been enough room for me to stand up but the plants were just fine with the low headspace,\" she said. \"I was able to gather data on their rates of growth and we now use this on our production sites to make sure we always have new plants ready to supply edible flowers.\"\n" +
+                        "Home studio\n" +
+                        "\n" +
+                        "University of Virginia media studies professor Siva Vaidhyanathan already had an established home office. But he realised he needed to up his game to stream lectures to his students from his spare room in addition to launching a podcast.\n" +
+                        "\"I could not make the office soundproof, but I did my best to make it non-reflective, so that my voice did not sound like it's in a big, metal storage container,\" he said, explaining the grey felt wall panels.\n" +
+                        "\"I also discovered how to connect my iPhone camera to my computer, giving me much higher resolution images. And I bought a retractable green screen, so I could superimpose my image over my slides for the best lecture capture experience I could manage.\"\n" +
+                        "Clocking off\n" +
+                        "The team at the Rotacloud software firm has started using their own product - originally developed primarily for the hospitality sector. It's designed to help managers plan rotas, and it includes a smartphone app for individual staff to clock on and off from their shifts.\n" +
+                        "\"The physical act of pressing a button at the end of the day that says, 'I'm clocking out now', gives me a firm psychological cut-off point to my work time. It's like throwing a switch in my mind,\" said designer Sarah Burgess. \"I live in a small house without a dedicated area for work. So being able to clearly differentiate between 'work time' and 'home time' has been vital to help protect my space - and my sanity.”\n",
+                kleinman, technology, uk, "2020-09-13", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/E288/production/_114329975_gettyimages-1213061129.jpg");
+        articleRepository.save(technology2);
+
+        Article technology3 = new Article("Puppy training a robotic dog points to the future",
+                "First the dog is kicked over, then pushed over, then shoved with a stick. Each time it gets back to its feet.",
+                "But don't rush to call the animal welfare authorities - it's a robotic dog undergoing training at Edinburgh University.\n" +
+                        "Alex Li is the Head of the Advanced Robotics Lab at the university and is among those leading the way in applying artificial intelligence (AI) to robotics.\n" +
+                        "The AI that controls his dog can cope with situations it has never seen before, like slippery surfaces or stairs.\n" +
+                        "And if you have ever watched internet footage of robots falling over, then you will appreciate how difficult that is to achieve.\n" +
+                        "So how did Mr Li and his team train their dog, called Jue-ying, or at least the AI that controls it?\n" +
+                        "Mr Li likens the process to the way young children are taught to play football. First, they will probably be taught individual skills like passing, dribbling and shooting.\n" +
+                        "\n" +
+                        "Once they have mastered those basics then they might be let loose in simple matches, where they will learn how to put those skills together to win a game.\n" +
+                        "That way of learning, which is so natural to humans, is something that companies and researchers are trying to replicate in machines.\n" +
+                        "The robotic dog was initially taught two skill sets - fall recovery and trotting and walking, and each of those was developed in a different artificial neural network.\n" +
+                        "Neural networks rely on layers of thousands or millions of tiny connections between nodes, clusters of mathematical computations and can adapt as they are trained.\n" +
+                        "Those first two skill sets were used as the basis to create others - in total eight neural networks.\n" +
+                        "If those eight are the players in a football team then the final task was to create a coach - an AI which could bring their skills together to solve certain problems, like getting up from different positions and walking to a target.\n" +
+                        "\n" +
+                        "The beauty and potential usefulness of the technique is that the robotic dog could be introduced to completely new scenarios, like navigating stairs or a rocky surface, and could make lightning-quick adjustments to stay upright and continue to its goal.\n" +
+                        "It might not sound like much but, Mr Li hopes the method can be developed so that robots can complete much more complex tasks.\n" +
+                        "\"Of course locomotion is cool, you can see the robots running around getting kicked in and getting up. But by the end of the day, you want the robot to do something useful for you,\" he says.\n" +
+                        "That will require the addition of features like vision systems and robotic hands, which adds many levels of complexity.\n" +
+                        "Mr Li's work builds on research by DeepMind Technologies, an artificial intelligence unit of Alphabet (the owners of Google) and based in London.\n" +
+                        "They have been leaders in a technique called deep reinforcement learning, by which neural networks learn from experience.\n" +
+                        "\n" +
+                        "Using that technique, DeepMind has developed AI that has beaten human masters at chess and Go as well as becoming a top player at the computer game Starcraft.\n" +
+                        "Raia Hadsell is the director of the Robotics Laboratory at DeepMind. She says that combining AI and movement has been a different challenge.\n" +
+                        "\"Your actions change the world,\" she points out. So unlike an AI that, for example, plays chess, a robot doing tasks around the home would have to cope with a shifting environment - imagine a robot doing the washing up and using the last of the washing up liquid.\n" +
+                        "\n" +
+                        "But if this approach can be successfully developed the rewards could be enormous.\n" +
+                        "\"I think that you will start to see robots being used more with humans in a safe way, because you'll be able to interact with these robots a little bit more. So they start to be more capable with doing tasks in the home,\" she says.\n" +
+                        "\"But probably more significantly, used in parts of industry, agriculture, construction. Imagine being able to enable a farmer with a robot that has general purpose, and could imitate different types of behaviours.\"\n" +
+                        "However, don't think you can give up ironing just yet.\n" +
+                        "\"I don't think this is in the next couple of years, but maybe, you know, the next 10 years,\" Ms Hadsell says.\n" +
+                        "Mr Li's robotic dog senses the world using feedback from its joints and motors - a relatively simple set of inputs. The outputs are just as simple - the dog walks or trots towards a target.\n" +
+                        "\n" +
+                        "Nathan Lepora is professor of robotics and AI at the Bristol Robotics Laboratory. He has also been training an AI to move, but not a robotic dog, instead a robotic hand that has a sense of touch.\n" +
+                        "His AI can recognise objects using an artificial sense of touch. While still in its early days he thinks that training AI to sense its environment and move around is potentially very powerful.\n" +
+                        "\"The AI opens up much more general ways of learning how to control rather than, if you like, handcrafting simple controllers. That's the difference. And that's what the deep reinforcement learning opens up.\n" +
+                        "\"And deep reinforcement learning also gives the capability to use much more complex sensory inputs as well, for that control.\"\n" +
+                        "However, it's not going to be easy to train an AI that can control a humanoid robot, equipped with all sorts of different sensors.\n" +
+                        "\"The level of mechanical engineering [involved in] building these robots has kind of gone past our capability to control them, because they're so complicated. And that's the problem that's getting cracked at the moment,\" says Prof Lepora.\n",
+                morris, technology, uk, "2021-02-05", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/2F00/production/_116723021_jue-yingoutdoor5.png");
+        articleRepository.save(technology3);
+
+        Article technology4 = new Article("Trump tweets can't be brought back to life on Twitter",
+                "The often colourful tweets of former president Donald Trump are being preserved for posterity but may never appear again on Twitter.",
+                "The National Archives and Records Administration (Nara) is working to create an official online archive.\n" +
+                        "\n" +
+                        "But, according to Twitter, this will not exist on its platform, as would normally happen.\n" +
+                        "\n" +
+                        "That is because he was permanently banned following the January attacks on the US Capitol.\n" +
+                        "\n" +
+                        "First reported by Politico, Twitter confirmed the decision to the BBC: \"Our teams have been working with NARA on the preservation of Tweets from @realDonaldTrump, as is standard with any administration transition and as we've done previously.\n" +
+                        "\n" +
+                        "\"Given that we permanently suspended @realDonaldTrump, the content from the account will not appear on Twitter as it did previously or as archived administration accounts do currently, regardless of how NARA decides to display the data it has preserved.\"\n" +
+                        "\n" +
+                        "Only administration accounts that were not in violation of Twitter's rules are allowed to be archived on the platform, it added.\n" +
+                        "\n" +
+                        "It is not clear where the former president's tweets will live if not on Twitter.\n" +
+                        "\n" +
+                        "The tweets of senior politicians and officials in the US are traditionally taken over by the archiving body to preserve them as historical records when they leave office.\n" +
+                        "\n" +
+                        "So, for instance, Kayleigh McEnany, former press secretary to President Trump, reverted to her private account when she left the administration, but her tweets during her time there remain on Twitter with the message: \"This is an archive of a Trump Administration account, maintained by the National Archives and Records Administration.\"\n" +
+                        "\n" +
+                        "When the policy for preserving social media posts was drawn up under the Obama administration, it stated that \"wherever possible\" materials should continue to be accessible on the platforms where they were created.\n" +
+                        "\n" +
+                        "But social media posts made by former president Obama and his officials are also preserved on a website, which is searchable.\n" +
+                        "\n" +
+                        "Trump comeback\n" +
+                        "President Trump was banned from Twitter after he posted a series of tweets deemed to be in violation of Twitter's rules on inciting violence. He tweeted almost daily during his presidency and saw it as a way to communicate directly with his nearly 90 million followers.\n" +
+                        "\n" +
+                        "He has since said he plans a social media comeback \"with his own platform\".\n" +
+                        "\n" +
+                        "According to his adviser Jason Miller, it will be \"the hottest ticket in social media\", and is due in a few months.\n" +
+                        "\n" +
+                        "President Trump was also suspended from Facebook after the riots in Washington. The social network's independent oversight committee is currently considering whether to allow him back.\n" +
+                        "\n",
+                clayton, technology, usa, "2021-04-07", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/27A4/production/_116384101_mediaitem116381016.jpg");
+        articleRepository.save(technology4);
+
+        Article technology5 = new Article("The woman who took on Google and won",
+                "Everyone has their breaking point. And when it comes it can be a small thing, an incident that usually wouldn't matter.",
+                "Shannon Wait's moment was when her Google-issued water bottle broke. The data centre she worked in was hot, so she asked for another one. However, she says the Google subcontractor refused to give her one.\n" +
+                        "\n" +
+                        "That moment sparked a chain reaction that led to an announcement last week. Google signed a statement saying the company's workers had the right to discuss pay and conditions with each other.\n" +
+                        "\n" +
+                        "It might seem bizarre that even needed to be said.\n" +
+                        "\n" +
+                        "But in actual fact it was the culmination of Shannon's battle with the company.\n" +
+                        "Her story is one of management overreach, a story that shines a light on managerial practices that have become synonymous with Big Tech.\n" +
+                        "\n" +
+                        "Shannon finished her history degree in 2018 and started working at a Google data centre in South Carolina the following February, earning $15 (£10.90) an hour.\n" +
+                        "\n" +
+                        "\"You're fixing the servers, which includes swapping out hard drives, swapping motherboards, lifting heavy batteries, they're like 30lb (13.6kg) each,\" she says. \"It's really difficult work.\"\n" +
+                        "\n" +
+                        "Google's offices are famed for being creative, alternative and fun - with table tennis tables, free snacks and music rooms. However, what Shannon describes sounds less idyllic.\n" +
+                        "\n" +
+                        "\"People aren't playing games all day like you see in the movies… the data centre is completely different,\" she says.\n" +
+                        "\n" +
+                        "Shannon was a contractor at Google. That means that although she worked in a Google data centre, she was actually employed by a subcontractor called Modis, part of a group of companies owned by another firm, Adecco.\n" +
+                        "\n" +
+                        "That complex arrangement has become increasingly common at Google. About half of the people who work for the company are reportedly employed as contractors.\n" +
+                        "\n" +
+                        "It also makes working out who actually carries the can for managerial mistakes complex. But we'll get to that later.\n" +
+                        "Shannon says when the pandemic hit, the work got harder. The minimum number of jobs per shift increased. But there was a sweetener.\n" +
+                        "￼\n" +
+                        "\n" +
+                        "\"Around the time of May 2020, Google announced that they were going to handle the pandemic in an honourable way. They said that they were going to give bonuses to every employee, including contractors, who work in person,\" she says.\n" +
+                        "\n" +
+                        "\"The time came that we were supposed to get that bonus and it never appeared in any of our bank accounts. We started getting concerned like, you know, I really could use this extra money.\"\n" +
+                        "\n" +
+                        "It was around this point that she says employees started talking to each other about the bonus, and how much they were entitled to receive.\n" +
+                        "\n" +
+                        "\"We started asking each other about pay, but any time it came up in front of management we were told not to talk about it.\"\n" +
+                        "￼\n" +
+                        "Shannon says she was even sent a message by a manager saying: \"It is never ok to discuss compensation with your peers\". She shared it with the BBC.\n" +
+                        "Shannon did eventually receive her bonus, but says she had become disillusioned. She had hoped to get a full-time job at Google. However, she noticed a culture of \"perma-temps\", temporary staff who she says would never get made staff, no matter how much they tried.\n" +
+                        "\n" +
+                        "Frustrated by management, Shannon reached what she says was her breaking point.\n" +
+                        "\n" +
+                        "\"It's very hot in the data centres - about 85F (29.5C). So Google issued me a water bottle, but the cap on it broke.\"\n" +
+                        "She says the same thing happened to her colleague, a full-time Google employee. However, Shannon says although her colleague was given a new bottle, she wasn't. She went home and typed up a Facebook post.\n" +
+                        "￼\n" +
+                        "Eventually, she says she had \"had enough\".\n" +
+                        "\n" +
+                        "\"The next day, I was at work, I got called into a conference room with all, for the most, the managers present. And they told me that my Facebook post was in violation of the non-disclosure agreement, and that I was a security risk and needed to hand over my badge and my laptop immediately, and be escorted off site.\"\n" +
+                        "\n" +
+                        "The Alphabet Workers Union was set up in January 2021 for Google workers. It is not recognised by the National Labor Relations Board, an independent government agency, and is sometimes referred to as a \"minority union\". The vast majority of Google workers aren't members, but Shannon was and the union took up her case.\n" +
+                        "\n" +
+                        "In February, they filed two cases on her behalf under unfair labour practice laws. One that she had been suspended illegally - for talking about supporting a union. The other that her managers had asked her, illegally, not to discuss her wages.\n" +
+                        "\n" +
+                        "Last month Google, Modis and the Alphabet Workers Union reached a settlement.\n" +
+                        "\n" +
+                        "Shannon's suspension was overturned.\n" +
+                        "￼\n" +
+                        "Google signed a document saying its employees \"have the right to discuss wage rates, bonuses, and working conditions\".\n" +
+                        "\n" +
+                        "It was a victory for both Shannon and the newly-formed union.\n" +
+                        "\n" +
+                        "\"People who work in warehouses and data centres for these trillion dollar companies are tired of even their smallest rights being trampled on. And they're realising that the companies aren't listening to their workers. So we're going to make them.\"\n" +
+                        "\n" +
+                        "Last week, Amazon workers in Alabama voted on whether they should unionise. Amazon is desperate to avoid workers unionising.\n" +
+                        "\n" +
+                        "The result is expected soon. It's the latest battle between Big Tech and some workers who feel, to put it mildly, unloved.\n" +
+                        "\"I think that one of the biggest things that people can learn is that not all Google employees make six figures… and even on the lowest level at Google, they have so much power - so much more power than they realise,\" said Shannon.\n" +
+                        "\n" +
+                        "And as for Google?\n" +
+                        "\n" +
+                        "Well it didn't admit any wrongdoing as part of the settlement, and didn't admit to being a \"joint employer\" of contract staff. The BBC put Shannon's story to Google but it said it had nothing further to add. Adecco has not responded to a BBC request for comment.\n" +
+                        "\n" +
+                        "Shannon doesn't want to return to a Google data centre, and ultimately wants to do a PhD in history. But she has already contributed to the history books, a rare win by an employee against a tech giant.",
+                clayton, technology, usa, "2021-04-07", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/1FDC/production/_117865180_screenshot2021-04-06at22.47.22.png");
+        articleRepository.save(technology5);
+
+        Article technology6 = new Article("Tool checks phone numbers from Facebook data breach",
+                "People can now enter their phone numbers into a website to see if they appeared in a recent Facebook data breach.\n" +
+                        "\n",
+                "Details of more than 530 million people were leaked in a database online, largely consisting of mobile numbers.\n" +
+                        "People can use the Have I Been Pwned online tool to check if their numbers or emails were compromised.\n" +
+                        "Facebook says the data is from an “old” breach in 2019 but privacy watchdogs are now investigating.\n" +
+                        "\n" +
+                        "The data\n" +
+                        "Facebook said it had \"found and fixed\" the breach more than a year-and-a-half ago.\n" +
+                        "\n" +
+                        "But the information has now been published for free in a hacking forum, making it widely available.\n" +
+                        "\n" +
+                        "The database covers 533 million people in 106 countries, according to researchers analysing the data. That includes 11 million Facebook users in the UK, 30 million Americans and 7 million Australians.\n" +
+                        "\n" +
+                        "Not every piece of data is available for each user but 500 million phone numbers were leaked compared with “only a few million email addresses”, Troy Hunt, a security expert who runs HaveIBeenPwned said in a blog on his website.\n" +
+                        "\n" +
+                        "'Not just a tiny slice of people'\n" +
+                        "Mr Hunt launched the phone number search function after “unprecedented traffic” to the website, following the news of the Facebook data leak.\n" +
+                        "\n" +
+                        "Previously, users of the platform could only search for email addresses.\n" +
+                        "Visitors to the website can now enter their mobile number into a search box, and the website will confirm if it has appeared in the leaked database.\n" +
+                        "\n" +
+                        "“I wanted to ensure Have I Been Pwned could answer that question for everyone, not just a tiny slice of people,” Mr Hunt told the BBC.\n" +
+                        "\n" +
+                        "It has also been suggested that Facebook’s own chief executive, Mark Zuckerberg, had his mobile number leaked in the database.\n" +
+                        "\n" +
+                        "\"This is the number associated with his account from the recent Facebook leak,\" security expert Dave Walker tweeted, along with a screenshot of Zuckerberg's leaked phone number.\n" +
+                        "\n" +
+                        "The BBC is not responsible for the content of external sites.\n" +
+                        "View original tweet on Twitter\n" +
+                        "The screenshot also suggests Mr Zuckerberg was on messaging platform Signal - which uses end-to-end encryption and is not owned by Facebook.\n" +
+                        "￼\n" +
+                        "Mark Zuckerberg's phone number was released in the leak, experts have suggested Facebook has requested users input their phone numbers since 2011, citing security reasons.\n" +
+                        "\n" +
+                        "It allows for “two-factor authentication”, an additional feature that sends a text to a user’s mobile whenever somebody logs into their account.\n" +
+                        "\n" +
+                        "The tech giant has advised users to check what details they share publicly on the platform by updating the How People Find and Contact You section, as well as completing \"regular privacy checkups\".\n" +
+                        "\n" +
+                        "\n" +
+                        "\n" +
+                        "De'Graft was shocked by the data Facebook stored on him\n" +
+                        "Facebook added the data was \"scraped\" using public information available on the system, rather than hacked.\n" +
+                        "\n" +
+                        "Meanwhile, several investigations have been launched into Facebook by privacy watchdogs around the world.\n" +
+                        "\n" +
+                        "Ireland's Data Protection Commission said it was working with the tech firm to establish if “the dataset referred to is indeed the same as that reported in 2019”.\n" +
+                        "\n" +
+                        "The Philippines’ National Privacy Commission and Hong Kong’s Office of the Privacy Commissioner have also launched probes into the breach.\n" +
+                        "\n",
+                wakefield, technology, uk, "2021-04-05", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/769D/production/_117856303_hi045062201.jpg");
+        articleRepository.save(technology6);
+
+        Article technology7 = new Article("Why you can’t have an Apple Car",
+                "Apple wants the auto industry to make its car, but it won’t share the spoils. Here’s how it will break the deadlock",
+                "Before its product announcements leaked like a sieve, Apple used to be known for its ability to surprise the world. \n" +
+                        "\n" +
+                        "The history of keynote speeches at its events have been littered with major announcements, from the PowerBook G4 in 2001 to the Apple Watch in 2014. \n" +
+                        "\n" +
+                        "But just how likely is it that Tim Cook will be announcing one more thing at a future Apple event, and pulling back the curtain to reveal a car?\n" +
+                        "\n" +
+                        "It’s a rumour that has persisted for years, and has recently gained even more traction. Apple may have one eye on the automotive industry for an obvious reason, says Ardnt Ellinghorst of Sanford C Bernstein, an analyst firm tracking the car business. “The auto industry is the largest consumer industry, and tech connectivity is increasingly the key selling point for why people buy a car.” \n" +
+                        "\n" +
+                        "For more than a decade futurists and forecasters have been spouting that cars will become essentially computers on wheels.\n" +
+                        "\n" +
+                        "Another is ego, reckons Sam Livingstone, founder and director of Car Design Research, an automotive design strategist. “Given they’ve managed to master the zeitgeist of attractive consumer durables, you’ve got to suppose there must be people within the organisation, quite high up, who might think this is the ultimate prize,” he says.\n" +
+                        "On the surface it seems a natural enough fit. \n" +
+                        "\n" +
+                        "Yet Ellinghorst began writing about a mooted Apple car in 2014, when leaked documents first surfaced about a project, codenamed Titan, to build an Apple vehicle. We’re now seven years on. What happened – or rather, what hasn’t happened?\n" +
+                        "\n" +
+                        "“I like to call it the Loch Ness of the automotive industry,” says Ferdinand Dudenhöffer, director of the Centre for Automotive Research in Duisburg, Germany. “Each time you get a news story that there’ll be an Apple car, then it’s like Nessie: it vanishes. We’ve seen that for ten years. If a story takes ten years, I don’t believe that such a story will come true. I don’t believe they’ll really go into hardware and manufacture a car, or will have a service provider manufacturing the car for them.”\n" +
+                        "\n" +
+                        " That’s something the latest rumours in the industry seem to concur with: Apple may end up having to go its own way if it wants to build a vehicle.\n" +
+                        "In part, it’s down to sheer practicalities: making cars is difficult, and Apple doesn’t yet have the know-how. In order to enter the market, it’ll need the help of a manufacturer, which requires it to try and sweet talk an industry that is notoriously protective of its interests.\n" +
+                        "\n" +
+                        "Apple, too, isn’t that well-known for being the most kind business partner. Intel, which was one of Apple’s closest partners, has been left listless after being dumped – and Steve Jobs was notorious for rubbing mobile phone network operators the wrong way while building the iPhone’s position in the market.\n" +
+                        "It comes down to the stubbornness of both Apple and the automotive industry, and the latter’s fight for survival. \n" +
+                        "\n" +
+                        "If Apple were to enter the car market, it would likely be the 500lb gorilla in the corner.\n" +
+                        "\n" +
+                        "Ellinghorst estimates that if Apple came to the market in 2024 or 2025, it could scale up to between 1 and 1.5 million cars by 2030. “The auto industry is competitive, right? And if Apple were to enter, it’s clear they would enter the premium end of the auto market,” he says. Others are less certain this would be the case. \n" +
+                        "\n" +
+                        "This premium market is around 15 per cent of the global car industry, which itself totals 85 million cars. “Apple would make that space quite crowded, and carmakers are worried they would enable one of their biggest competitors to enter the market,” says Ellinghorst.\n" +
+                        "\n" +
+                        "The car industry is resolutely independent, with auto manufacturers rarely willing to allow outside companies into their onboard entertainment and navigation systems for fear of losing out on precious revenue. “Incumbent car brands can broadly see this thing coming over the horizon to them at some speed, which is that generating value will increasingly depend on the digital services offered in the car,” says Livingstone. The risk, he adds, is that car manufacturers produce the boring mechanical bits and all the clever, exciting technology is created by companies such as Apple and Google.",
+                walker, technology, uk, "2021-03-16", 0,
+                "https://wi-images.condecdn.net/image/Zg5x36D9nNG/crop/810/f/wired-applecar-2.jpg");
+        articleRepository.save(technology7);
+
+        Article technology8 = new Article("This bizarre electric racing scooter goes as fast as a car",
+                "The eSkootr S1X is a carbon-fibre version of a Segway that can reach speeds of 100kph",
+                "Not many people would wish to hit speeds in excess of 100kph on a transport device with no roll cage, completely open to the elements and riding on 6.5in wheels travelling just a few centimetres off the ground. \n" +
+                        "\n" +
+                        "This is, however, what anyone taking a trip on an eSkootr S1X racing e-scooter can look forward to.\n" +
+                        "\n" +
+                        "To give you some comparison as to how the eSkootr S1X stacks up against recreational models, the top speed of our favourite electric scooter is a frankly more than sufficient 15.5mph.\n" +
+                        "\n" +
+                        "eSC says these circuits will be just 400 metres to one kilometre long, and that the races with be heat-based lasting eight to ten minutes each. Six riders per heat will battle, or scoot, for a place in the final that should then feature a total of ten riders competing for a win.\n" +
+                        "Much like with Formula E where for the first couple of seasons teams had to use a standardised race car they could then modify and refine, the eSkootr S1X is intended to be the initial ‘stock’ scooter, then in subsequent seasons outside developers will be allowed to submit their own rides.\n" +
+                        "\n" +
+                        "Powering the S1X are two 6kW motors, one on each wheel, that have been developed especially for the prototype racer and are powered by a 24Ah battery with 1.33kWh capacity. The e-scooter has a carbon fibre chassis and aluminium front and rear assembly and weighs 35kg, but has hydraulic disc brakes to combat the speeds it can produce. As for cornering, eSC says this model can lean over up to 50 degrees if the driver is brave enough.\n" +
+                        "\n" +
+                        "With two separate motors powering the front and rear wheels, eSC needed to develop a system where the rider could control the power as sending too much to the front wheel during cornering would not be ideal for stability. As a result, when the throttle is opened the S1X delivers slightly less torque to the front motor than the rear, supposedly keeping the eSkootr stable when accelerating out of turns.\n" +
+                        "\n" +
+                        "Power delivery is also split into two modes: a conventional thumb throttle on the handlebar and a boost button for maximum thrust along straights.\n" +
+                        "\n" +
+                        "As for safety of speeding around on 100kph electric scooters, eSC has drafted in ex-F1 and Le Mans racer Alex Wurz as their 'eSC Safety Ambassador' to help design the safety measures and circuits. The S1X itself comes with a kill switch, cutting power to the scooter if the driver parts ways with his or her ride.\n" +
+                        "eSC has also appointed Formula 1 advisor Andy Mellor as chair of its safety commission. Mellor has been involved in F1 and motorsport safety for 20 years as a consultant to the FIA, and led the project to develop the Halo frontal protection device now fitted to all F1 cars.\n" +
+                        "\n" +
+                        "However, the main issue right now with the the world’s first racing series for electric scooters is garnering enough teams to compete. eSC has signed up Carlin racing, which currently competes in Formula 2 and 3, and formerly in Formula E, but needs a total of 10 teams with 30 racers to make the championship viable.\n" +
+                        "\n" +
+                        "As well as hopefully advancing tech in micro mobility, one of the supposed main aims of the series, according to eSC the 'accessible' cost of entry to the championship - £400,000 a season, less than F3 – means they will hopefully be able to confirm more official teams soon.",
+                white, technology, uk, "2021-02-25", 0,
+                "https://wi-images.condecdn.net/image/paV4L1NEJ18/crop/810/f/wired-scooter-3.jpg");
+        articleRepository.save(technology8);
+
+        Article technology9 = new Article("Greek Scientist Develops Pioneering 6G Technology",
+                "A Greek scientist is developing 6G technology after receiving a 2 million euro grant to pursue the project at Queen’s University, in Belfast, Northern Ireland.",
+                "While the world is just starting to discover and enjoy the benefits of 5G cellular technology, an acclaimed Greek researcher is working tirelessly with his team in Northern Ireland towards developing an even more advanced wireless broadband network.\n" +
+                        "\n" +
+                        "Thessaloniki-born Dr. Michalis Matthaiou, who started his international career after earning his PhD at the University of Edinburgh in 2005, held research positions at a series of esteemed universities in Germany, Sweden, and the USA, before being awarded the Chair of Communications Engineering and Signal Processing at Queen’s University Belfast in 2013.\n" +
+                        "\n" +
+                        "At the end of 2020, he was approved to receive 2 million euros  in the form of the highly prestigious European Research Council Consolidator Grant (2021-2026), to take the next step in his research and transform the latest speculative academic concepts in wireless technology into commercial breakthroughs.\n" +
+                        "\n" +
+                        "“Since 2018, my team has been investigating and exploring the development of 6G-enabling technologies, leading to the publication of a plethora of research papers on cell-free massive MIMO, intelligent reflecting surfaces and THz communications.\n" +
+                        "\n" +
+                        "“These technological paradigms have been identified as key to the successful rollout and evolution beyond 5G and 6G networks”, he tells Greek Reporter.\n" +
+                        "\n" +
+                        "Ever-evolving network \n" +
+                        "technologies\n" +
+                        "\n" +
+                        "Firstly, Dr. Matthaiou says that it is important to clarify that 6G will not replace 5G; instead, it will be an improved extension of it.\n" +
+                        "\n" +
+                        "“5G is the first technology that will enable the Internet-of-Things (IoT), while 6G will further improve the connectivity speeds by utilizing higher frequency bands (at the order of THz or 109 Hz) to avail of the substantial amounts of bandwidths available, whereas 5G occupies sub-6 GHz and above 24 GHz frequencies”, he explains.\n" +
+                        "\n" +
+                        "Another important difference to recognize between 6G and 5G is that the latter requires laborious infrastructure investment and upgrades, whereas 6G will capitalize on the already existent infrastructure for 5G.“\n" +
+                        "\n" +
+                        "Some applications that will emerge in the context of 6G are super-smart societies, extended reality, connected robotics and autonomous systems, wireless brain-computer interaction, haptic communication, and beyond”, the Greek researcher adds.\n" +
+                        "As he points out, wireless technologies have been continuously evolving since the 1970s.\n" +
+                        "\n" +
+                        "\n" +
+                        "“To provide an idea of the scale of growth in the mobile traffic, in 2020 that stood at approximately 62 Exabytes per month, while the forecast for 2030 is that this number will skyrocket to 5016 Exabytes per month — an 80-fold increase.\n" +
+                        "“It is therefore very evident that we need to keep up with the rapidly escalating increase in the mobile data traffic, and the number of connected devices as well as being mindful of the shifting demographic with migration to cities and increased urbanization trends, by developing powerful, elastic and scalable wireless technologies in preparation for the decades to come,” he concludes.\n" +
+                        "\n" +
+                        "6G to be launched by 2030\n" +
+                        "\n" +
+                        "Dr. Matthaiou expects 6G to be launched by 2030. “Historically”, he says, “every generation of wireless technologies has a lifespan of 10 years from theoretical conception to commercial exploitation, and this is also our expectation for 6G”.\n" +
+                        "While his team is focused on the theoretical modeling and performance evaluation of some candidate 6G-enabling technologies, there are several other academic and industrial groups across the world that are looking into similar problems.\n" +
+                        "\n" +
+                        "\n" +
+                        "“The research competition is predictably fierce,” he states. “The next step is to physically demonstrate the realizable potential of these technologies using the lab facilities at Queen’s and, finally, to commercialize our physical prototypes.”\n" +
+                        "He admits that there are several technical challenges pertaining to the successful completion of his ERC Consolidator Grant.\n" +
+                        "\n" +
+                        "“The main vision of this project is to amalgamate the information and electromagnetic theories for the first time in 70 years. These two theories are based on different principles -probability theory versus Maxwell’s wave equations- and their unification is a hugely challenging exercise.\n" +
+                        "\n" +
+                        "“Nevertheless, we now have the tools and expertise to confidently create a research platform on which these scientific communities will begin to cross-leverage their complementary expertise. This proposal intends to break the scientific barriers and enable the creation of this platform for the first time ever,” he notes with enthusiasm.\n" +
+                        "\n" +
+                        "5G conspiracy theories\n" +
+                        "\n" +
+                        "In the matter of conspiracy theories around 5G technology which have been gaining ground especially during the COVID-19 pandemic, Dr. Matthaiou gives a calm and collected response.\n" +
+                        "\n" +
+                        "“Such conspiracy theories have been a common thread throughout the development of successive generations of wireless technologies. Nevertheless, today, with the substantial penetration of social media, it is very easy for such theories to gain access and, eventually, influence a much larger number of people”, he observes.\n" +
+                        "\n" +
+                        "On the other hand, he prefers to draw more attention to the fact that 5G devices will be consuming fewer watts of power compared to their 3G/4G counterparts.\n" +
+                        "\n" +
+                        "“This is because the new wireless systems have become better at sending and receiving information, i.e. in a more power-efficient manner. Moreover, 5G base stations have been designed to reduce their power consumption, in order to contribute to the global fight against CO2 emissions.\n" +
+                        "\n" +
+                        "“This is corroborated by the official press release of the World Health Organization, which seeks to emphasize that 5G, Wi-Fi and other common wireless technologies are not harmful in terms of radiation”, he argues.\n" +
+                        "\n" +
+                        "As to those connecting 5G with the spreading of COVID-19, Dr. Matthaiou simply comments that such theories contravene common sense.\n" +
+                        "\n" +
+                        "“In point of fact, it is thanks to wireless technologies that our societies were enabled to continue being functional in these unprecedented times; consider the importance of remote working and e-learning during 2020-2021”, he remarks.\n" +
+                        "\n" +
+                        "\n",
+                tsoni, technology, uk, "2021-04-10", 0,
+                "https://greekreporter.com/wp-content/uploads/2021/01/Greek-researcher-Dr-Michalis-Matthaiou-works-to-develop-6G-technology-networks.jpg");
+        articleRepository.save(technology9);
+
+        Article technology10 = new Article("Elon Musk's brain implant firm teaches monkey to play Pong with its mind",
+                "\"Our goal is to enable a person with paralysis to use a computer or phone with their brain activity alone,\" says Neuralink",
+                "Elon Musk's brain implant company Neuralink has released a video showing how it has taught a monkey - Pager, a nine-year-old macaque - to play the video game Pong with its mind.\n" +
+                        "The video follows Mr Musk's assertion in February that the company has \"a monkey with a wireless implant in their skull with tiny wires\" that it uses to play video games.\n" +
+                        "\n" +
+                        "Neuralink Corporation, which Elon Musk owns alongside his SpaceX and Tesla businesses, previously claimed to have implanted coin-sized wireless sensors inside the brains of two pigs, describing the sensors as \"a Fitbit in your skull with tiny wires\".\n" +
+                        "\n" +
+                        "At the time of the video, Pager was six weeks on from having had the Neuralink devices installed - one in each side of his brain - and in that time has learned to interact with a computer for a \"tasty banana smoothie\" delivered through a straw.\n" +
+                        "The implants work by recording signals in Pager's motor cortex that normally coordinates hand and arm movements.\n" +
+                        "\n" +
+                        "\"Our goal is to enable a person with paralysis to user a computer or phone with their brain activity alone,\" says the narrator during the video of Pager.\n" +
+                        "\n" +
+                        "During a talk on the app Clubhouse in February, before saying that a further announcement would be made in the coming months, Elon Musk said: \"You can't see where the implant is and he's a happy monkey.\"\n" +
+                        "\n" +
+                        "The billionaire told people on the call that an inspector from the US Department of Agriculture described the company's laboratory as \"the nicest monkey facility\" they had ever examined.\n" +
+                        "\"We went the extra mile for the monkeys,\" Mr Musk said.\n" +
+                        "\n" +
+                        "\"One of the things we're trying to figure out is whether we can have the monkeys playing mind Pong with each other? That would be pretty cool.\"\n" +
+                        "\n" +
+                        "The tiny implant the company has developed has more than 3,000 electrodes, attached to flexible threads measuring about a tenth of the size of a hair, capable of monitoring about 1,000 neurons.\n" +
+                        "\n" +
+                        "The ultimate aim is to create a brain-computer interface, and it is being trialled in order to treat people with brain and spinal injuries.\n" +
+                        "\n" +
+                        "Neuralink's head surgeon, Dr Matthew MacDougall, said the first trials would focus on patients with paralysis or paraplegia, although he has not provided a date for when these trials would start.\n" +
+                        "\n" +
+                        "According to the company, the technology could contribute to finding a cure for neurological conditions such as Alzheimer's, dementia and spinal cord injuries.\n" +
+                        "\n" +
+                        "Mr Musk said last year that the implantable device could \"actually solve these problems\", also mentioning memory loss, hearing loss, depression and insomnia.\n" +
+                        "\n" +
+                        "Some of the more conceptual ideas touted by Mr Musk are not yet considered feasible by scientists, including a kind of \"save state\" in the brain.\n" +
+                        "\n" +
+                        "\"So if you were to die your state could be returned in the form of another human body or a robot body,\" he said. \"You could decide if you want to be a robot or a person or whatever.\"",
+                hendrix, technology, usa, "2021-04-09", 0,
+                "https://e3.365dm.com/21/03/768x432/skynews-spacex-elon-musk_5313033.jpg?bypass-service-worker&20210409111722");
+        articleRepository.save(technology10);
+
     }
 }
