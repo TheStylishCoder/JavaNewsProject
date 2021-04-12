@@ -2238,5 +2238,301 @@ public class DataLoader implements ApplicationRunner {
                 "https://e3.365dm.com/21/03/768x432/skynews-spacex-elon-musk_5313033.jpg?bypass-service-worker&20210409111722");
         articleRepository.save(technology10);
 
+
+        Article uplifting1 = new Article("Covid: Volunteers' Hugs for Heroes at Wrexham hospital",
+                "A group of volunteers have raised funds for up to 2,500 goody bags to be given to staff at a hospital in Wrexham.",
+                "Hugs for Heroes was inspired after an ICU nurse \"broke down\" on the phone over the stresses of the pandemic while she spoke to local jeweller Ruth Rees.\n" +
+                        "\n" +
+                        "The bags include thank you cards, vouchers, chocolates and hand creams, which are all designed to be \"hugs\".\n" +
+                        "The Shooting Star cancer support unit, at Maelor Hospital, said staff felt thankful to be shown appreciation.\n" +
+                        "\n" +
+                        "Ruth Rees, a jeweller in Wrexham, said she had sent a letter informing a customer, the ICU nurse, that her pawn broking payments were overdue, and was told sorry and how the nurse was \"under a lot of pressure\".\n" +
+                        "\n" +
+                        "Ms Rees said this made her realise how hard the pandemic had been on NHS staff and wanted to thank them for all their hard work.\n" +
+                        "\n" +
+                        "\"I thought, 'These poor folks, they are so near the edge',\" she said.\n" +
+                        "\n" +
+                        "\"I just wanted to reach out and give a big hug, I just thought, 'What could I do to give them all a virtual hug?'.\"\n" +
+                        "\n" +
+                        "The idea was the born of creating the goody bags.\n" +
+                        "\n" +
+                        "The aim of the project is to \"give all 2,500 staff at Maelor a little morale boost and a few little treats to brighten what is one of the darkest times they've seen\".\n" +
+                        "\n" +
+                        "Morrisons and Kellogg's were among businesses to donate, whilst money raised from GoFundMe went in to buying the gifts.\n" +
+                        "\n" +
+                        "Ms Rees herself donated £1,000 to buy hand creams.\n" +
+                        "\n" +
+                        "'Community spirit'\n" +
+                        "\n" +
+                        "Karen Roberts, who works at the hospital, said: \"I've worked throughout the pandemic. The past year has been pretty hectic and a daunting time for everyone, to be honest.\n" +
+                        "\n" +
+                        "\"It's been lovely to receive a Hugs for Heroes goody bag, to show people are thinking about us.\n" +
+                        "\n" +
+                        "Becca Martin, who has been preparing and distributing the bags said \"it's been amazing to see so many people give so much\".\n" +
+                        "\n" +
+                        "\"These treats are never going to equate, but it's something to say thank you, you are appreciated, and we do see you… it hasn't gone unnoticed.\"\n" +
+                        "\n" +
+                        "Ms Rees added the \"Wrexham people are almost legendary for their generosity and community spirit\".\n",
+                easdale, uplifting, uk, "2021-03-22", 0,
+                "https://ichef.bbci.co.uk/news/800/cpsprodpb/10384/production/_117663466_hugsforheroesdelivery.png");
+        articleRepository.save(uplifting1);
+
+
+        Article uplifting2 = new Article("Comic Relief: Birmingham boy's lockdown jokes inspire campaign",
+                "A boy who left jokes at the end of his driveway during the coronavirus lockdown has helped inspire a Comic Relief campaign.",
+                "Sonny, from Kings Heath, Birmingham, said he thought his jokes and pictures would \"cheer people up\".\n" +
+                        "Sir Lenny Henry wrote to the eight-year-old to say the charity had launched its Share a Smile campaign prompted by Sonny's \"wonderful idea\".\n" +
+                        "\n" +
+                        "Sonny said he was \"really, really, really amazed\" to receive the letter.\n" +
+                        "The schoolboy posted jokes daily for 100 days in an effort to \"just make people smile,\" he said, and had been \"blown away\" to receive the letter.\n" +
+                        "\n" +
+                        "\"At first I didn't know who [Sir] Lenny Henry was, but then when my mum and dad started telling me, and we watched a couple of episodes of Tiswas, he just made me really, really laugh.\"\n" +
+                        "\n" +
+                        "The actor and comedian said in the letter to Sonny: \"As a fellow Midlander (Dudley's great, we've gotta zoo and a canal!) and someone who loves to laugh and make others laugh too, I was touched by your brilliant idea of putting jokes in your windows to make your neighbours smile.\n" +
+                        "\"I'm sure it really cheered people up and put a smile on their face when they really needed it.\"\n" +
+                        "\n" +
+                        "\"Inspired by your wonderful idea,\" the letter continued, \"we launched Share a Smile.\"\n" +
+                        "\n" +
+                        "The charity said the campaign was about getting the whole country sharing their favourite jokes with their neighbours and community.\n" +
+                        "\n" +
+                        "Mum, Lisa, said she was \"so, so, proud\" of her son.\n" +
+                        "\n" +
+                        "\"Just to have chats with people that were passing - they came by every day to have a look - was really lovely,\" she said.\n" +
+                        "\"Keep up your incredible work Sonny. \n" +
+                        "\n" +
+                        "With young people like you in it I know that the country will be laughing long into the future,\" the letter from Sir Lenny concluded.",
+                king, uplifting, uk, "2021-03-19", 0,
+                "https://ichef.bbci.co.uk/news/800/cpsprodpb/13FBD/production/_117635818_sonny.jpg");
+        articleRepository.save(uplifting2);
+
+
+        Article uplifting3 = new Article("Surrogacy: 'My friend gave birth to the baby that could have killed me'",
+                "A woman told she could die if she became pregnant due to her cystic fibrosis has become a mother - after her best friend acted as a surrogate.",
+                "Emma Graves, from Wolverhampton, gave birth to Harry in November after agreeing to carry Sophie Tristram's baby for her.\n" +
+                        "\n" +
+                        "Lockdown made everything difficult as the friends could not see each other.\n" +
+                        "Mrs Tristram said nothing she could say would put into words how thankful she was for what her friend did.\n" +
+                        "\n" +
+                        "Although women with cystic fibrosis can give birth, a bacteria in Mrs Tristram's lungs could have developed into a pneumonia-type illness and proven fatal, she said.\n" +
+                        "\n" +
+                        "\"Every woman thinks that they're going to be able to carry their own child and to be told that I couldn't do that took me a long while to get my head around,\" Mrs Tristram said.\n" +
+                        "\n" +
+                        "She and husband Ben had decided to explore the possibility of surrogacy as a \"first route\" to starting a family.\n" +
+                        "\n" +
+                        "It was Paul Graves, Emma's husband, who first suggested his wife might be willing to help.\n" +
+                        "\n" +
+                        "He had a talk with his wife \"and then it all stemmed from there really,\" Mrs Tristram said.\n" +
+                        "\n" +
+                        "A surrogacy agency was used to keep everything \"above board\" and on the day Prime Minister Boris Johnson announced the first lockdown, they found out Mrs Graves was pregnant.\n" +
+                        "\n" +
+                        "\"Emma had to go to all of her appointments on her own, which was obviously a lot harder,\" Mrs Tristram said.\n" +
+                        "\"But Emma was absolutely fantastic, she kept us involved at every niggle, every kick, every hiccup. We felt very involved, even though we couldn't see her for the first part of the pregnancy.\"\n" +
+                        "\n" +
+                        "\"There's nothing I could ever do or give her or say that would put into words how thankful we are for what she did,\" she said.\n" +
+                        "\n" +
+                        "Mrs Graves, 37, said she took time to think through the decision, speaking to her older daughters, aged 16 and 19, before agreeing.\n" +
+                        "\n" +
+                        "\"Everything went really, really well, it was a really positive experience, I couldn't have asked for better,\" she said.\n" +
+                        "\n" +
+                        "\"With it being Sophie and Ben's embryo, I already knew I had no genetic link, so you're mentally prepared, I was just housing him for nine months.\"\n" +
+                        "\n" +
+                        "She said she did not get to see Harry as much as she would like, but is kept updated with regular video calls and photos.\n" +
+                        "\n" +
+                        "\"I absolutely couldn't have asked for more support [from her family]\".\n" +
+                        "\n" +
+                        "\"It didn't happen the way we'd planned... we were going to go for weekends away and have pampering sessions. Covid got in everybody's way,\" she said.\n" +
+                        "\n" +
+                        "\"Harry was a happy ending after a strange year,\" she added.",
+                tristram, uplifting, uk, "2021-03-11", 0,
+                "https://ichef.bbci.co.uk/news/800/cpsprodpb/E45E/production/_117526485_01_pic.jpg");
+        articleRepository.save(uplifting3);
+
+
+        Article uplifting4 = new Article("Thumbs up for Telford boy who called 999 for mum",
+                "A nine-year-old boy phoned an ambulance by using his mum's thumb to unlock her phone after she passed out.",
+                "Emma Hughes, 39, from Telford, was out running with her son, Oakley, when a car spooked their dog.\n" +
+                        "\n" +
+                        "The dog ran under her feet, causing her fall and break her wrist. She managed to get home before passing out.\n" +
+                        "\n" +
+                        "Oakley helped his mum and dog back inside, before running to get his first aid kit and finding his mum passed out. He then managed to ring 999.\n" +
+                        "\n" +
+                        "\"He grabbed my phone and used my thumb to unlock it and then called 999,\" Mrs Hughes said.\n" +
+                        "\n" +
+                        "\"He does know my code but in the moment, he couldn't remember it.\"\n" +
+                        "Oakley was able to speak to ambulance control and could give operators most of their address.\n" +
+                        "\n" +
+                        "\"He knew the address, but not the postcode, but he found a letter on the fridge with it on and then flagged them down,\" she said.\n" +
+                        "\n" +
+                        "Mrs Hughes said \"luckily\" she was able to pre-warn her son that she felt faint, otherwise it would have \"scared him even more\".\n" +
+                        "\n" +
+                        "\"He did a really good job,\" she said.\n" +
+                        "\n" +
+                        "Oakley has been given a bravery bear from his school and is \"very proud of himself\".\n" +
+                        "Mrs Hughes broke her wrist and is in a splint, but goes back to hospital next week for more X-rays.\n" +
+                        "\n" +
+                        "Oakley is being very helpful round the house and has even learnt how to tie his mother's hair, she said.\n" +
+                        "\n" +
+                        "\"We've kind of had these conversation, with my husband working away, I think we were watching something and it made me think, we need to have a chat about what to do [if something bad happens].\n" +
+                        "\n" +
+                        "\"He [Oakley] said he'd remembered if from then.\"\n" +
+                        "\n" +
+                        "\n",
+                hughes, uplifting, uk, "2021-03-08", 0,
+                "https://ichef.bbci.co.uk/news/800/cpsprodpb/152E7/production/_117495768_whatsappimage2021-03-08at16.03.56.jpg");
+        articleRepository.save(uplifting4);
+
+
+        Article uplifting5 = new Article("How opera singers are helping people with ‘long Covid’",
+                "People suffering from lingering Covid symptoms are being referred to an unlikely place: the English National Opera",
+                "English National Opera (ENO) has launched an online programme to help people suffering from lingering and debilitating Covid symptoms, specifically shortness of breath.\n" +
+                        "Designed by the ENO and medical experts, participants in the six-week ENO Breathe programme are taught exercises to improve posture and breath control. People also learn to sing lullabies, which can help to alleviate the anxiety that stems from struggling to breathe.\n" +
+                        "“Lullabies create a musically soothing environment: they are ideal for non-specialist singers. They span continents and cultures and are universal in their appeal,” said Jenny Mollica, who heads ENO’s learning and participation programme.\n" +
+                        "\n" +
+                        "The launch follows a pilot programme, after which the majority of the participants reported an improvement in their breathlessness and feeling much less anxious. They also reported enjoying being part of a supportive community.\n" +
+                        "“I know that my breath control is better now,” said participant Colette-Elizabeth. “My posture is better. I can go into meetings and get my point across without suffocating on each breath.”\n" +
+                        "\n" +
+                        "People wishing to take part can be referred by clinics that specialise in so-called ‘long Covid’. “You don’t have to have any experience or interest in singing to take part,” noted Mollica.",
+                zhuravlyova, uplifting, uk, "2021-04-06", 0,
+                "https://www.positive.news/wp-content/uploads/2021/04/BTS-ENO-Breathe-lullaby-filming-Alexandra-Oomens-A%C2%A9-Karla-Gowlett-courtesy-of-ENO-75-1800x0-c-center.jpg");
+        articleRepository.save(uplifting5);
+
+
+        Article uplifting6 = new Article("Covid: 'How being a delivery man helps my autistic son'",
+                "A mother has thanked her \"wonderful\" community for giving her autistic son a focus during the coronavirus lockdown.\n" +
+                        "\n",
+                "Cal Carr feels he has \"changed\" since starting to deliver groceries and prescriptions to people living in the Vale of Glamorgan village of St Athan.\n" +
+                        "\n" +
+                        "His mother Sarah said gifts and support from neighbours had made him feel needed and his meltdowns, which had worsened in lockdown, have \"stopped\".\n" +
+                        "\"It's changed me so much, it is so wonderful,\" said Cal, 31.\n" +
+                        "\n" +
+                        "One neighbour gave Cal a hoody printed with 'Cal's Delivery Service' after hearing he wanted to wear a uniform like his siblings.\n" +
+                        "\n" +
+                        "Sarah said for Cal, who also has a severe learning disability, it meant the world.\n" +
+                        "\"Callum likes to feel he's the same as everybody else,\" she said.\n" +
+                        "￼\n" +
+                        "A neighbour has made Cal leaflets to advertise his service\n" +
+                        "\"His siblings used to wear a uniform [to school] but they didn't have a uniform for his [special] school so for photographs I used to get him a sweatshirt the same colour as his siblings to make him feel the same.\n" +
+                        "\n" +
+                        "\"He wants to be accepted, he wants to be the same as his brothers and his sister, he wants to go out and be working but with his disabilities he's unable to get paid work.\"\n" +
+                        "\n" +
+                        "Other neighbours have made Cal a lanyard, ID cards, leaflets and given him a shopping trolley - and he's been given a new trike to help him make deliveries.\n" +
+                        "￼\n" +
+                        "\n" +
+                        "Cal made his first delivery on 10 January\n" +
+                        "Sarah said life at home with Cal had become very difficult as she said he \"wasn't coping with the lockdown\".\n" +
+                        "\n" +
+                        "\"He got very depressed and didn't want to do anything so we came up with the idea of Cal's Collection to get him out and about really,\" she said. \"To get him away from the four walls.\"\n" +
+                        "\n" +
+                        "\"Since Callum started this delivery service it has had a positive impact 100-fold on family life.\"\n" +
+                        "￼\n" +
+                        "A neighbour gave Cal a brand new trike to help him on his deliveries.\n" +
+                        "\n" +
+                        "The family, who moved to south Wales from the Midlands two years ago, said they were very grateful for the \"very strong community spirit in St Athan.\"\n" +
+                        "\n" +
+                        "\"They've really have taken Callum and ourselves to their hearts,\" Sarah said.\n" +
+                        "\"Callum feels valued and that he has a purpose now, he's happier, he's more positive in mood, he's more helpful, he wants to go out and do the deliveries and prescriptions.\"\n" +
+                        "\n" +
+                        "Cal has said the support of his village has made him \"really, really happy\".\n" +
+                        "\"I was really, really fed up,\" he said.\n" +
+                        "\"I needed to get out to do things - I have meltdowns most of the time. I get really, really frustrated and angry.\n" +
+                        "\n" +
+                        "\"I can't understand why changes are happening, different things are happening… I can't understand why Covid is here, why it is still going on. I don't understand what I can and can't do.\"\n" +
+                        "￼\n" +
+                        "Autistic people like Callum have brains that works in a different way from others but it is not an illness Cal's customers have been thanking him on his Facebook page.\n" +
+                        "\n" +
+                        "\"Thank you Callum for supporting us through isolation,\" one posted. \"You've been invaluable, you're doing a fantastic job.\"\n" +
+                        "\n" +
+                        "Another wrote: \"You are a star.\"\n" +
+                        "His family have now set up a second service - Cal's Collection Homeless Service, where he collects unwanted clothes, bedding and shoes and distributes them to people who are homeless or in need.",
+                bryant, uplifting, uk, "2021-03-07", 0,
+                "https://ichef.bbci.co.uk/news/800/cpsprodpb/091F/production/_117353320_cal3.jpg");
+        articleRepository.save(uplifting6);
+
+
+        Article uplifting7 = new Article("The breast cancer home-testing kit inspired by a dog’s nose",
+                "A device that could save lives by improving breast cancer testing owes part of its success to the humble pooch",
+                "Man’s best friend has proven a loyal ally once again – this time in the fight against breast cancer. The humble pooch is the inspiration behind a new device that provides affordable, pain-free and non-invasive testing for breast cancer.\n" +
+                        "Most of the credit for the home testing kit, however, must go to Spanish engineer Judit Giró Benet (pictured above), who invented it. The Blue Box uses artificial intelligence that mimics a dog’s nose to analyse urine samples and identify breast cancer biomarkers.\n" +
+                        "Hounds were first accredited with sniffing out cancer in 1989, when a canine was observed showing unusual interest in a mole that was growing on its owner’s leg. The mole turned out to be cancerous.\n" +
+                        "\n" +
+                        "“This event proved that cancer causes metabolic changes, altering the body’s taste,” said Benet. “And so we mimicked the dog’s sensory system into an AI based software.”\n" +
+                        "Benet decided to focus on breast cancer testing after coming across a study by the Catalan Department of Health, which found that 41 per cent of women skipped mammogram screenings because they found them too painful. Benet’s mission subsequently took on added poignancy when her mother was diagnosed with breast cancer.\n" +
+                        "“That just continued to make it even more meaningful to pursue this project,” said Benet.\n" +
+                        "\n" +
+                        "The Blue Box is easy to use; all women have to do is put a urine sample inside the device and wait for the result to be sent to them via their smartphone.\n" +
+                        "“Every second that the urine is inside the Blue Box it is sending a signal to the cloud, where our artificial intelligence algorithm is hosted,” explained Benet. “Then the signal will go back to the phone so the user gets a result.”\n" +
+                        "In early trials, the Blue Box gave an accurate reading more than 95 per cent of the time, offering the potential for early diagnoses and better patient outcomes. Larger trials are now needed.\n" +
+                        "Benet says that the more people use Blue Boxes, the more intelligent the software becomes.\n" +
+                        "“Every time that someone gets screened, [they] would be feeding this artificial intelligence algorithm with new data,” she said. “So, you are helping the next women who will come after you have a better diagnosis.”\n" +
+                        "Breast cancer is the most common form of cancer among women and despite advances in medicine the number of people dying from it is rising. However, Benet’s device could lead to earlier diagnoses and therefore better patient outcomes.\n" +
+                        "The Blue Box’s potential to boost cancer survival rates was acknowledged at the 2020 James Dyson Award, which awarded Benet first prize and £30,000 to develop her invention.\n" +
+                        "“What we dream is a world in which every household has one of these Blue Boxes giving every woman the possibility to get screened at home, giving them the power to own their own health,” said Benet. “If the Blue Box can reach the market it can be empowering for every woman in the world.”\n" +
+                        "Rewarding ingenuity: the James Dyson Award\n" +
+                        "The annual James Dyson Award is an international competition that celebrates and rewards designers of problem-solving ideas. For the first time last year, the award had a separate category for sustainably inventions – a welcome albeit overdue acknowledgment of the climate emergency.\n" +
+                        "The sustainability category was won by Carvey Ehren Maigue (pictured below), an engineering student at Mapúa University in the Philippines. Maigue developed a technique to turn rotten vegetables into a plastic-like material that converts UV light into electricity. His innovation can be attached to buildings and is effective even in shady areas, because it can pick up UV rays that bounce off other structures.\n" +
+                        "Among the sustainability runners-up was a device that captures tyre pollution at source. Created by London’s Royal College of Arts, the car-mounted contraption reportedly captures 60 per cent of harmful airborne tyre particulates.\n" +
+                        "The particles it fails to catch could potentially be captured by another award-winning device – developed by inventors at the University of Southampton – which captures microplastics out of water.",
+                haines, uplifting, uk, "2021-01-26", 0,
+                "https://www.positive.news/wp-content/uploads/2021/01/JDA_November-2020_The-Blue-Box-imagery_International-winner-3-e1611680401898-1800x0-c-center.jpg");
+        articleRepository.save(uplifting7);
+
+
+        Article uplifting8 = new Article("Bus stops in Utrecht designed to benefit bees",
+                "More than 316 bus stops in the Dutch city of Utrecht have been transformed into mini urban havens for bees",
+                "More than 316 bus stops in the Dutch city of Utrecht have been transformed into mini urban havens for bees\n" +
+                        "The bus stops, which are owned and managed by operator RBL Outdoor on behalf of the local government, have been installed with green roofs to help meet the city’s requirements for healthy urban living.\n" +
+                        "Green roofs help to capture fine dust and rainwater and encourage biodiversity by providing ideal conditions for bees to thrive\n",
+                douglas, uplifting, europe, "2019-10-25", 0,
+                "https://www.utrecht.nl/fileadmin/_processed_/3/4/csm_Bushokje-sedumdak_b62b6c73a6.jpg");
+        articleRepository.save(uplifting8);
+
+
+        Article uplifting9 = new Article("Three good things: animals that have staged an unlikely comeback",
+                "From blue whales to Notre Dame's bees, these imperiled animals are bouncing back from the brink",
+                "1. Blues whales\n" +
+                        "\n" +
+                        "The world’s largest animal, the blue whale, has been spotted in “unprecedented numbers” in the waters around Antarctica – a sign that the critically endangered mammal could be staging a comeback. A team of researchers led by the British Antarctic Survey made 36 sightings of blue whales during their three-week survey earlier this year, identifying 55 animals – compared to just one sighting made during the 2018 survey.\n" +
+                        "The recent survey was the final of three expeditions to the sub-Antarctic island of South Georgia, as part of a project to investigate the recovery of whales in the region. The population of blue whales in Antarctic waters is believed to be less than 1 per cent of its levels before whaling began in South Georgia in the early 20th century.\n" +
+                        "\n" +
+                        "2. Notre Dame’s bees\n" +
+                        "\n" +
+                        "Three colonies of bees that survived the devastating fire of the Notre Dame cathedral in Paris are “thriving”, their keeper has confirmed. The population, which is thought to number 30,000-45,000 bees across three hives, have been living in the rafters of the cathedral since 2013. They miraculously survived the fire in April 2019.\n" +
+                        "Beekeeper, Sibyle Moulin, had struggled to visit the hives in the latter part of 2019 because access to the damaged building was restricted. But she has since been able to check on the bees and has confirmed that they are doing well and preparing to produce honey this summer.\n" +
+                        "\n" +
+                        "3. Colorado’s wolves\n" +
+                        "\n" +
+                        "The grey wolf may howl again in Colorado if a ballot measure to reintroduce the predators passes this year. A bill proposing the return of the animal is scheduled be put to voters in November; polling indicates it is likely to pass. Wolves almost became extinct in the US, but successful reintroduction programmes have brought the predators back to some areas.\n" +
+                        "The animals boost biodiversity by changing the behaviour of other species. “Wolves keep elk moving, which spares streamside plants, and they provide leftover meals for scavenging eagles and bears,” said Michael Robinson of the Center for Biological Diversity",
+                douglas, uplifting, europe, "2020-04-10", 0,
+                "https://www.positive.news/wp-content/uploads/2020/04/michael-larosa-kR1Aer8c_WI-unsplash-512x512-c-center.jpg");
+        articleRepository.save(uplifting9);
+
+
+        Article uplifting10 = new Article("Covid: Volunteers' Hugs for Heroes at Wrexham hospital\n",
+                "A group of volunteers have raised funds for up to 2,500 goody bags to be given to staff at a hospital in Wrexham.",
+                "Hugs for Heroes was inspired after an ICU nurse \"broke down\" on the phone over the stresses of the pandemic while she spoke to local jeweller Ruth Rees.\n" +
+                        "The bags include thank you cards, vouchers, chocolates and hand creams, which are all designed to be \"hugs\".\n" +
+                        "The Shooting Star cancer support unit, at Maelor Hospital, said staff felt thankful to be shown appreciation.\n" +
+                        "Ruth Rees, a jeweller in Wrexham, said she had sent a letter informing a customer, the ICU nurse, that her pawn broking payments were overdue, and was told sorry and how the nurse was \"under a lot of pressure\".\n" +
+                        "Ms Rees said this made her realise how hard the pandemic had been on NHS staff and wanted to thank them for all their hard work.\n" +
+                        "\n" +
+                        "\"I thought, 'These poor folks, they are so near the edge',\" she said.\n" +
+                        "\"I just wanted to reach out and give a big hug, I just thought, 'What could I do to give them all a virtual hug?'.\"\n" +
+                        "Hundreds of Easter eggs collected for Plymouth health workers\n" +
+                        "NHS and social care workers in Wales to get a bonus payment\n" +
+                        "The idea was the born of creating the goody bags.\n" +
+                        "The aim of the project is to \"give all 2,500 staff at Maelor a little morale boost and a few little treats to brighten what is one of the darkest times they've seen\".\n" +
+                        "Morrisons and Kellogg's were among businesses to donate, whilst money raised from GoFundMe went in to buying the gifts.\n" +
+                        "'Community spirit'\n" +
+                        "Karen Roberts, who works at the hospital, said: \"I've worked throughout the pandemic. The past year has been pretty hectic and a daunting time for everyone, to be honest.\n" +
+                        "\"It's been lovely to receive a Hugs for Heroes goody bag, to show people are thinking about us.\n" +
+                        "Becca Martin, who has been preparing and distributing the bags said \"it's been amazing to see so many people give so much\".\n" +
+                        "\"These treats are never going to equate, but it's something to say thank you, you are appreciated, and we do see you… it hasn't gone unnoticed.\"\n" +
+                        "Ms Rees added the \"Wrexham people are almost legendary for their generosity and community spirit”.\n",
+                easedale, uplifting, uk, "2020-03-20", 0,
+                "https://ichef.bbci.co.uk/news/624/cpsprodpb/10384/production/_117663466_hugsforheroesdelivery.png");
+        articleRepository.save(uplifting10);
+
+
     }
 }
