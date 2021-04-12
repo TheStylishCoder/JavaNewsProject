@@ -23,7 +23,7 @@ const Article = ({article, currentUser}) => {
     <Link to = {url} className="name" onClick={handleView}>
     {article.headline}
     </Link>
-    <img src={article.image} height="300px" width="auto" />
+    <img src={article.image} height="auto" width="300px" />
     <p>Author: {article.journalist.name}</p>
     <p>Date: {article.date}</p>
     <p>Category: {article.category.type}</p>

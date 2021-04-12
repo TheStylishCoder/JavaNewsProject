@@ -1,0 +1,32 @@
+.navbar {
+    background-color:navy;
+    padding:10px;
+}
+
+.navbar > ul{
+    list-style:none;
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+.navbar > ul > li{
+    flex-direction:row;
+    justify-content:center;
+    padding: 3px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+.navbar > ul > li > a{
+    color:white;
+    padding:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar > ul > li > a:hover{
+    background-color:white;
+    color:blue;
+}

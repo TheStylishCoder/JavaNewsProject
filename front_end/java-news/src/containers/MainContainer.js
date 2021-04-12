@@ -80,9 +80,9 @@ const MainContainer = () => {
                entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  />
           }} />
 
-          <Route path="/journalists" render={() => {
+          {/* <Route path="/journalists" render={() => {
               return <JournalistContainer allJournalists={allJournalists} />
-          }} />
+          }} /> */}
 
           <Route path="/users" render={() => {
               return <UserContainer allUsers={allUsers} allArticles={allArticles} allJournalists={allJournalists} currentUser={currentUser}/> 
