@@ -48,7 +48,8 @@ public class ArticleController {
 //    http://localhost:8080/api/articles/category?category=Business an example search
     @GetMapping(value="/articles/category")
     public ResponseEntity<List<Article>> getAllArticlesByCategory(@RequestParam(name="category") String category){
-        return new ResponseEntity<List<Article>>(articleRepository.findArticlesByCategoryType(category), HttpStatus.OK);
+        return new ResponseEntity<List<Article>>(articleRepository.findArticlesByCategoryTypeOrderByDateDesc(category),
+                HttpStatus.OK);
     }
 }
 
