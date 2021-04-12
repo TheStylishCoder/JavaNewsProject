@@ -168,7 +168,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
                 </select>
 
                 <label htmlFor = "date">Date:</label>
-                <input type="date" name="date" onChange={handleChange} value={stateArticle.date} />
+                <input type="text" placeholder="dd-mm-yyyy" name="date" onChange={handleChange} value={stateArticle.date} />
                   
 
                 <label htmlFor = "image">Image Link/URL:</label>
