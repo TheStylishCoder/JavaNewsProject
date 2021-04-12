@@ -1,104 +1,38 @@
-import React from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import { useState, useEffect } from "react";
-// import JournalistList from '../components/journalist/JournalistList';
-// import JournalistForm from '../components/journalist/JournalistForm';
-// import JournalistDetail from '../components/journalist/JournalistDetail';
-// import Request from '../helpers/request';
-// import { Button } from '@material-ui/core';
-
-
+import React, { useEffect } from 'react';
+import JournalistDetail from '../components/journalists/JournalistDetail';
+import JournalistList from '../components/journalists/JournalistList';
+i
 
 const JournalistContainer = () => {
-    // const [journalist, setJournalist] = useState([]);
-    // const [articles, setArticles] = useState([]);
 
+    const [allJournalists, setAllJournalists] = useState([])
+    const [selectedJournalist, setSelectedJournalist] = useState(null)
 
-    // const requestAll = function () {
-    //     const request = new Request();
-    //     const journalistPromise = request.get('http://localhost:8080/api/journalist')
-    //     const articlePromise = request.get('http://localhost:8080/api/articles')
+    const getJournalists = () => {
 
-    //     Promise.all([journalistPromise, articlePromise])
-    //         .then((data) => {
-    //             setJournalist(data[0]);
-    //             setArticles(data[1]);
-    //         })
-    // }
+    }
 
-    // useEffect(() => {
-    //     requestAll()
-    // }, [])
+    useEffect(() => {
+        getJournalists()
+    }, [])
 
-    // const findJournalistById = function (id) {
-    //     return journalist.find((journalist) => {
-    //         return journalist.id === parseInt(id);
-    //     })
-    // }
+    const handleSelectedJournalist = (journalist) => {
+        setSelectedJournalist(journalist)
+        .then(() => {
+            window.location = '/journalists'
+        })
+    }
 
-    // const handleDelete = function (id) {
-    //     const request = new Request();
-    //     const url = "http://localhost:8080/api/journalist/" + id
-    //     request.delete(url)
-    //         .then(() => window.location = "/journalist")
-    // }
-
-    // const handlePost = function (journalist) {
-    //     const request = new Request();
-    //     request.post("http://localhost:8080/api/journalist", journalist)
-    //         .then(() => window.location = '/journalist')
-    // }
-
-    // const handleUpdate = function (journalist) {
-    //     const request = new Request();
-    //     request.patch('http://localhost:8080/api/journalist/' + journalist.id, journalist)
-    //         .then(() => {
-    //             window.location = '/journalist/' + journalist.id
-    //         })
-    // }
-
-
-
-    // if (!journalist) {
-    //     return null
-    // }
-    return (
-        // <Router>
-            <>
-                {/* <Switch>
-
-                    <Route exact path='/journalist/new' render={() => {
-                        return <JournalistForm articles={articles} onCreate={handlePost} />
-                    }} />
-
-                    <Route exact path="/journalist/:id/edit" render={(props) => {
-                        const id = props.match.params.id;
-                        const journalist = findJournalistById(id);
-                        return <JournalistForm journalist={journalist} articles={articles} onUpdate={handleUpdate} />
-                    }} />
-
-
-                    <Route exact path="/journalist/:id" render={(props) => {
-                        const id = props.match.params.id;
-                        const journalist = findJournalistById(id);
-                        return <JournalistDetail journalist={journalist}
-                            onDelete={handleDelete}
-                            onUpdate={handleUpdate}
-                            articles={articles}
-                        />
-                    }} />
-
-                    <Route render={() => {
-                        return <>
-                        <h1>Create / Edit Journalist</h1>
-                        <Button variant="contained" color="primary"  href="/journalist/new">Create New Journalist</Button>
-                        <JournalistList journalist={journalist} />
-                        </>
-                    }} />
-                </Switch> */}
-            </>
-        // </Router>
+    return(
+        <>
+        <h1>Journalists</h1>
+        <div className="beers-container">
+        <JournalistList allJournalists={allJournalists} onSelectedJournalist={handleSelectedJournalist}/>
+        <JournalistDetail journalist={selectedJournalist}/>
+        </div>
+        </>
     )
+
 }
 
 export default JournalistContainer;
