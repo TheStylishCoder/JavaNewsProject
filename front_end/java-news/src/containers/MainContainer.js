@@ -73,6 +73,7 @@ const MainContainer = () => {
     const handleCurrentUser = (user) => {
         console.log("mainContainer user", user);
         setCurrentUser(user)
+        // window.location = '/users/' + currentUser.id
     }
 
 
