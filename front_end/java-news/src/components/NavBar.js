@@ -8,10 +8,12 @@ const NavBar = () => {
 
     return(
         <>
-        <div className="navbar">
+        <header className="navbar">
+        <img src="/images/Header.png" alt="Header" width="100%" />
+     
            <ul>
                 <li className="navLink">
-                    <Link to="/home"><i class="fas fa-home"></i></Link>
+                    <Link to="/home"><i class="fas fa-home fa-2x"></i></Link>
                 </li>
                 <li className="navLink">
                     <Link to="/articles/politics">Politics</Link>
@@ -38,7 +40,8 @@ const NavBar = () => {
                     <Link to="/login">Login</Link>
                 </li>
             </ul>
-        </div>
+       
+        </header>
         </>
     )
 
