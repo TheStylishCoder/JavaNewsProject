@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import JournalistDetail from '../components/journalists/JournalistDetail';
 import JournalistList from '../components/journalists/JournalistList';
-i
+
 
 const JournalistContainer = () => {
 

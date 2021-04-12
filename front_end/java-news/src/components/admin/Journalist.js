@@ -14,7 +14,7 @@ const Journalist = ({journalist}) => {
     <Link to = {url} className="name">
     {journalist.name} 
     </Link>
-    {/* could put image here  */}
+    could put image here 
     </>
   )
 }

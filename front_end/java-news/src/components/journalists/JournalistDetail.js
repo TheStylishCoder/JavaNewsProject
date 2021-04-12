@@ -1,5 +1,5 @@
 import React from 'react';
-import Journalist from '.Journalist'
+
 
 const JournalistDetail = ({journalist}) => {
 

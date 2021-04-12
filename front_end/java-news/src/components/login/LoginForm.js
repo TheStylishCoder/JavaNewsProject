@@ -21,6 +21,7 @@ const LoginForm = ({allUsers, handleLogin}) => {
 
 
     const loginSubmit = function(){
+        console.log("login submit called")
         for( let user of allUsers){
             if(stateUser.name === user.name && stateUser.password === user.password){
                 handleLogin(user)
@@ -53,7 +54,7 @@ const LoginForm = ({allUsers, handleLogin}) => {
             <form onSubmit={loginSubmit} >
                 <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username} />
                 <input type="Password" placeholder="Password" name="password" onChange={handleChange} value={stateUser.password}/>
-                <Link to={url}><button type="submit">Login</button></Link> 
+                <button type="submit">Login</button> 
             </form>
         </div>
         </>
