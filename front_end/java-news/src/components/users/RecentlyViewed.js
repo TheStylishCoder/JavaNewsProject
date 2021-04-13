@@ -23,7 +23,7 @@ const RecentlyViewed = ({currentUser}) => {
     
 
     return(
-        <ul className="viewed-list">
+        <ul className="article-list">
         {viewedArticlesNodes}
         </ul>
     )
