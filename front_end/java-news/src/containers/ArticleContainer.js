@@ -20,7 +20,7 @@ const ArticleContainer = ({setCurrentUser, allArticles, businessArticles, politi
         console.log("check faves called")
         const readingList = currentUser.favouriteArticles
         console.log("reading list - ", readingList)
-        if(readingList.some(article.headline)){
+        if(readingList.some(list => list[list.headline] === article.headline)){
             {article.favourite = true}
         }else {
             {article.favourite = false}
