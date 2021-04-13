@@ -20,7 +20,12 @@ const MainContainer = () => {
     const [allRoles, setAllRoles] = useState([]);
     const [allLocations, setAllLocations] = useState([]);
     const [allCategories, setAllCategories] = useState([]);
-    const [currentUser, setCurrentUser] = useState({});
+    const [currentUser, setCurrentUser] = useState({
+        username: "",
+        password: "",
+        role: "",
+        location: ""
+    });
     const [businessArticles, setBusinessArticles] = useState([]);
     const [politicsArticles, setPoliticsArticles] = useState([]);
     const [technologyArticles, setTechnologyArticles] = useState([]);
@@ -77,7 +82,7 @@ const MainContainer = () => {
         setCurrentUser(user)
     }
 
-    const checkForUserRole = () => {
+    const checkForRole = () => {
         console.log("check for user called", currentUser)
         if(currentUser && currentUser.role.role === "User"){
             return <UserNavBar />
@@ -89,40 +94,13 @@ const MainContainer = () => {
         
     }
 
-    // const checkForAdminRole = (currentUser) => {
-    //     if(currentUser.role.role === "Admin"){
-    //         return(
-    //             <AdminNavBar />
-    //         )
-    //     }else{
-    //         return null;
-    // }
-
-    // }else(currentUser.role.role === "Admin"){
-    //     return(
-    //         <AdminNavBar />
-    //     )
-    // }
-                
-        // } else if(currentUser.role.role === "Admin"){
-        //     let renderNavBar = <AdminNavBar />
-        // }else{
-        //     if(!renderNavBar){
-        //         return null
-        //     }else{
-        //         return renderNavBar
-        //     }
-           
-        
-    
 
 
     return(
         <Router>
         <>
         <NavBar/>
-        {checkForUserRole()}
-        {/* {checkForAdminRole()} */}
+        {checkForRole()}
         <Switch>
           <Route path="/articles"  render={() => {
               return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}

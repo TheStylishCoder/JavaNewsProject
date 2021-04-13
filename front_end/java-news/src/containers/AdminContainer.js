@@ -81,7 +81,7 @@ const AdminContainer = ({allArticles, allJournalists, allCategories, allLocation
     }
     return(
         <>
-        <AdminNavBar />
+        {/* <AdminNavBar /> */}
 
         <Route exact path='/admin/journalists/new' render={() => {
             return <JournalistForm onCreate={handleJournalistPost} />

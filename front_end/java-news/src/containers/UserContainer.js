@@ -16,7 +16,7 @@ const UserContainer = ({currentUser, allUsers}) => {
 
     return(
         <>
-        <UserNavBar />
+        {/* <UserNavBar /> */}
 
         <Route exact path='/users/profile' render={() => {
             return <UserProfile currentUser={currentUser}/>
