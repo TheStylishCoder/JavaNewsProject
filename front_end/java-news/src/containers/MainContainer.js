@@ -76,13 +76,50 @@ const MainContainer = () => {
     }
 
 
+
+
+    // const checkFavourite = function(article){
+    //     console.log("check faves called")
+    //     const readingList = currentUser.favouriteArticles
+    //     console.log("reading list - ", readingList)
+    //     if(readingList.some(list => list[list.headline] === article.headline)){
+    //         article.favourite = true
+    //     }else {
+    //         article.favourite = false
+
+    //     }
+    // }
+
+    const handleFavouriteToggle = (article) => {
+        console.log("handleFaveToggle called")
+        // if(article.favourite = true){
+        //         let copiedUser = {...currentUser}
+        //         const index = copiedUser.favouriteArticles.indexOf(article)
+        //         copiedUser.favouriteArticles.splice(index,1)
+        //         setCurrentUser(copiedUser)
+        //         article.favourite = false
+        // } else {
+            let copiedUser = {...currentUser};
+            copiedUser.favouriteArticles.push(article)
+            setCurrentUser(copiedUser);
+            article.favourite = true;
+        // }
+
+    }
+
+
+
+
+
+
+
     return(
         <Router>
         <>
         <NavBar/>
         <Switch>
           <Route path="/articles"  render={() => {
-              return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}
+              return <ArticleContainer handleFavouriteToggle={handleFavouriteToggle} allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}
                entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  currentUser={currentUser} setCurrentUser={setCurrentUser}/>
           }} />
 
