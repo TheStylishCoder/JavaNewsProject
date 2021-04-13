@@ -7,13 +7,26 @@ const ReadingList = ({currentUser}) => {
         return (<p>Loading...</p>)
     }
     
-    const viewed = currentUser.viewedArticles;
+    const addToViewCount = function(article){
+        console.log("addToViewCount called", article, article.viewCount)
+        article.viewCount += 1;
+        console.log("after modification", article, article.viewCount)
+    }
 
-    const viewedArticlesNodes = viewed.map((article, index) => {
+    const addToRecentlyViewed = function(article){
+        console.log("addToRecentlyViewed called", currentUser.viewedArticles)
+        currentUser.viewedArticles.push(article);
+        console.log("after modification", currentUser.viewedArticles)
+    }
+
+
+    const favouriteArticles = currentUser.favouriteArticles;
+
+    const favouriteArticlesNodes = favouriteArticles.map((article, index) => {
         return (
             <li key={index} className="component-item">
             <div className="component">
-            <Article article={article} />
+            <Article article={article} currentUser={currentUser} addToViewCount={addToViewCount} addToRecentlyViewed={addToRecentlyViewed}/>
             </div>
             </li>
         )
@@ -24,7 +37,7 @@ const ReadingList = ({currentUser}) => {
 
     return(
         <ul className="article-list">
-        {viewedArticlesNodes}
+        {favouriteArticlesNodes}
         </ul>
     )
 }

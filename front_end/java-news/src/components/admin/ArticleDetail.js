@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const ArticleDetail = ({article, onDelete}) => {
 
     if (!article){
-      return <p>Loading...</p>
+      return <p className="hide-loading">Loading...</p>
     }
 
 

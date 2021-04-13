@@ -26,7 +26,7 @@ const LoginForm = ({currentUser, allUsers, handleLogin}) => {
         for( let user of allUsers){
             if(stateUser.name === user.name && stateUser.password === user.password){
                 handleLogin(user)
-                const profileLink = (currentUser ? (<Link to="/users/profile">Go to Profile</Link>) : (null));
+             
         }
     }   
 }

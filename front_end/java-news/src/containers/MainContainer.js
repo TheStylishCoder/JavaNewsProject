@@ -9,6 +9,8 @@ import AdminContainer from './AdminContainer';
 import LoginContainer from './LoginContainer';
 import UserNavBar from '../components/users/UserNavBar';
 import AdminNavBar from '../components/admin/AdminNavBar';
+import '../App.css';
+import HomePage from '../components/HomePage';
 
 
 
@@ -145,9 +147,9 @@ const MainContainer = () => {
                entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  currentUser={currentUser} setCurrentUser={setCurrentUser}/>
           }} />
 
-          {/* <Route path="/journalists" render={() => {
+          <Route path="/journalists" render={() => {
               return <JournalistContainer allJournalists={allJournalists} />
-          }} /> */}
+          }} />
 
           <Route path="/users" render={() => {
               return <UserContainer allUsers={allUsers} allArticles={allArticles} allJournalists={allJournalists} currentUser={currentUser}/> 
@@ -160,6 +162,11 @@ const MainContainer = () => {
           <Route path="/login" render={() => {
               return <LoginContainer allLocations={allLocations} allUsers={allUsers} currentUser={currentUser} setCurrentUser={handleCurrentUser} />
           }} />
+
+        <Route path="/home" render={() => {
+              return <HomePage allArticles={allArticles} />
+          }} />
+
           
         </Switch>
         </>

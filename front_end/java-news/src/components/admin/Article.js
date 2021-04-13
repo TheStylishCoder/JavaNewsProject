@@ -4,14 +4,14 @@ import {Link} from 'react-router-dom';
 const Article = ({article}) => {
 
   if (!article){
-    return <p>Loading...</p>
+    return <p className="hide-loading">Loading...</p>
   }
 
   const url = "/admin/articles/" + article.id;
 
   return (
     <>
-    <img src={article.image} height="auto" width="300px" />
+    <img src={article.image} height="auto" width="300px" alt=""/>
     <Link to = {url} className="name">
     {article.headline} 
     </Link>

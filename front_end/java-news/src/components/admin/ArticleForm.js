@@ -50,14 +50,14 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
 
 
     if(!allJournalists.length === 0){
-        return <p>Loading...</p>  
+        return <p className="hide-loading">Loading...</p>  
     }
     const journalistOptions = allJournalists.map((journalist, index) => {
         return <option key={index} value={index}>{journalist.name}</option> 
     })
 
     if(!allCategories.length === 0){
-        return <p>Loading...</p> 
+        return <p className="hide-loading">Loading...</p> 
     }
     const categoryOptions = allCategories.map((category, index) => {
         return <option key={index} value={index}>{category.type}</option>
@@ -65,7 +65,7 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
 
 
     if(!allLocations.length ===0){
-        return <p>Loading...</p> 
+        return <p className="hide-loading">Loading...</p> 
     }
     const locationOptions = allLocations.map((location, index) => {
         return <option key={index} value={index}>{location.name}</option>
