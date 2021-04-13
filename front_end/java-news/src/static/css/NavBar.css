@@ -1,8 +1,9 @@
 .navbar {
     /* position: fixed;
     top: 0;
-    width: 100%;
-    margin-bottom: 50px; */
+    width: 100%; */
+    
+    
 }
 
 
@@ -16,6 +17,7 @@
     background-color:#08165F;
     padding: 10px; 
     margin: 0;
+   
    
 
 }
@@ -39,5 +41,5 @@
 
 .navbar > ul > li > a:hover{
     background-color:white;
-    color:blue;
+    color: #08165F;
 }

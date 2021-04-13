@@ -5,20 +5,22 @@ const AdminNavBar = () => {
 
     return (
         <>
-        <ul>
-            <li className="navLink">
-                <Link to="/admin/journalists/new">Create Journalist</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/admin/journalists">Edit Journalists</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/admin/articles/new">Create Article</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/admin/articles">Edit Articles</Link>
-            </li>
-        </ul>
+        <div className="navbar">
+            <ul>
+                <li className="navLink">
+                    <Link to="/admin/journalists/new">NEW JOURNALIST</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/admin/journalists">EDIT JOURNALIST</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/admin/articles/new">NEW ARTICLE</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/admin/articles">EDIT ARTICLE</Link>
+                </li>
+            </ul>
+        </div>
         </>
     )
 

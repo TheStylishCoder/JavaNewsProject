@@ -5,20 +5,22 @@ const UserNavBar = () => {
 
     return(
         <>
-        <ul>
-            <li className="navLink">
-                <Link to="/users/profile">Profile</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/users/readinglist">Reading List</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/users/recentlyviewed">Recently Viewed</Link>
-            </li>
-            <li className="navLink">
-                <Link to="/users/localnews">News In My Area</Link>
-            </li>
-        </ul>
+        <div className='navbar'>
+            <ul>
+                <li className="navLink">
+                    <Link to="/users/profile">PROFILE</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/users/readinglist">READING LIST</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/users/recentlyviewed">RECENTLY VIEWED</Link>
+                </li>
+                <li className="navLink">
+                    <Link to="/users/localnews">NEWS IN MY AREA</Link>
+                </li>
+            </ul>
+        </div>
         </>
     )
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import Article from './Article';
+import '../../static/css/ArticleList.css';
 
 const EditArticleList = ({allArticles}) => {
 
@@ -41,7 +42,7 @@ const EditArticleList = ({allArticles}) => {
     // )
 
     return(
-        <ul className="component-list">
+        <ul className="article-list">
 	        {articleNodes}
 	      </ul>
 
