@@ -2,8 +2,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    list-style: none;
 }
 
 .component {
     width: 300px;
+    margin: 20px;
 }

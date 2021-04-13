@@ -43,3 +43,8 @@
     background-color:white;
     color: #08165F;
 }
+
+a {
+    color: black;
+    font-weight: bold;
+}
