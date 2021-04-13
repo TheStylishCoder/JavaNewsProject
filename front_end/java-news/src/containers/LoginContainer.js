@@ -33,7 +33,7 @@ const LoginContainer = ({currentUser, setCurrentUser, allUsers, allLocations}) =
             <Route exact path='/login' render={() => 
             <>
             <div className="login-container">
-                <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} />
+                {/* <SignUpForm allUsers={allUsers}  onCreate={handlePost} allLocations={allLocations} /> */}
                 <LoginForm allUsers={allUsers}  handleLogin={handleLogin} currentUser={currentUser}/>
             </div>
 

@@ -6,7 +6,7 @@ import ReadingList from '../components/users/ReadingList';
 import RecentlyViewed from '../components/users/RecentlyViewed';
 import LocalNews from '../components/users/LocalNews';
 
-const UserContainer = ({currentUser, allUsers}) => {
+const UserContainer = ({currentUser, allUsers, allArticles}) => {
 
     const findUserById = function(id){
         return allUsers.find((user) => {
@@ -31,7 +31,7 @@ const UserContainer = ({currentUser, allUsers}) => {
         }} />
 
         <Route exact path='/users/localnews' render={() => {
-            return <LocalNews />
+            return <LocalNews allArticles={allArticles} currentUser={currentUser}/>
         }} />
 {/* 
         <Route exact path = '/users/:id' render={(props) => {
