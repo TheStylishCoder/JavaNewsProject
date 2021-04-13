@@ -1,8 +1,7 @@
 import React from 'react';
 import JournalistForm from '../components/admin/JournalistForm';
 import Request from '../helpers/request';
-import {Route, Switch} from 'react-router-dom';
-import AdminNavBar from '../components/admin/AdminNavBar';
+import {Route} from 'react-router-dom';
 import EditJournalistList from '../components/admin/EditJournalistList';
 import ArticleForm from '../components/admin/ArticleForm';
 import EditArticleList from '../components/admin/EditArticleList';

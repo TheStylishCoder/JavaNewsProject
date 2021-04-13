@@ -1,5 +1,5 @@
 import React from 'react';
-import Article from './Article';
+
 
 const ArticleDetail = ({article, currentUser, handleFavouriteToggle}) => {
 
@@ -28,7 +28,7 @@ const ArticleDetail = ({article, currentUser, handleFavouriteToggle}) => {
     
         <div className="article-detail">
             <h1>{article.headline}</h1>
-            <img src={article.image} height="400px" width="auto" />
+            <img src={article.image} height="400px" width="auto" alt=""/>
             <p>Author: {article.journalist.name}</p>
             <p>Date: {article.date}</p>
             <p>Category: {article.category.type}</p>

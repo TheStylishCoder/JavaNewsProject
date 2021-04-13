@@ -11,7 +11,7 @@ const Article = ({article}) => {
 
   return (
     <>
-    <img src={article.image} height="auto" width="300px" />
+    <img src={article.image} height="auto" width="300px" alt=""/>
     <Link to = {url} className="name">
     {article.headline} 
     </Link>
