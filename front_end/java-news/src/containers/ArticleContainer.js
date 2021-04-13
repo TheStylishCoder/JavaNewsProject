@@ -3,7 +3,7 @@ import {Route, Switch} from 'react-router-dom';
 import ArticleDetail from '../components/articles/ArticleDetail';
 import ArticleList from '../components/articles/ArticleList';
 
-const ArticleContainer = ({allArticles, businessArticles, politicsArticles, technologyArticles, entertainmentArticles, lifestyleArticles, upliftingArticles, sportsArticles, currentUser}) => {
+const ArticleContainer = ({setCurrentUser, allArticles, businessArticles, politicsArticles, technologyArticles, entertainmentArticles, lifestyleArticles, upliftingArticles, sportsArticles, currentUser}) => {
 
     const findArticleById = function(id){
         return allArticles.find((article) => {
@@ -17,8 +17,10 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
     }
 
     const checkFavourite = function(article){
-        const readingList = currentUser.favouriteArticles;
-        if(readingList.some(article)){
+        console.log("check faves called")
+        const readingList = currentUser.favouriteArticles
+        console.log("reading list - ", readingList)
+        if(readingList.some(article.headline)){
             {article.favourite = true}
         }else {
             {article.favourite = false}
@@ -27,14 +29,19 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
     }
 
     const handleFavouriteToggle = (article) => {
-        checkFavourite();
+        console.log("handleFaveToggle called")
+        checkFavourite(article);
         const readingList = currentUser.favouriteArticles.map((favourite) => {
             if(favourite.headline === article.headline){
                 article.favourite = false
-                const index = currentUser.favouriteArticles.indexOf(article)
-                currentUser.favouriteArticles.splice(index,1)
+                let copiedUser = {...currentUser};
+                const index = copiedUser.favouriteArticles.indexOf(article)
+                copiedUser.favouriteArticles.splice(index,1)
+                setCurrentUser(copiedUser);
             }
-            currentUser.favouriteArticles.push(article)
+            let copiedUser = {...currentUser};
+            copiedUser.favouriteArticles.push(article)
+            setCurrentUser(copiedUser);
             article.favourite = true;
         })
     }
@@ -74,7 +81,7 @@ const ArticleContainer = ({allArticles, businessArticles, politicsArticles, tech
         <Route exact path="/articles/:id" render={(props) =>{
         const id = props.match.params.id;
         const article = findArticleById(id);
-        return <ArticleDetail article={article} onFavouriteToggle={handleFavouriteToggle}/>
+        return <ArticleDetail article={article} currentUser={currentUser} handleFavouriteToggle={handleFavouriteToggle}/>
         }}/>
 
         <Route render={() => {

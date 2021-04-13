@@ -1,17 +1,22 @@
 import React from 'react';
 import Article from './Article';
 
-const ArticleDetail = ({article, currentUser, onFavouriteToggle}) => {
+const ArticleDetail = ({article, currentUser, handleFavouriteToggle}) => {
 
     if(!article){
         return <p>Loading...</p>
     }
 
+
+
     
 
     const favouriteDisplay = function(article){
-        if(currentUser.role === "User"){
-            return <button onClick={() => {onFavouriteToggle(article)}}>
+        console.log("favouriteDisplay called" )
+        console.log(currentUser);
+        if(currentUser.role.role === "User"){
+            // return <p>button here</p>
+            return <button onClick={() => {handleFavouriteToggle(article)}}>
                 {article.favourite ? 'Delete from Reading List' : 'Add to Reading List'}</button>
         }else{
             return null
@@ -29,7 +34,7 @@ const ArticleDetail = ({article, currentUser, onFavouriteToggle}) => {
             <p>Category: {article.category.type}</p>
             <p>{article.fullStory}</p> 
             <p>{article.viewCount}</p>
-            {favouriteDisplay()}
+            {favouriteDisplay(article)}
         </div>
     
     )

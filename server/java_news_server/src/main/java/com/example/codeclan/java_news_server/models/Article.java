@@ -20,10 +20,10 @@ public class Article implements Serializable {
     @Column(name = "headline")
     private String headline;
 
-    @Column(name = "summary")
+    @Column(name = "summary", length=600)
     private String summary;
 
-    @Column(name = "full_story", length=7000)
+    @Column(name = "full_story", length=22000)
     private String fullStory;
 
     @ManyToOne

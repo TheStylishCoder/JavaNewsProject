@@ -83,7 +83,7 @@ const MainContainer = () => {
         <Switch>
           <Route path="/articles"  render={() => {
               return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}
-               entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  />
+               entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  currentUser={currentUser} setCurrentUser={setCurrentUser}/>
           }} />
 
           {/* <Route path="/journalists" render={() => {

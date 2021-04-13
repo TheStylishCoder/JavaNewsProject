@@ -33,17 +33,17 @@ class JavaNewsServerApplicationTests {
 	void contextLoads() {
 	}
 
-	@Test
-	public void canCreateUser(){
+//	@Test
+//	public void canCreateUser(){
 
-		Role admin = new Role("admin");
-		roleRepository.save(admin);
-
-		Location scotland = new Location("Scotland");
-		locationRepository.save(scotland);
-
-		User user = new User("BobBoberson", "iluvnews", admin, scotland);
-		userRepository.save(user);
-	}
+//		Role admin = new Role("admin");
+//		roleRepository.save(admin);
+//
+//		Location scotland = new Location("Scotland");
+//		locationRepository.save(scotland);
+//
+//		User user = new User("BobBoberson", "iluvnews", admin, scotland);
+//		userRepository.save(user);
+//	}
 
 }
