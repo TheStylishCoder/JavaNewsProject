@@ -54,7 +54,7 @@ const ArticleList = ({allArticles, currentUser}) => {
         return(
           
              <li className="article-list-item" key={index}>
-                 <div className="article-component">
+                 <div className="component">
                     <Article article={article} currentUser={currentUser} addToRecentlyViewed={addToRecentlyViewed} addToViewCount={addToViewCount} />
                  </div>
             </li>
@@ -62,11 +62,11 @@ const ArticleList = ({allArticles, currentUser}) => {
     })
 
     return(
-        <>
+        
         <ul className="article-list">
             {articleListItems}
         </ul>
-        </>
+       
     )
 }
 
