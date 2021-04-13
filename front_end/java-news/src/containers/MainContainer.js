@@ -7,6 +7,8 @@ import JournalistContainer from './JournalistContainer';
 import UserContainer from './UserContainer';
 import AdminContainer from './AdminContainer';
 import LoginContainer from './LoginContainer';
+import UserNavBar from '../components/users/UserNavBar';
+import AdminNavBar from '../components/admin/AdminNavBar';
 
 
 
@@ -75,11 +77,52 @@ const MainContainer = () => {
         setCurrentUser(user)
     }
 
+    const checkForUserRole = () => {
+        console.log("check for user called", currentUser)
+        if(currentUser && currentUser.role.role === "User"){
+            return <UserNavBar />
+        }else if(currentUser && currentUser.role.role === "Admin"){
+            return <AdminNavBar />
+        }else {
+            return null
+        }
+        
+    }
+
+    // const checkForAdminRole = (currentUser) => {
+    //     if(currentUser.role.role === "Admin"){
+    //         return(
+    //             <AdminNavBar />
+    //         )
+    //     }else{
+    //         return null;
+    // }
+
+    // }else(currentUser.role.role === "Admin"){
+    //     return(
+    //         <AdminNavBar />
+    //     )
+    // }
+                
+        // } else if(currentUser.role.role === "Admin"){
+        //     let renderNavBar = <AdminNavBar />
+        // }else{
+        //     if(!renderNavBar){
+        //         return null
+        //     }else{
+        //         return renderNavBar
+        //     }
+           
+        
+    
+
 
     return(
         <Router>
         <>
         <NavBar/>
+        {checkForUserRole()}
+        {/* {checkForAdminRole()} */}
         <Switch>
           <Route path="/articles"  render={() => {
               return <ArticleContainer allArticles={allArticles} businessArticles={businessArticles} politicsArticles={politicsArticles} technologyArticles={technologyArticles}
