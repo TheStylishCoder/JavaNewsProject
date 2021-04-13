@@ -2,16 +2,19 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const Article = ({article, currentUser}) => {
+const Article = ({article, currentUser, addToViewCount, addToRecentlyViewed, handleFavouriteToggle}) => {
 
   if (!article){
     return <p>Loading...</p>
   }
 
-  const handleView = function(article){
-    article.viewCount +=1;
-    currentUser.viewedArticles.push(article);
-
+  const handleView = function(){
+      console.log("handleView called", article)
+      addToViewCount(article);
+    // article.viewCount +=1;
+     console.log("after modification", article)
+    // currentUser.viewedArticles.push(article);
+        addToRecentlyViewed(article);
   }
 
 
