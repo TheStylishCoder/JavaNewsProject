@@ -7,14 +7,14 @@ const Journalist = ({journalist}) => {
     return <p>Loading...</p>
   }
 
-  const url = "/admin/journalists/" + journalist.id;
+  const url = "/journalists/" + journalist.id;
 
   return (
     <>
     <Link to = {url} className="name">
     {journalist.name} 
     </Link>
-    could put image here 
+
     </>
   )
 }

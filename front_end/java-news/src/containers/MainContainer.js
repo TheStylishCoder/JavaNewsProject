@@ -18,7 +18,7 @@ const MainContainer = () => {
     const [allRoles, setAllRoles] = useState([]);
     const [allLocations, setAllLocations] = useState([]);
     const [allCategories, setAllCategories] = useState([]);
-    const [currentUser, setCurrentUser] = useState(null);
+    const [currentUser, setCurrentUser] = useState({});
     const [businessArticles, setBusinessArticles] = useState([]);
     const [politicsArticles, setPoliticsArticles] = useState([]);
     const [technologyArticles, setTechnologyArticles] = useState([]);
@@ -43,6 +43,7 @@ const MainContainer = () => {
         const lifestyleArticlesPromise = request.get('/api/articles/category?category=Lifestyle')
         const upliftingArticlesPromise = request.get('/api/articles/category?category=Uplifting')
         const sportsArticlesPromise = request.get('/api/articles/category?category=Sports')
+        
 
 
         Promise.all([articlePromise, journalistPromise, userPromise, rolePromise, locationPromise, categoryPromise, businessArticlesPromise, 
@@ -69,6 +70,11 @@ const MainContainer = () => {
     }, [])
 
 
+    const handleCurrentUser = (user) => {
+        console.log("mainContainer user", user);
+        setCurrentUser(user)
+    }
+
 
     return(
         <Router>
@@ -80,9 +86,9 @@ const MainContainer = () => {
                entertainmentArticles={entertainmentArticles} lifestyleArticles={lifestyleArticles} upliftingArticles={upliftingArticles} sportsArticles={sportsArticles}  />
           }} />
 
-          <Route path="/journalists" render={() => {
+          {/* <Route path="/journalists" render={() => {
               return <JournalistContainer allJournalists={allJournalists} />
-          }} />
+          }} /> */}
 
           <Route path="/users" render={() => {
               return <UserContainer allUsers={allUsers} allArticles={allArticles} allJournalists={allJournalists} currentUser={currentUser}/> 
@@ -93,7 +99,7 @@ const MainContainer = () => {
           }} />
 
           <Route path="/login" render={() => {
-              return <LoginContainer allLocations={allLocations} allUsers={allUsers} currentUser={currentUser} setCurrentUser={setCurrentUser} />
+              return <LoginContainer allLocations={allLocations} allUsers={allUsers} currentUser={currentUser} setCurrentUser={handleCurrentUser} />
           }} />
           
         </Switch>
