@@ -1,4 +1,9 @@
 .article-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.component {
+    width: 300px;
 }
