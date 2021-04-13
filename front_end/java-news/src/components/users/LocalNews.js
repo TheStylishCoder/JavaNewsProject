@@ -8,6 +8,7 @@ const LocalNews = ({allArticles, currentUser}) => {
     }
     
    
+   
     const results = allArticles.filter(article => article.location.name === currentUser.location.name);
 
 
