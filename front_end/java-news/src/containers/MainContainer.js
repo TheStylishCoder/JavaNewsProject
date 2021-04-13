@@ -24,7 +24,8 @@ const MainContainer = () => {
         username: "",
         password: "",
         role: "",
-        location: ""
+        location: "",
+        viewedArticles: []
     });
     const [businessArticles, setBusinessArticles] = useState([]);
     const [politicsArticles, setPoliticsArticles] = useState([]);

@@ -27,7 +27,7 @@ const UserContainer = ({currentUser, allUsers}) => {
         }} />
 
         <Route exact path='/users/recentlyviewed' render={() => {
-            return <RecentlyViewed/>
+            return <RecentlyViewed currentUser={currentUser}/>
         }} />
 
         <Route exact path='/users/localnews' render={() => {
