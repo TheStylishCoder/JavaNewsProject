@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Article = ({article}) => {
 
   if (!article){
-    return <p>Loading...</p>
+    return <p className="hide-loading">Loading...</p>
   }
 
   const url = "/admin/articles/" + article.id;

@@ -9,6 +9,7 @@ import AdminContainer from './AdminContainer';
 import LoginContainer from './LoginContainer';
 import UserNavBar from '../components/users/UserNavBar';
 import AdminNavBar from '../components/admin/AdminNavBar';
+import '../App.css';
 
 
 
