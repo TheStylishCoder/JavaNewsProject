@@ -2534,5 +2534,300 @@ public class DataLoader implements ApplicationRunner {
         articleRepository.save(uplifting10);
 
 
+        Article sports1 = new Article("Scotland qualify for Euro 2020 - and book England showdown in Group D",
+                "Scotland secure Euro 2020 qualification with play-off victory in Serbia; +" +
+                        " Scotland face England in Group D; Scots will play twice at Hampden Park home and once at Wembley in " +
+                        "first " +
+                        " major tournament appearance since 1998; England vs Scotland at Wembley on June 18",
+                "It's been 22 years in the making but Scotland have finally done it - and a showdown with " +
+                        "England awaits at next summer's European Championship.\n" +
+                        "Steve Clarke's side sealed a first major tournament appearance since 1998 after a dramatic " +
+                        "penalty shootout win over Serbia after Luka Jovic had agonisingly forced extra-time with a " +
+                        "90th-minute equaliser.\n" +
+                        "\n" +
+                        "Scotland's reward for defying the bookmakers' odds and prevailing eventually in Belgrade is a " +
+                        "place in Group D alongside England, Croatia and Czech Republic, and a mouth-watering " +
+                        "Euro 2020 schedule that will see all three group-stage games take place in the British " +
+                        "Isles.\n" +
+                        "\n" +
+                        "It all begins on June 14 at the home of Scottish football - Hampden Park - where Scotland " +
+                        "host Croatia on matchday one, before they make the trip to Wembley Stadium to face the " +
+                        "Auld Enemy, England, on June 18.\n" +
+                        "The Scots then return to Hampden on June 22 to play Croatia, where they could be vying for a" +
+                        " place in the knockout stages of a major tournament for the very first time.\n" +
+                        "\n" +
+                        "Southgate, Clarke relish meeting\n" +
+                        "\n" +
+                        "Gareth Southgate congratulated Scotland and said he hoped fans would be back to " +
+                        "enjoy a \"super occasion\".\n" +
+                        "\n" +
+                        "             \"Let's hope we're a full house.  That would be a super occasion, although it " +
+                        "certainly makes our lives a lot more difficult.\n" +
+                        "\n" +
+                        "\"In particular, going to Hampden a couple of years ago was an incredible game and atmosphere. " +
+                        "That will give everybody something to look forward to in a difficult time, let's hope we've " +
+                        "got full crowds back in the stadium for that.\"\n" +
+                        "\n" +
+                        "After seeing his Scotland side hold their nerve from the spot in Serbia, Clarke said: " +
+                        "\"The whole nation can be proud - but nobody can be prouder than the players on the pitch " +
+                        "because they were magnificent.\n" +
+                        "\n" +
+                        "\"This puts us back on the map and in a big tournament, but next summer will take care of" +
+                        " itself. We've got three great group games - one especially that the Tartan Army will enjoy.\"",
+                jock, sports, scotland, "2020-11-30", 0,
+                "https://e0.365dm.com/20/11/1600x900/skysports-scotland-england_5170950.jpg?20201113123445");
+        articleRepository.save(sports1);
+
+        Article sports2 = new Article("Celtic complete Treble with Scottish Cup Final win against Aberdeen",
+                "Celtic completed a domestic treble without losing a game as Tom Rogic fired in a stoppage-time goal against Aberdeen to win the Scottish Cup.\n" +
+                        "\n", "A beautifully controlled half-volley from Jonny Hayes after nine minutes was reward for a fine Dons start.\n" +
+                "\n" +
+                "But Celtic were level within two minutes as Stuart Armstrong was given too much time to pick out the far corner from the edge of the box.\n" +
+                "\n" +
+                "Late Celtic pressure paid off as Rogic fired low past goalkeeper Joe Lewis.\n" +
+                "A thrilling 90 minutes concluded with Celtic not only lifting the cup for the first time since 2013 but becoming the first side in Scotland to complete an unbeaten treble.\n" +
+                "\n" +
+                "It is the 37th time the Hoops have lifted the world's oldest national football trophy and the fourth time they have won the treble - and their first since 2001.\n" +
+                "\n" +
+                "Derek McInnes' Dons, looking to end a 27-year wait to win the competition for an eighth time, were left as runners-up to Brendan Rodgers' side in the Premiership, the League Cup and now the Scottish Cup.\n" +
+                "\n" +
+                "It was a pulsating cup final right from the start, Aberdeen coming out with an edge to their play that put their illustrious rivals on the back foot.\n" +
+                "\n" +
+                "Yes, Rodgers' team had won five out of five in the head-to-heads this season, with an aggregate score of 12-2, but this was an altogether different Dons to previous versions.\n" +
+                "\n" +
+                "In this classic, they were a team reborn.\n" +
+                "In the beginning, they harried Celtic's go-to men. Graeme Shinnie and Kenny McLean were commanding.\n" +
+                "\n" +
+                "They lived in their faces defensively and showed plenty offensively. The feeling was that Aberdeen had to take the lead to make a true fight of this final and that is precisely what they did.\n" +
+                "\n" +
+                "Having shipped three early goals to Celtic in their last meeting, the Dons changed the narrative.\n" +
+                "\n" +
+                "From a Niall McGinn corner, Hayes came round the blindside of Leigh Griffiths and smashed a volley past goalkeeper Craig Gordon and beyond Kieran Tierney on the line.\n" +
+                "\n" +
+                "It was a goal of quality and a goal that electrified the huge Aberdeen support.\n" +
+                "Celtic are champions, though, and their true selves emerged only two minutes later when Aberdeen unwisely stood off Armstrong, who thumped in the equaliser low to Lewis's left.\n" +
+                "\n" +
+                "Two early goals and the intensity only cranked up from there. Midway through the half, there was controversy.\n" +
+                "Jayden Stockley - selected up front ahead of Adam Rooney - swung an arm into Tierney's face and the young Celtic full-back immediately signalled that he was in bother.\n" +
+                "\n" +
+                "Blood poured from his mouth and, after treatment, he had to leave the field.\n" +
+                "Stockley has a reputation for over-zealous use of his arms and elbows and was deeply fortunate not to see red for a fourth time this season. He claimed it was accidental, but Celtic were having none of it. They were incensed.\n" +
+                "\n" +
+                "Callum McGregor shifted to left-back and Rogic came into the final and things went up another level.\n" +
+                "\n" +
+                "Gordon made a double save in quick order and then made another from a Stockley header.\n" +
+                "\n" +
+                "Celtic were rattled, they were totally unable to get a hold of the game in the face of the Dons' aggressive edge.\n" +
+                "It was Celtic, however, who should have gone ahead just before the break when a delicious Griffiths delivery was put over from point-blank range by Scott Sinclair.\n" +
+                "\n" +
+                "The toe-to-toe nature of the contest carried on brilliantly. Griffiths and Sinclair went close then Aberdeen swept downfield on a breakaway and a priceless chance was wasted.\n" +
+                "\n" +
+                "Hayes had mugged McGregor down the right and, with McLean running free in the box, all they had to do was get their communication right and a goal was certain.\n" +
+                "\n" +
+                "They didn't. Hayes hit his pass slightly behind McLean and the midfielder couldn't hook it in. Agony for Aberdeen.\n" +
+                "Celtic then moved up a gear and now it was the Dons pinned on the ropes. Lewis pushed a Patrick Roberts shot on to his post.\n" +
+                "\n" +
+                "From the resulting corner, Celtic's Mikael Lustig tugged the ball just wide. The game opened up as wide as the Clyde.\n" +
+                "Aberdeen's Ash Taylor headed away from under his own crossbar, Dedryck Boyota headed just over, Gordon made a fine save from Shinnie and then it was Lewis's turn again, saving wonderfully from Griffiths. Lewis was immense for the Dons.\n" +
+                "\n" +
+                "As the final wore on, Celtic took an ever-tightening grip.\n" +
+                "\n" +
+                "Rodgers' side pressed and pressed and a tiring Aberdeen threw their bodies in front of shots to keep alive. Their scrambling defence was constant and heroic.\n" +
+                "\n" +
+                "But it wasn't enough. With all at Hampden steeling themselves for extra-time, Rogic ran at Aberdeen down the right, going past the utterly jaded Andrew Considine and slamming his shot low under Lewis. Extraordinary.\n" +
+                "\n" +
+                "The heartbroken Dons had made it a mighty battle, but Celtic showed their incomparable will and their domestic greatness.\n" +
+                "\n" +
+                "The history makers had done it again. A treble won. Truly, they are something special.\n",
+                english, sports, scotland, "2017-05-27", 0,
+                "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/12B5A/production/_96243667_celtic.jpg");
+        articleRepository.save(sports2);
+
+        Article sports3 = new Article("'It's never been done': Celtic complete 'double treble' with Scottish Cup win", "Goals from Callum McGregor and Olivier Ntcham see off Motherwell in Scottish Cup final as Brendan Rodgers' side complete a domestic clean sweep of trophies for the fifth time\n" +
+                "\n", "Celtic's dominance of Scottish football continued as they completed a treble of domestic trophies for the second consecutive season with a 2-0 victory over Motherwell in the Scottish Cup final on Saturday.\n" +
+                "\n" +
+                "Stunning first-half strikes from Callum McGregor and Olivier Ntcham meant there was never much doubt of Celtic claiming a treble of Scottish Premiership, League Cup and Scottish Cup trophies for the fifth time.\n" +
+                "\n" +
+                "However, after winning the treble without suffering a single domestic defeat last season, there was more history for Brendan Rodgers's men as they became the first side to retain all three trophies.\n" +
+                "\n" +
+                "And the Celtic manager insisted the Glasgow giants could be even better next season as he hailed his side's achievement.\n" +
+                "\n" +
+                "\"I'm so happy for everyone involved, players, staff, supporters,\" Rodgers told BBC Scotland. \"It's an incredible achievement by everyone. I thought we thoroughly deserved it. A mention for Motherwell, they have had a great season.\n" +
+                "\n" +
+                "\"I'm very lucky to get the chance to manage the club. You can only do your best and the last couple of seasons have been magical,\" the former Liverpool manager added.\n" +
+                "\n" +
+                "\"I said to the players before the game, 'this is a chance for you to make your own history, to win today, it's going to live with you, your families and the supporters forever',\" the Northern Irishman explained.\n" +
+                "\n" +
+                "\"It's never been done, so big applause to the players. It's a great day for everyone.\n" +
+                "\n" +
+                "\"We can be better next year. We set out to win three trophies, but I need to push them even harder next year. There are improvements we can make. We'll go away, recover and come back with big motivation in the summer.\"",
+                mcgregor, sports, scotland, "2018-05-18", 0,
+                "https://www.thenationalnews.com/image/policy:1.731918:1526749253/sp20-Celtic.JPG?f=16x9&w=1200&$p$f$w=ee47782");
+        articleRepository.save(sports3);
+
+        Article sports4 = new Article("Celtic make history with Treble Treble triumph at Hampden", "One club. Three seasons. Nine trophies. Celtic have secured an historic Treble Treble, completing a clean sweep of the domestic trophies for the third season in a row.",
+                "Today’s 2-1 victory over Hearts in the Scottish Cup final at Hampden, courtesy of a double from Odsonne Edouard, created football history.\n" +
+                        "\n" +
+                        "The incredible Treble Treble success began on August 7, 2016 with a 2-1 victory over Hearts at Tynecastle, and was completed today with another win over the same opposition.\n" +
+                        "\n" +
+                        "Celtic have played 141 games in their Treble Treble run, winning 112, drawing 20 and losing just nine. The Hoops have scored 339 goals, while only conceding 82.\n" +
+                        "\n" +
+                        "It was James Forrest who netted the first of those goals back in 2016, while it was Edouard who scored the last goal today at Hampden.\n" +
+                        "\n" +
+                        "Season 2016/17 was the Invincible Treble, as Brendan Rodgers’ Celtic side went through the entire domestic campaign without defeat, drawing just four of their 47 competitive games. They defeated Aberdeen in both cup finals, with Tom Rogic netting a dramatic last-gasp winner in the Scottish Cup final at Hampden.\n" +
+                        "\n" +
+                        "The following season, the Hoops replicated their treble success, securing the league title with an emphatic 5-0 demolition derby over Rangers at Paradise. In the two cup finals, Motherwell were the opposition and, again, Celtic came out on top on both occasions.\n" +
+                        "\n" +
+                        "Now, the team has done it again. The League Cup was secured back in December, when Ryan Christie scored the only goal of the final against Aberdeen.\n" +
+                        "\n" +
+                        "With Neil Lennon taking over at the end of February, he guided the team to another title triumph – the club’s eighth-in-a-row – with a 3-0 win over Aberdeen at Pittodrie confirming Celtic as the finest team in Scotland yet again.\n" +
+                        "\n" +
+                        "And the Irishman, having seen off Hibernian and Aberdeen in the Scottish Cup, has led the team to glory at Hampden today.",
+                watson, sports, scotland, "2019-05-25", 0,
+                "https://images-v2.gc.celticfc.com/28425c00-bf83-11ea-8a09-4b8210c11ed3.jpg");
+        articleRepository.save(sports4);
+
+        Article sports5 = new Article("How Celtic won the quadruple Treble as Hearts victory seals untouchable glory",
+                "The Hoops stars who played today will have created a lasting legacy that is unlikely to ever be matched again.",
+                "Celtic have achieved what many would have thought impossible after beating Hearts on penalties in the Scottish Cup Final and completing an unprecedented quadruple Treble.\n" +
+                        "\n" +
+                        "No club has ever won back to back trebles in the history of the game, let alone build up such a long-lasting resume of dominance over the entirety of Scottish football.\n" +
+                        "\n" +
+                        "It is an achievement of unparalleled power that will be forever etched into history as a cornerstone of Hoops fans' bragging rights.\n" +
+                        "\n" +
+                        "Given the knowledge their historic run of trebles has come to an end after a shock 2-0 defeat to Ross County in the Betfred Cup, you'd imagine, players, management and fans will want to mark their sensational moment and pay tribute to the players and staff who made it happen." +
+                        "\n" +
+                        "Scottish Cup - Celtic 3 Hearts 3 (Celtic win on pens) (December 20, 2020)\n" +
+                        "\n" +
+                        "There are bonkers games and then there is this bonkers game. Celtic weathered the ultimate Hearts comeback and secured quadruple Treble glory. It was a day of high drama that erupted after Kris Ajer fired home after the thrilling penalty shoot out.",
+                macrae,sports,scotland, "2020-12-20", 0,
+                "https://e0.365dm.com/20/12/1600x900/skysports-celtic-scottish-cup_5213988.jpg?20201220173210");
+        articleRepository.save(sports5);
+
+        Article sports6 = new Article("Celtic 5-1 Rangers", "Moussa Dembele scored a hat-trick as Celtic hammered Rangers in their first league derby for four years.",
+                "He rose above a static defence to head in from a corner then pounced on a Rob Kiernan mistake with a deft finish.\n" +
+                        "\n" +
+                        "Joe Garner headed a reply before the break, but Dembele set up Scott Sinclair for a finish off a post.\n" +
+                        "\n" +
+                        "Rangers' Philippe Senderos was sent off after a handball led to a second yellow card, before Dembele and Stuart Armstrong exposed the 10 men.\n" +
+                        "\n" +
+                        "Victory lifts Brendan Rodgers' Scottish Premiership leaders - and reigning champions - four points clear of their city rivals, who started the day in second place, with a game in hand.\n" +
+                        "\n" +
+                        "Mark Warburton's visitors, who won the Championship title last season, rarely looked like rescuing even a point once Dembele, the summer arrival from Fulham having started in place of the injured Leigh Griffiths, opened the scoring after a fairly even first 33 minutes.\n" +
+                        "\n" +
+                        "The French striker thus became the first player to score a hat-trick in an Old Firm league derby for 50 years.\n" +
+                        "\n" +
+                        "This dominant performance sets Celtic up nicely for Tuesday's opening Champions League group game against Barcelona.",
+                waddell, sports,scotland, "2016-09-10", 0,
+                "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/9E52/production/_91103504_dembele2.jpg");
+        articleRepository.save(sports6);
+
+        Article sports7 = new Article("Rangers 1-5 Celtic: League champions thrash Old Firm rivals at Ibrox",
+                "Celtic remain on course for an unbeaten season after the Scottish Premiership champions thrashed Old Firm rivals Rangers 5-1 at Ibrox on Saturday.",
+                "Scott Sinclair put the visitors on their way from the penalty spot on seven minutes after Patrick Roberts was tripped by Myles Beerman's reckless challenge.\n" +
+                        "\n" +
+                        "Leigh Griffiths doubled Celtic's lead before half-time and three goals after the break by Callum McGregor (52), Dedryck Boyata (61) and Mikael Lustig (87) completed their scoring.\n" +
+                        "\n" +
+                        "Kenny Miller, who signed a one-year contract extension with Rangers on Friday, netted a consolation for the hosts (81).\n" +
+                        "\n" +
+                        "Celtic dominated throughout at the home of their fierce rivals and are now five matches away from ending the domestic campaign without defeat.\n" +
+                        "\n" +
+                        "The champions, who beat Rangers 2-0 in their Scottish Cup semi-final last Sunday, have won five of the six Old Firm meetings this season.",
+                rudden, sports, scotland, "2017-04-30", 0,
+                "https://e0.365dm.com/17/04/1600x900/skysports-leigh-griffiths-scott-sinclair-celtic_3941326.jpg?20170429141322");
+        articleRepository.save(sports7);
+
+        Article sports8 = new Article("Celtic 5-0 Rangers: Odsonne Edouard scores twice in title-clinching rout",
+                "Celtic clinched their seventh straight Scottish Premiership title in style as they thumped Old Firm rivals Rangers 5-0.\n" +
+                        "\n",
+                "Brendan Rodgers' side were relentless from the start and surged into a 3-0 lead at half-time after two goals from Odsonne Edouard and then one from James Forrest.\n" +
+                        "\n" +
+                        "Rangers had no answer and Tom Rogic added the fourth early in the second half before Callum McGregor made it 5-0 shortly afterwards.\n" +
+                        "\n" +
+                        "The hosts spurned chances to win by an even greater margin, but that did little to dampen the celebrations at a buoyant Celtic Park as Rangers slumped to another heavy defeat against their rivals.\n" +
+                        "\n" +
+                        "Celtic will now have their sights set on completing an historic second treble in two seasons when they face Motherwell in the Scottish Cup final on May 19.\n" +
+                        "\n" +
+                        "Rangers, meanwhile, will be left wondering how they can close a huge gap on their rivals.",
+                courtney, sports, scotland, "2018-04-30", 0,
+                "https://e0.365dm.com/18/04/1600x900/skysports-celtic-edouard-rangers_4296082.jpg?20180429123811");
+        articleRepository.save(sports8);
+
+        Article sports9 = new Article("Progrès Niederkorn 2-0 Rangers",
+                "Rangers suffered one of their worst ever results as they were knocked out of the Europa League qualifiers by Luxembourg minnows Progres Niederkorn.",
+                "The Ibrox side took a 1-0 first-leg lead to Luxembourg but fell behind to a second-half Emmanuel Francoise finish.\n" +
+                        "\n" +
+                        "Sebastian Thill sealed progress, scoring only the third European goal in the minnows' history to secure their first ever win in Europe.\n" +
+                        "\n" +
+                        "Niko Kranjcar, Josh Windass and Kenny Miller hit the woodwork for Rangers.\n" +
+                        "\n" +
+                        "But the Ibrox men had failed to dominate the game the way they had in the first leg, ensuring their first foray into Europe for six years was short-lived as they went out in the first qualifier." +
+                        "Boss Pedro Caixinha brought Daniel Candeias, Alfredo Morelos and Jordan Rossiter into his starting line-up as he looked for more of a cutting edge in the second leg.\n" +
+                        "\n" +
+                        "The visitors had the bulk of the early possession but again lacked the final pass that could punish Progres.\n" +
+                        "\n" +
+                        "Miller had a shot blocked following a Kranjcar corner but it was all too untidy in the last third.\n" +
+                        "\n" +
+                        "That seemed to give the hosts the confidence they had lacked in the first half at Ibrox, with Olivier Thill curling a long-range free-kick narrowly wide with goalkeeper Wes Foderingham struggling to get across.\n" +
+                        "\n" +
+                        "\n" +
+                        "Miller was inches away from connecting with a Lee Wallace cross but it was at the other end where the chances started to come.\n" +
+                        "\n" +
+                        "Mike Schneider hit one over the bar when in a good position before the home side came very close. Olivier Thill drove forward and fired a long-range shot that had Foderingham beaten but slid just wide.\n" +
+                        "\n" +
+                        "The second half started with Progres going even closer, this time Francoise bursting clear on the right and drilling a low effort towards the corner that Foderingham saved brilliantly.\n" +
+                        "\n" +
+                        "As the second half wore on the home side looked the more threatening, with a few nerves evident in the visiting defence.\n" +
+                        "\n" +
+                        "Home keeper Sebastian Flauss had gone off injured in the first half but Rangers failed to test stand-in Charly Schinker until after the hour, when Ryan Jack's close-range header was directed straight at him.\n" +
+                        "\n" +
+                        "Moments later Caixinha's side almost grabbed a crucial away goal as Wallace sent in a cross that Kranjcar headed off the bar.\n" +
+                        "\n" +
+                        "Then came the opener for Progres as Olivier Thill crossed for Francoise to finish at the near post.\n" +
+                        "\n" +
+                        "The second arrived soon after as Sebastian Thill curled a free-kick into the box that evaded everyone and crept in at the back post.\n" +
+                        "\n" +
+                        "Rangers rallied in the closing minutes with Windass' diving header coming back off the bar before Miller, in stoppage time, lobbed an effort off the face of the bar.\n" +
+                        "\n" +
+                        "There was no way through though, and the visitors slumped to a shocking result.",
+                tully, sports, scotland, "2017-07-04", 0,
+                "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/12E30/production/_96806377_13674258.jpg");
+        articleRepository.save(sports9);
+
+        Article sports10 = new Article("Rangers 0-1 Celtic",
+                "Ten-man Celtic survived a Rangers onslaught - including a missed penalty - to clinch their fourth Scottish League Cup in a row and 10th consecutive domestic trophy.",
+                "Christopher Jullien slammed in the winner with Celtic's only shot on target, though the French defender appeared a yard offside.\n" +
+                        "\n" +
+                        "But three minutes later in a frantic contest, Jeremie Frimpong was sent off after fouling Alfredo Morelos in the box, only for Fraser Forster to save the Colombian's penalty.\n" +
+                        "\n" +
+                        "That was only one of a series of brilliant saves by the Celtic goalkeeper, who spectacularly denied Ryan Jack before the break as well as Morelos on three occasions.\n" +
+                        "\n" +
+                        "The Rangers striker wasted a number of other opportunities including one in stoppage time as, despite finding the net 25 times this season, he remains without a goal against Celtic.\n" +
+                        "\n" +
+                        "Neil Lennon's side demonstrated impressive resilience as they further burnish their dominance of Scottish football and are now 31 domestic cup matches unbeaten.\n" +
+                        "\n" +
+                        "'Rangers seize final by the throat'\n" +
+                        "\n" +
+                        "To say that Rangers were dominant in the opening half would be the understatement of the season. They should have been at least one goal, and probably more, ahead such was their control. Rangers came out of the traps with aggression, energy and intent.\n" +
+                        "\n" +
+                        "They pressed Celtic into a state of distraction. Not only could the champions not raise any kind of gallop in attack, they could scarcely keep hold of what little of the ball they had.\n" +
+                        "\n" +
+                        "Inspired by the desire and intelligence of Jack and Glen Kamara, Rangers seized the final by the throat from the first whistle. They forced three corners inside seven minutes and won the header each time. Connor Goldson had two reasonable chances to put them ahead. Filip Helander won the third one as Celtic's defence looked in serious trouble.\n" +
+                        "\n" +
+                        "There was more to come from Gerrard's team. Not a goal, but chance after chance. Jack launched a rocket from miles out and Forster, at full stretch, tipped it away brilliantly. Rangers' chances and Forster's saves became a recurring theme.\n" +
+                        "\n" +
+                        "Incredibly, Goldson had another look from a corner just 16 minutes in. Soon after, Morelos - no goal in 10 Old Firm games - saw his first shot of the final squirm under Forster's body. Celtic got lucky there. Jonny Hayes was first to the loose ball and hacked clear as Joe Aribo loitered.\n" +
+                        "\n" +
+                        "None of Celtic's go-to men were at the races, not Scott Brown, not Callum McGregor, not James Forrest, not Ryan Christie. Odsonne Edouard was not fit enough to start the final - he was on the bench - and how they missed his physicality. The fact that Rangers were utterly controlling things without the injured Steven Davis was all the more impressive.\n" +
+                        "\n" +
+                        "They needed a goal, though. And it refused to come. That was their undoing, their horror. Morelos got himself free again but his shot was met with a low save from Forster. Kristoffer Ajer had a header for Celtic that reminded you that they still existed in the game but the normal flow continued directly with more Rangers chances on the back of more Celtic errors forced from them by the blue storm.\n" +
+                        "\n" +
+                        "Morelos skipped away from Ajer down the right and, on the angle, fired directly at Forster. Ten minutes later he went again, but this time Forster kicked away his attempt with his right foot. Morelos really should have put that one away.\n" +
+                        "\n" +
+                        "Celtic were being schooled, their only saving grace being that they were somehow level. They couldn't live with the intensity of their rivals. At the break, Mohamed Elyounoussi, anonymous and clearly still unfit after a month out, was replaced by Mikey Johnston but the theme carried on as before.\n",
+                mckenna, sports, scotland, "2019-12-09", 0,
+                "https://ichef.bbci.co.uk/onesport/cps/800/cpsprodpb/B4FF/production/_110053364_19721396.jpg");
+        articleRepository.save(sports10);
+
     }
 }
