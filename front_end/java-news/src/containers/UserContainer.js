@@ -23,7 +23,7 @@ const UserContainer = ({currentUser, allUsers}) => {
         }} />
 
         <Route exact path='/users/readinglist' render={() => {
-            return <ReadingList />
+            return <ReadingList currentUser={currentUser}/>
         }} />
 
         <Route exact path='/users/recentlyviewed' render={() => {
