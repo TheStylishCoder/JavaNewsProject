@@ -12,7 +12,7 @@ const Journalist = ({journalist}) => {
   const url = "/journalists/" + journalist.id;
 
   return (
-    <div className="">
+    <div className="journalist-component">
       <Link to = {url} className="name">
       {journalist.name} 
       <br/>

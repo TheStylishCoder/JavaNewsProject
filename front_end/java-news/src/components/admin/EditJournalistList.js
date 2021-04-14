@@ -9,8 +9,8 @@ const EditJournalistList = ({allJournalists}) => {
 
     const journalistNodes = allJournalists.map((journalist, index) => {
         return (
-          <li key={index} className="component-item">
-          <div className="component">
+          <li key={index} className="journalist-list-item">
+          <div className="journalist-component">
           <Journalist journalist={journalist} />
           </div>
           </li>
@@ -30,7 +30,7 @@ const EditJournalistList = ({allJournalists}) => {
     // })
 
     return(
-        <ul className="component-list">
+        <ul className="journalist-list">
 	        {journalistNodes}
 	      </ul>
 

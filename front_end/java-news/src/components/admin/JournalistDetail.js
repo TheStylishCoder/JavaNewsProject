@@ -15,7 +15,7 @@ const JournalistDetail = ({journalist, onDelete}) => {
   }
 
   const journalistArticles = journalist.articles.map((article, index) => {
-    return <li key={index}>
+    return <li className="journalist-article-list-item" key={index}>
     {article.headline}
     </li>
   })
@@ -26,10 +26,10 @@ const JournalistDetail = ({journalist, onDelete}) => {
     return (
      
  
-      <div className = "component">
+      <div className = "journalist-detail">
       <Journalist journalist = {journalist}/>
       <p>Articles:</p>
-      <ul>
+      <ul className="journalist-articles">
       {journalistArticles}
       </ul>
       <button onClick={handleDelete}>Delete {journalist.name}</button>
