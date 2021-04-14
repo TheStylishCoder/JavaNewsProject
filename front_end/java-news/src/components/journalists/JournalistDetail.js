@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import '../../static/css/JournalistDetail.css';
 
 const JournalistDetail = ({journalist}) => {
 
@@ -10,7 +10,7 @@ const JournalistDetail = ({journalist}) => {
 
     const journalistArticles = journalist.articles.map((article, index) => {
         const url = "/articles/" + article.id;
-        return <li key={index}>
+        return <li className="journalist-article-list-item" key={index}>
         <Link to = {url} className="name">{article.headline} </Link>
         </li>
       })
@@ -18,10 +18,11 @@ const JournalistDetail = ({journalist}) => {
     return(
         <>
         <div className = "journalist-detail">
-        <h1>Journalist: {journalist.name}</h1>
+        <h1>{journalist.name}</h1>
+        <img src={journalist.image} height="300" width="auto" alt="journalist profile"/>
         <h2>All articles by {journalist.name}:</h2>
 
-        <ul>
+        <ul className="journalist-articles">
         {journalistArticles}
         </ul>
        

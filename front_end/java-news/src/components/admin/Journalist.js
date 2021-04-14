@@ -10,12 +10,14 @@ const Journalist = ({journalist}) => {
   const url = "/admin/journalists/" + journalist.id;
 
   return (
-    <>
-    <Link to = {url} className="name">
-    {journalist.name} 
-    </Link>
-    could put image here 
-    </>
+    <div className="journalist-component">
+      <Link to = {url} className="name">
+      {journalist.name} 
+      </Link>
+      <img src={journalist.image} height="300" width="auto" alt="journalist profile"/>
+    </div>
+    
+    
   )
 }
 

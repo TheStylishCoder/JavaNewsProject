@@ -1,4 +1,4 @@
-.journalist-list-item{
+/* .journalist-list-item{ */
     /* display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -6,17 +6,17 @@
     background-color:#1477b1;
     padding: 0px; 
     margin: 0; */
-    margin-top: 7%;
+    /* margin-top: 7%;
     display: flex;
     flex-direction: row;
     float: inline-start;
     justify-content: center;
     align-items: center;
-    width: 100%;
+   
     flex-basis: content;
     font-size: 25px;
     
-}
+} */
 
 /* .journalist-list{
     .journalist-list-item{ */
@@ -40,7 +40,25 @@
     } */
 /* } */
 
+.journalist-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
+}
+
+.journalist-list-item {
+    list-style: none;
+
+}
+
+.journalist-component{
+    width: 500px;
+    margin: 20px;
+    text-align: center;
+    font-size: 20pt;
+   
+}
 
 
 

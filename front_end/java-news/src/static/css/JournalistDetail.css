@@ -1,0 +1,16 @@
+.journalist-detail{
+    width: 100%;
+    align-items: center;
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: center;
+  
+}
+
+.journalist-articles{
+    list-style: none;
+}
+
+.journalist-article-list-item{
+    margin: 15px;
+}

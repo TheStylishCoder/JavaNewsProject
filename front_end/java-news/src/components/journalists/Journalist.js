@@ -1,6 +1,8 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
+
+
 const Journalist = ({journalist}) => {
 
   if (!journalist){
@@ -10,13 +12,14 @@ const Journalist = ({journalist}) => {
   const url = "/journalists/" + journalist.id;
 
   return (
-    <>
-    <Link to = {url} className="name">
-    {journalist.name} 
-    <img src={journalist.image} height="300" width="400" alt="journalist profile"/>
-    </Link>
-
-    </>
+    <div className="">
+      <Link to = {url} className="name">
+      {journalist.name} 
+      <br/>
+      <img src={journalist.image} height="300" width="auto" alt="journalist profile"/>
+      </Link>
+    </div>
+  
   )
 }
 
