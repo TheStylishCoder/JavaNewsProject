@@ -1,8 +1,10 @@
 import React from 'react';
 import Journalist from  './Journalist';
+import {Link} from 'react-router-dom';
+import '../../static/css/JournalistList.css';
 
 
-const JournalistList = ({allJournalists}) => {
+const JournalistList = ({journalist, allJournalists}) => {
 
     if (allJournalists.length === 0){
         return(<p>Loading...</p>)
@@ -19,12 +21,19 @@ const JournalistList = ({allJournalists}) => {
         )
     })
 
+    
+
     return(
+        <>
+        <Link to="/journalists"><p>journalists</p></Link>
         <div className="journalist-list">
+    
             <ul>
+                
                 {journalistListItems}
             </ul>
         </div>
+        </>
         
     )
 
