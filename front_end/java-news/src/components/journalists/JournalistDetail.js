@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 
 const JournalistDetail = ({journalist}) => {
@@ -8,8 +9,9 @@ const JournalistDetail = ({journalist}) => {
     }
 
     const journalistArticles = journalist.articles.map((article, index) => {
+        const url = "/articles/" + article.id;
         return <li key={index}>
-        {article.headline}
+        <Link to = {url} className="name">{article.headline} </Link>
         </li>
       })
 

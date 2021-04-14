@@ -1,5 +1,6 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import '../../static/css/Form.css';
 
 const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCreate, onUpdate}) => {
 
@@ -138,41 +139,41 @@ const ArticleForm = ({allJournalists, allCategories, allLocations, article, onCr
         <>
         <h2>{heading}</h2>
         <form onSubmit={handleSubmit}>
-            <div className = "article-form">
+            <div className = "form">
 
                 <label htmlFor = "headline">Headline:</label>
-                <input type="text" placeholder="Headline" name="headline" onChange={handleChange} value={stateArticle.headline} />
+                <input class="input-field" type="text" placeholder="Headline" name="headline" onChange={handleChange} value={stateArticle.headline} />
               
                 <label htmlFor = "summary">Summary:</label>
-                <input type="text" placeholder="Summary" name="summary" onChange={handleChange} value={stateArticle.summary} />
+                <input class="input-field" type="text" placeholder="Summary" name="summary" onChange={handleChange} value={stateArticle.summary} />
                 
                 <label htmlFor = "fullStory">Main Content:</label>
-                <input type="text" placeholder="Main Content" name="fullStory" onChange={handleChange} value={stateArticle.fullStory} />
+                <input class="input-field" type="text" placeholder="Main Content" name="fullStory" onChange={handleChange} value={stateArticle.fullStory} />
                 
                 <label htmlFor = "journalist">Author:</label>
-                <select name="journalist" onChange={handleJournalist} defaultValue={findJournalistIndex() || "select-journalist"}>
+                <select class="input-field" name="journalist" onChange={handleJournalist} defaultValue={findJournalistIndex() || "select-journalist"}>
                     <option disabled value='select-journalist'>Select a Journalist</option>
                     {journalistOptions}
                 </select>
 
                 <label htmlFor = "category">Category:</label>
-                <select name="category" onChange={handleCategory} defaultValue={findCategoryIndex() || "select-category"}>
+                <select class="input-field" name="category" onChange={handleCategory} defaultValue={findCategoryIndex() || "select-category"}>
                     <option disabled value='select-category'>Select a Category</option>
                     {categoryOptions}
                 </select>
 
                 <label htmlFor = "location">Location:</label>
-                <select name="location" onChange={handleLocation} defaultValue={findLocationIndex() || "select-location"}>
+                <select class="input-field" name="location" onChange={handleLocation} defaultValue={findLocationIndex() || "select-location"}>
                     <option disabled value='select-location'>Select a Location</option>
                     {locationOptions}
                 </select>
 
                 <label htmlFor = "date">Date:</label>
-                <input type="text" placeholder="dd-mm-yyyy" name="date" onChange={handleChange} value={stateArticle.date} />
+                <input class="input-field" type="text" placeholder="dd-mm-yyyy" name="date" onChange={handleChange} value={stateArticle.date} />
                   
 
                 <label htmlFor = "image">Image Link/URL:</label>
-                <input type="text" placeholder="Image URL" name="image" onChange={handleChange} value={stateArticle.image} />
+                <input class="input-field" type="text" placeholder="Image URL" name="image" onChange={handleChange} value={stateArticle.image} />
 
                 <button type="submit">Save</button>
             </div>
