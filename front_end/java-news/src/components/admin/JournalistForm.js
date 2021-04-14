@@ -56,6 +56,7 @@ const JournalistForm = ({journalist, onCreate, onUpdate}) => {
                 <input className="input-field" type = "text" placeholder="Full Name" name="name" onChange={handleUpdate} value={stateJournalist.name} />
                 <br />
                 <button type="submit">Save</button>
+                <br/>
             </div>
         </form>
         </>

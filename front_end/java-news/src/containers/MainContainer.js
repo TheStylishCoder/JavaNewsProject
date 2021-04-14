@@ -11,6 +11,7 @@ import UserNavBar from '../components/users/UserNavBar';
 import AdminNavBar from '../components/admin/AdminNavBar';
 import '../App.css';
 import HomePage from '../components/HomePage';
+import FooterPage from '../components/FooterPage';
 
 
 
@@ -138,7 +139,7 @@ const MainContainer = () => {
 
     return(
         <Router>
-        <>
+        <div className="content-wrap">
         <NavBar/>
         {checkForRole()}
         <Switch>
@@ -169,7 +170,8 @@ const MainContainer = () => {
 
           
         </Switch>
-        </>
+        </div>
+        {/* <FooterPage /> */}
         </Router>
     )
 

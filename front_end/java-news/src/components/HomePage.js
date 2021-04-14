@@ -79,10 +79,10 @@ const HomePage = ({
         <p>Summary: {randomArticle.summary}</p> */}
         
     </div>
-    <div className="photoOfDay" >
+    {/* <div className="photoOfDay" >
         <h2>Photo of the Day</h2>
-        <img src="https://picsum.photos/200" alt="random picture" />
-    </div>
+        <img src="https://picsum.photos/200" height="400" width="400" alt="random picture" />
+    </div> */}
     </>
   );
 };
