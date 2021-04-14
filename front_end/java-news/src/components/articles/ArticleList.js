@@ -62,10 +62,12 @@ const ArticleList = ({allArticles, currentUser}) => {
     })
 
     return(
-        
+        <>
+        <h3 className="heading">{allArticles[0].category.type} Articles</h3>
         <ul className="article-list">
             {articleListItems}
         </ul>
+        </>
        
     )
 }
