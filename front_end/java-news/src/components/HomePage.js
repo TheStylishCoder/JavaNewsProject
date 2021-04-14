@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Article from "./articles/Article";
+import '../static/css/HomePage.css';
+
 const HomePage = ({
   allBusiness,
   allPolitics,
@@ -33,8 +35,8 @@ const HomePage = ({
         const url = "/articles/" + randomArticle.id;
         return (
           <li key={index}>
-            <div>
-              <Link to={url} className="name">
+            <div className="home-component">
+              <Link to={url} className="home-header">
                 {randomArticle.headline}
               </Link>
               <img
@@ -44,7 +46,6 @@ const HomePage = ({
                 alt=""
               />
               <p>Author: {randomArticle.journalist.name}</p>
-              <p>Date: {randomArticle.date}</p>
               <p>Category: {randomArticle.category.type}</p>
               <p>Summary: {randomArticle.summary}</p>
             </div>
@@ -63,12 +64,11 @@ const HomePage = ({
   //     })
   //   }
   return (
+    <>
     <div className="home-page">
-      <h1>Welcome To Full Stack News!</h1>
-      <h2>Photo of the Day</h2>
-      <img src="https://picsum.photos/200" alt="" />
-      <h2>Featured Articles</h2>
-      <ul>{randomArticleNodes}</ul>
+      <h1 className="heading">Welcome To Full Stack News!</h1>
+      <h2 className="heading">Featured Articles</h2>
+      <ul className="home-list">{randomArticleNodes}</ul>
       {/* <Link to = {url} className="name" >
         {randomArticle.headline}
         </Link>
@@ -77,7 +77,13 @@ const HomePage = ({
         <p>Date: {randomArticle.date}</p>
         <p>Category: {randomArticle.category.type}</p>
         <p>Summary: {randomArticle.summary}</p> */}
+        
     </div>
+    <div className="photoOfDay" >
+        <h2>Photo of the Day</h2>
+        <img src="https://picsum.photos/200" alt="random picture" />
+    </div>
+    </>
   );
 };
 export default HomePage;
