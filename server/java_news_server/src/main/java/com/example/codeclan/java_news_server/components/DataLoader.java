@@ -83,166 +83,163 @@ public class DataLoader implements ApplicationRunner {
         User anna = new User("thestylishreader", "1234", admin, scotland);
         userRepository.save(anna);
 
-        Journalist read = new Journalist("Simon Read");
+        Journalist read = new Journalist("Simon Read", "https://s3.amazonaws.com/media.muckrack.com/profile/images/35533/simonnread.jpeg.256x256_q100_crop-smart.jpg");
         journalistRepository.save(read);
 
-        Journalist russon = new Journalist("Mary-Ann Russon");
+        Journalist russon = new Journalist("Mary-Ann Russon", "https://s3.amazonaws.com/media.muckrack.com/profile/images/78197/mary-ann-russon.png.256x256_q100_crop-smart.png");
         journalistRepository.save(russon);
 
-        Journalist bloom = new Journalist("Jonty Bloom");
+        Journalist bloom = new Journalist("Jonty Bloom", "https://www.speakersforschools.org/wp-content/uploads/2020/03/jontybloom.jpg");
         journalistRepository.save(bloom);
 
-        Journalist bearne = new Journalist("Suzanne Bearne");
+        Journalist bearne = new Journalist("Suzanne Bearne", "https://media-exp1.licdn.com/dms/image/C4D03AQGR7hy-96DbtA/profile-displayphoto-shrink_200_200/0/1602918204308?e=1623283200&v=beta&t=E4hxaLe5JsyWS7gkWQvlIr9_covX8Kz7wkfkrMxq5o0");
         journalistRepository.save(bearne);
 
-        Journalist harper = new Journalist("Justin Harper");
+        Journalist harper = new Journalist("Justin Harper", "https://s3.amazonaws.com/media.muckrack.com/profile/images/8973486/unadjustednonraw_thumb_22.jpg.256x256_q100_crop-smart.jpg");
         journalistRepository.save(harper);
 
-        Journalist jock = new Journalist("Scotch Jock");
+        Journalist jock = new Journalist("Scotch Jock", "https://www.pressgazette.co.uk/wp-content/uploads/2019/01/Hugh-McIlvanney-PA-e1548414110553.jpg");
         journalistRepository.save(jock);
 
-        Journalist english = new Journalist("Tom English");
+        Journalist english = new Journalist("Tom English", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT94BM7wRVZGdwuyvudxDuMFvBJTczpCFR5nyjvmRB4mSwQ0pIn-wmk9W4a3hbvQh0FQsc&usqp=CAU");
         journalistRepository.save(english);
 
-        Journalist mcgregor = new Journalist("Paul McGregor");
+        Journalist mcgregor = new Journalist("Paul McGregor", "https://pbs.twimg.com/profile_images/795995522666471425/P4jZSAEo_400x400.jpg");
         journalistRepository.save(mcgregor);
 
-        Journalist watson = new Journalist("Chris Watson");
+        Journalist watson = new Journalist("Chris Watson", "data:image/jpeg;base64,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");
         journalistRepository.save(watson);
 
-        Journalist macrae = new Journalist("Craig Macrae");
+        Journalist macrae = new Journalist("Craig Macrae", "https://m.media-amazon.com/images/M/MV5BMzUxMzNiYWYtMzFkYS00NmVkLWFjNDQtM2Q4ODMyZGE3ZTVjXkEyXkFqcGdeQXVyNDI5MzEyNTY@._V1_UY317_CR4,0,214,317_AL_.jpg");
         journalistRepository.save(macrae);
 
-        Journalist waddell = new Journalist("David Waddell");
+        Journalist waddell = new Journalist("David Waddell", "https://pbs.twimg.com/profile_images/2793628946/7533b41b0108aa5d1d72d4e9169dab90_400x400.jpeg");
         journalistRepository.save(waddell);
 
-        Journalist rudden = new Journalist("Gary Rudden");
+        Journalist rudden = new Journalist("Gary Rudden", "data:image/jpeg;base64,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");
         journalistRepository.save(rudden);
 
-        Journalist courtney = new Journalist("Andrew Courtney");
+        Journalist courtney = new Journalist("Andrew Courtney", "https://www.ravenscroftgroup.com/media/1163/andrew-courtney-table2-feb17.jpeg?center=0.5125,0.59666666666666668&mode=crop&quality=75&width=992&height=650&rnd=132497487040000000");
         journalistRepository.save(courtney);
 
-        Journalist tully = new Journalist("Daniel Tully");
+        Journalist tully = new Journalist("Daniel Tully", "https://newmainsunitedfc.com/wp-content/uploads/2020/06/Daniel-Tully.jpeg");
         journalistRepository.save(tully);
 
-        Journalist mckenna = new Journalist("Sean McKenna");
+        Journalist mckenna = new Journalist("Sean McKenna", "https://media-exp1.licdn.com/dms/image/C4D03AQGJIc5pr7CApg/profile-displayphoto-shrink_200_200/0/1517541177370?e=1622073600&v=beta&t=a2_82cT2bc28v__MX2pdv8lWzFMKmheTiQB906Qo5O8");
         journalistRepository.save(mckenna);
 
-        Journalist martin = new Journalist("Jonathan Martin");
+        Journalist martin = new Journalist("Jonathan Martin", "https://i.dailymail.co.uk/i/pix/2013/11/13/article-2505047-1961401F00000578-720_306x423.jpg");
         journalistRepository.save(martin);
 
-        Journalist robertson = new Journalist("Chris Robertson");
+        Journalist robertson = new Journalist("Chris Robertson", "https://e3.365dm.com/19/03/600x600/skynews-chris-robertson_4616169.jpg");
         journalistRepository.save(robertson);
 
-        Journalist binding = new Journalist("Lucia Binding");
+        Journalist binding = new Journalist("Lucia Binding", "https://e3.365dm.com/19/03/600x600/skynews-lucia-binding-news-reporter_4616196.jpg");
         journalistRepository.save(binding);
 
-        Journalist mercer = new Journalist("David Mercer");
+        Journalist mercer = new Journalist("David Mercer", "https://e3.365dm.com/19/03/600x600/skynews-david-mercer-news-reporter_4616230.jpg");
         journalistRepository.save(mercer);
 
-        Journalist connelly = new Journalist("John Connolly");
+        Journalist connelly = new Journalist("John Connolly", "https://pbs.twimg.com/profile_images/913515121334394880/q0u0mmtm_400x400.jpg");
         journalistRepository.save(connelly);
 
-        Journalist fletcher = new Journalist("Harry Fletcher");
+        Journalist fletcher = new Journalist("Harry Fletcher", "https://images1.the-dots.com/959559/harry-profile-pic.jpeg?p=profileImage");
         journalistRepository.save(fletcher);
 
-        Journalist ashurt = new Journalist("Sam Ashurt");
+        Journalist ashurt = new Journalist("Sam Ashurst", "https://movingpicturesfilmclub.files.wordpress.com/2020/11/sam-ashurst-2.jpg");
         journalistRepository.save(ashurt);
 
-        Journalist rackham = new Journalist("Annabel Rackham");
+        Journalist rackham = new Journalist("Annabel Rackham", "https://pbs.twimg.com/profile_images/1346451015009251329/bSf8tQfC_400x400.jpg");
         journalistRepository.save(rackham);
 
-        Journalist kale = new Journalist("Sirin Kale");
+        Journalist kale = new Journalist("Sirin Kale", "https://images.squarespace-cdn.com/content/v1/59b557f403596ecddff9b1ea/1608556548801-AHAEJN5JN6AXF34TUKYY/ke17ZwdGBToddI8pDm48kBt5X_d8dgB6Oe3btMU9ay97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UXYeskgZ0UWtEEYOxuoj0jwqgbWVV8gGiQIMx2XMuPLsF-HWY8oCn8lZApDZXKlGig/Sirin1.jpg");
         journalistRepository.save(kale);
 
-        Journalist barnett = new Journalist("Emma Barnett");
+        Journalist barnett = new Journalist("Emma Barnett", "https://ichef.bbci.co.uk/images/ic/1200x675/p05j34vj.jpg");
         journalistRepository.save(barnett);
 
-        Journalist howarth = new Journalist("Emma Howrth");
+        Journalist howarth = new Journalist("Emma Howarth", "https://pbs.twimg.com/profile_images/101733578/emmaontrain_400x400.JPG");
         journalistRepository.save(howarth);
 
-        Journalist jones = new Journalist("Anna Jones");
+        Journalist jones = new Journalist("Anna Jones", "https://pbs.twimg.com/profile_images/838068217012703232/KFxKG3ZP_400x400.jpg");
         journalistRepository.save(jones);
 
-        Journalist walker = new Journalist("Ella Walker");
+        Journalist walker = new Journalist("Ella Walker", "https://pbs.twimg.com/profile_images/929743895793160192/J6juPYgk_400x400.jpg");
         journalistRepository.save(walker);
 
-        Journalist wakefield = new Journalist("Jane Wakefield");
+        Journalist wakefield = new Journalist("Jane Wakefield", "https://pbs.twimg.com/profile_images/1027105709765390338/MRNQKWUs.jpg");
         journalistRepository.save(wakefield);
 
-        Journalist morris = new Journalist("Ben Morris");
+        Journalist morris = new Journalist("Ben Morris", "https://pbs.twimg.com/profile_images/1328755018078547968/4nVlbeUz_400x400.jpg");
         journalistRepository.save(morris);
 
-        Journalist kleinman = new Journalist("Zoe Kleinman");
+        Journalist kleinman = new Journalist("Zoe Kleinman", "https://www.f4docs.myzen.co.uk/assets/photos/zoe_kleinman350.jpg");
         journalistRepository.save(kleinman);
 
-        Journalist tsoni = new Journalist("Paula Tsoni");
+        Journalist tsoni = new Journalist("Paula Tsoni", "http://dramaquarterly.com/wp-content/uploads/2020/04/Le-Parlement-XavierFEAT.jpg");
         journalistRepository.save(tsoni);
 
-        Journalist white = new Journalist("Jordan White");
+        Journalist white = new Journalist("Jordan White", "https://pbs.twimg.com/profile_images/1303412837382066177/t8m9OR27_400x400.jpg");
         journalistRepository.save(white);
 
-        Journalist clayton = new Journalist("Max Clayton");
+        Journalist clayton = new Journalist("Max Clayton", "https://www.boulderjcc.org/clientuploads/ACE/2020/Boradway-Max.jpg");
         journalistRepository.save(clayton);
 
-        Journalist hendrix = new Journalist("Grady Hendrix");
+        Journalist hendrix = new Journalist("Grady Hendrix", "https://cachedimages.podchaser.com/512x512/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2YyODhhNjhlMTZhYTVhZjQ0OTlkZGY5MDA0MDBkZjdiLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D");
         journalistRepository.save(hendrix);
 
-        Journalist easdale = new Journalist("Sarah Easdale");
+        Journalist easdale = new Journalist("Sarah Easdale", "https://pbs.twimg.com/profile_images/573110570636853248/h4xHSIwv_400x400.jpeg");
         journalistRepository.save(easdale);
 
-        Journalist king = new Journalist("Nathaniel King");
+        Journalist king = new Journalist("Daniel King", "https://s3.amazonaws.com/media.muckrack.com/profile/images/10349526/asbestos-profile-pic_dkin.png.256x256_q100_crop-smart.png");
         journalistRepository.save(king);
 
-        Journalist tristram = new Journalist("Sophie Tristram");
+        Journalist tristram = new Journalist("Sophie Tristram", "https://bookgig.com/sites/default/files/styles/event_speaker/public/sophie%20kinsella_0.jpg?itok=tD3Fz08X");
         journalistRepository.save(tristram);
 
-        Journalist hughes = new Journalist("Emma Hughes");
+        Journalist hughes = new Journalist("Emma Hughes", "https://pbs.twimg.com/profile_images/1144129188028461056/q9mhCH34.jpg");
         journalistRepository.save(hughes);
 
-        Journalist bryant = new Journalist("Nicola Bryant");
+        Journalist bryant = new Journalist("Nicola Bryant", "https://static.wikia.nocookie.net/doctor-who-season-23b/images/e/ea/Nicola_Bryant.jpg/revision/latest?cb=20200804175336");
         journalistRepository.save(bryant);
 
-        Journalist zhuravlyova = new Journalist("Sonia Zhuravlyova");
+        Journalist zhuravlyova = new Journalist("Sonia Zhuravlyova", "https://soniazhuravlyova.com/wp-content/uploads/2017/10/Photo-on-12-10-2017-at-14.04-2-1.jpeg");
         journalistRepository.save(zhuravlyova);
 
-        Journalist haines = new Journalist("Gavin Haines");
+        Journalist haines = new Journalist("Gavin Haines", "https://pbs.twimg.com/profile_images/1154000960525611008/UKWzbKMI_400x400.jpg");
         journalistRepository.save(haines);
 
-        Journalist douglas = new Journalist("Lucy Douglas");
+        Journalist douglas = new Journalist("Lucy Douglas", "https://media-exp1.licdn.com/dms/image/C5622AQEnYQRVQX-JvA/feedshare-shrink_1280/0/1551613826369?e=1620259200&v=beta&t=m4Bc5MDMywpNibYkhoiW-XPM7P-yEAqCbL8j4oAtsHI");
         journalistRepository.save(douglas);
 
-        Journalist easedale = new Journalist("Sarah Easedale");
-        journalistRepository.save(easedale);
-
-        Journalist reynolds = new Journalist("Darryl Reynolds");
+        Journalist reynolds = new Journalist("Darryl Reynolds", "https://media.thetab.com/blogs.dir/120/files/2016/10/img-1295-e1477941568586.jpg");
         journalistRepository.save(reynolds);
 
-        Journalist boyle = new Journalist("Charles Boyle");
+        Journalist boyle = new Journalist("Charles Boyle", "https://static.wikia.nocookie.net/brooklynnine-nine/images/1/1a/Jolo.jpg/revision/latest/top-crop/width/360/height/450?cb=20150520193319");
         journalistRepository.save(boyle);
 
-        Journalist diaz = new Journalist("Victor Diaz");
+        Journalist diaz = new Journalist("Victor Diaz", "https://s7d2.scene7.com/is/image/TWCNews/Web-Talent-Photos_Victor-Diaz-640x360");
         journalistRepository.save (diaz);
 
-        Journalist harkness = new Journalist("Frank Harkness");
+        Journalist harkness = new Journalist("Frank Harkness", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-7zxxYvIWtoLRekG8UyThQuqr7drGhx8rLSimKv5a2F0axk9-OBmZYHRym5UDe4F7JMU&usqp=CAU");
         journalistRepository.save(harkness);
 
-        Journalist gordon = new Journalist("James Gordon");
+        Journalist gordon = new Journalist("James Gordon", "https://s3.amazonaws.com/media.muckrack.com/profile/images/80281/image.jpg.256x256_q100_crop-smart.jpg");
         journalistRepository.save(gordon);
 
-        Journalist santiago = new Journalist("Emilio Santiago");
+        Journalist santiago = new Journalist("Amelia Santiago", "https://images1.the-dots.com/2389712/amelia-duggan-headshot-1.jpeg?p=social");
         journalistRepository.save(santiago);
 
-        Journalist holt = new Journalist("Elliot Holt");
+        Journalist holt = new Journalist("Elliot Holt", "https://media-exp1.licdn.com/dms/image/C4D03AQG_ZmSENXiwIQ/profile-displayphoto-shrink_200_200/0/1526651817090?e=1622678400&v=beta&t=qfaATce8GoV8EoRYc_mTlaURUBCTmD_xWWwD8HgQC2k");
         journalistRepository.save(holt);
 
-        Journalist williams = new Journalist("Rhys Williams");
+        Journalist williams = new Journalist("Rhys Williams", "https://media-exp1.licdn.com/dms/image/C5603AQFsb3sbHOSSAA/profile-displayphoto-shrink_200_200/0/1517565806498?e=1620259200&v=beta&t=PZbrraDmpmWhU-UiXrvMBRZrmG_s8ILTUGW7rMGmbSA");
         journalistRepository.save(williams);
 
-        Journalist jeffords = new Journalist("Samuel Jeffords");
+        Journalist jeffords = new Journalist("Samuel Jeffords", "https://www.wine-searcher.com/images/critic/tim-atkin-34-1-3.jpg");
         journalistRepository.save(jeffords);
 
-        Journalist cooper = new Journalist("Jacob Cooper");
+        Journalist cooper = new Journalist("Jacob Cooper", "https://upload.wikimedia.org/wikipedia/commons/f/f6/Jacob_Cooper_headshot_2019.jpg");
         journalistRepository.save(cooper);
 
 
@@ -2529,7 +2526,7 @@ public class DataLoader implements ApplicationRunner {
                         "Becca Martin, who has been preparing and distributing the bags said \"it's been amazing to see so many people give so much\".\n" +
                         "\"These treats are never going to equate, but it's something to say thank you, you are appreciated, and we do see you… it hasn't gone unnoticed.\"\n" +
                         "Ms Rees added the \"Wrexham people are almost legendary for their generosity and community spirit”.\n",
-                easedale, uplifting, uk, "2020-03-20", 0,
+                easdale, uplifting, uk, "2020-03-20", 0,
                 "https://ichef.bbci.co.uk/news/624/cpsprodpb/10384/production/_117663466_hugsforheroesdelivery.png");
         articleRepository.save(uplifting10);
 

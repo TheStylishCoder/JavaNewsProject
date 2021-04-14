@@ -20,13 +20,17 @@ public class Journalist implements Serializable {
     @Column(name = "name")
     private String name;
 
+    @Column(name= "image")
+    private String image;
+
     @JsonIgnoreProperties(value = "journalist")
     @OneToMany(mappedBy = "journalist", fetch = FetchType.LAZY)
     @Cascade(org.hibernate.annotations.CascadeType.DELETE)
     private List<Article> articles;
 
-    public Journalist(String name) {
+    public Journalist(String name, String image) {
         this.name = name;
+        this.image = image;
         this.articles = new ArrayList<>();
     }
 
