@@ -60,4 +60,12 @@ public class Journalist implements Serializable {
     public void setArticles(List<Article> articles) {
         this.articles = articles;
     }
+
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
 }
