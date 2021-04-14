@@ -7,9 +7,9 @@ const UserNavBar = () => {
         <>
         <div className='navbar'>
             <ul>
-                <li className="navLink">
+                {/* <li className="navLink">
                     <Link to="/users/profile">PROFILE</Link>
-                </li>
+                </li> */}
                 <li className="navLink">
                     <Link to="/users/readinglist">READING LIST</Link>
                 </li>
