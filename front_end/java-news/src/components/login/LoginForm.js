@@ -41,13 +41,19 @@ const LoginForm = ({currentUser, allUsers, handleLogin}) => {
         <>
 
         <div className="login-form">
-        <h3>Login</h3>
+        <h3>LOGIN</h3>
         <form onSubmit={loginSubmit} >
-            <input type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username} />
-            <input type="Password" placeholder="Password" name="password" onChange={handleChange} value={stateUser.password}/>
+            <label htmlFor = "username">Enter Your Username:</label>
+            <br />
+            <input className="input-field" type="text" placeholder="Username" name="username" onChange={handleChange} value={stateUser.username} />
+            <br />
+            <label htmlFor = "password">Enter Your Password:</label>
+            <br />
+            <input className="input-field" type="Password" placeholder="Password" name="password" onChange={handleChange} value={stateUser.password}/>
+            <br />
             <button type="submit">Login</button> 
         </form>
-        <Link to="/users/profile">Go to Profile</Link>
+       
         </div>
         </>
     )
