@@ -12,6 +12,20 @@
     color:black;
     margin-bottom: 50px;
 }
+
+
+.login-form {
+    width:500px;
+    height: 500px;
+    animation-name: learn;
+    animation-duration: 5s;
+}
+
+  
+@keyframes learn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
 /* 
 .input-field {
     width: 100%;
