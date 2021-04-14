@@ -19,7 +19,7 @@ const ArticleDetail = ({article, onDelete}) => {
 
 
     return (
-      <div className = "component">
+      <div className = "article-detail">
       <Article article = {article}/>
       <p>Full Story: {article.fullStory}</p>
       <p>Location: {article.location.name}</p>

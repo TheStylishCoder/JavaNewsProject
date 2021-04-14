@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../static/css/ArticleDetail.css';
 
 
 const ArticleDetail = ({article, currentUser, handleFavouriteToggle}) => {
@@ -29,11 +30,10 @@ const ArticleDetail = ({article, currentUser, handleFavouriteToggle}) => {
         <div className="article-detail">
             <h1>{article.headline}</h1>
             <img src={article.image} height="400px" width="auto" alt=""/>
-            <p>Author: {article.journalist.name}</p>
-            <p>Date: {article.date}</p>
-            <p>Category: {article.category.type}</p>
-            <p>{article.fullStory}</p> 
-            <p>{article.viewCount}</p>
+            <p><b>Author:</b> {article.journalist.name}</p>
+            <p><b>Date:</b> {article.date}</p>
+            <p><b>Category:</b> {article.category.type}</p>
+            <p><b>Full Story: </b>{article.fullStory}</p> 
             {favouriteDisplay(article)}
         </div>
     
