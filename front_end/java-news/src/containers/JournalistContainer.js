@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import JournalistDetail from '../components/journalists/JournalistDetail';
 import JournalistList from '../components/journalists/JournalistList';
 import {Route, Switch} from 'react-router-dom';
@@ -7,6 +7,28 @@ import {Route, Switch} from 'react-router-dom';
 
 
 const JournalistContainer = ({journalist, currentUser, allJournalists}) => {
+    // const [allJournalists, setAllJournalists] = useState([]);
+    // const [allArticles, setArticles] = useState ([]);
+    
+
+
+    // const requestAll = function(){
+    //     const request = new Request();
+    //     const journalistPromise = request.get('/api/journalists')
+    //     const articlePromise = request.get('/api/articles')
+      
+    
+    //     Promise.all([journalistPromise, articlePromise])
+    //     .then((data) => {
+    //         setAllJournalists(data[0]);
+    //         setArticles(data[1]);
+            
+    //     })
+    //   }
+
+    //   useEffect(()=>{
+    //     requestAll()
+    //   }, [])
 
       const findJournalistById = function(id){
         return allJournalists.find((journalist) => {
@@ -14,6 +36,7 @@ const JournalistContainer = ({journalist, currentUser, allJournalists}) => {
         })
     }
 
+     
 
       if(!allJournalists){
           return null

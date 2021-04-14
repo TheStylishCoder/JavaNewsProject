@@ -164,7 +164,7 @@ const MainContainer = () => {
           }} />
 
         <Route path="/home" render={() => {
-              return <HomePage allArticles={allArticles} />
+              return <HomePage allBusiness={businessArticles} allTechnology={technologyArticles} allEntertainment={entertainmentArticles} allPolitics={politicsArticles} />
           }} />
 
           
