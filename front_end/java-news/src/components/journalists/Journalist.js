@@ -13,7 +13,7 @@ const Journalist = ({journalist}) => {
     <>
     <Link to = {url} className="name">
     {journalist.name} 
-    <img src={journalist.image} alt="journalist profile"/>
+    <img src={journalist.image} height="300" width="400" alt="journalist profile"/>
     </Link>
 
     </>
