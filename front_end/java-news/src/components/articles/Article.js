@@ -23,14 +23,14 @@ const Article = ({article, currentUser, addToViewCount, addToRecentlyViewed, han
 
   return (
     <>
+    <img src={article.image} height="auto" width="300px" alt="Article Image"/>
     <Link to = {url} className="name" onClick={handleView}>
     {article.headline}
     </Link>
-    <img src={article.image} height="auto" width="300px" alt=""/>
-    <p>Author: {article.journalist.name}</p>
-    <p>Date: {article.date}</p>
-    <p>Category: {article.category.type}</p>
-    <p>Summary: {article.summary}</p>
+    <p><b>Author:</b> {article.journalist.name}</p>
+    <p><b>Date:</b> {article.date}</p>
+    <p><b>Category:</b> {article.category.type}</p>
+    <p><b>Summary:</b> {article.summary}</p>
     </>
   )
 }

@@ -40,7 +40,7 @@ const LoginForm = ({currentUser, allUsers, handleLogin}) => {
     return(
         <>
 
-        <div className="login-form">
+        <div className="form">
         <h3>LOGIN</h3>
         <form onSubmit={loginSubmit} >
             <label htmlFor = "username">Enter Your Username:</label>

@@ -1,19 +1,19 @@
-.form {
+/* .form {
     display:flex;
-    flex-direction:column;
+    flex-direction:column; */
     /* width:25em; */
-    text-align:center;
+    /* text-align:center;
     margin-left:auto;
     margin-right:auto;
     background-color:white;
     padding:10px;
     border:5px solid rgb(85, 80, 80);
     color:black;
-    margin-bottom: 50px;
-}
+    margin-bottom: 50px; */
+/* } */
 
 
-.login-form {
+.form {
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
@@ -28,16 +28,69 @@
     align-items: center;
 }
 
+.article-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    height: 550px;
+    animation-name: learn;
+    animation-duration: 5s;
+    background-color: #08165F;
+    color: white;
+    align-items: center;
+}
+
+.journalist-form {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display:flex;
+    flex-direction: column;
+    width:500px;
+    height: 100px;
+    animation-name: learn;
+    animation-duration: 5s;
+    background-color: #08165F;
+    color: white;
+    align-items: center;
+}
+
 .input-field {
-    /* padding: 5px; */
    margin-top: 5px;
    margin-bottom: 10px;
+   width: 200px;
+}
+
+.article-input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.text-input{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    float: left;
+    width: 350px;
+    min-height: 50px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
 }
 
   
 @keyframes learn {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+.heading {
+    text-align: center;
+    color: #08165F;
+    margin-top: 30px;
 }
 /* 
 .input-field {

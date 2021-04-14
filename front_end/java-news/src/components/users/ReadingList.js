@@ -36,9 +36,12 @@ const ReadingList = ({currentUser}) => {
     
 
     return(
+        <>
+        <h3>{currentUser.username}'s Reading List</h3>
         <ul className="article-list">
         {favouriteArticlesNodes}
         </ul>
+        </>
     )
 }
 

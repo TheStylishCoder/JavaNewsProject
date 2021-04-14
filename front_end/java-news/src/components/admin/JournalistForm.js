@@ -47,11 +47,14 @@ const JournalistForm = ({journalist, onCreate, onUpdate}) => {
 
     return(
         <>
-        <h2>{heading}</h2>
+        <h2 className="heading">{heading}</h2>
         <form onSubmit={handleSubmit}>
             <div className = "journalist-form">
+                <br />
                 <label htmlFor = "name">Journalist Full Name:</label>
-                <input type = "text" placeholder="Full Name" name="name" onChange={handleUpdate} value={stateJournalist.name} />
+                <br />
+                <input className="input-field" type = "text" placeholder="Full Name" name="name" onChange={handleUpdate} value={stateJournalist.name} />
+                <br />
                 <button type="submit">Save</button>
             </div>
         </form>
