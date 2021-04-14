@@ -20,7 +20,7 @@ public class Journalist implements Serializable {
     @Column(name = "name")
     private String name;
 
-    @Column(name= "image")
+    @Column(name= "image", length=10000)
     private String image;
 
     @JsonIgnoreProperties(value = "journalist")
