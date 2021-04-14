@@ -36,9 +36,12 @@ const RecentlyViewed = ({currentUser}) => {
     
 
     return(
+        <>
+        <h3 className="heading">{currentUser.username}'s Recently Viewed</h3>
         <ul className="article-list">
         {viewedArticlesNodes}
         </ul>
+        </>
     )
 
 }

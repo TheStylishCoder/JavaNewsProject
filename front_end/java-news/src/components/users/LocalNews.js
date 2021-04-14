@@ -38,9 +38,12 @@ const LocalNews = ({allArticles, currentUser}) => {
     
 
     return(
+        <>
+         <h3 className="heading">News From {currentUser.location.name}</h3>
         <ul className="article-list">
         {localNewsNodes}
         </ul>
+        </>
     )
 
 }
